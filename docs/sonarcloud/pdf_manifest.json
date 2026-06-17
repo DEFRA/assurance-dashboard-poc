@@ -1,0 +1,12 @@
+{
+  "pdf_groups": [
+    {
+      "group_name": "IDM",
+      "file": "pdfs/IDM.pdf"
+    },
+    {
+      "group_name": "FES",
+      "file": "pdfs/FES.pdf"
+    }
+  ]
+}

@@ -1,0 +1,1224 @@
+{
+  "IPAFFS": {
+    "group_name": "IPAFFS",
+    "platform_filter": "sonarqube",
+    "total_projects": 49,
+    "total_projects_in_map": 49,
+    "matched": 49,
+    "unmatched": [],
+    "total_loc": 255585,
+    "quality_gate": {
+      "passed": 47,
+      "failed": 0,
+      "unknown": 2
+    },
+    "code_quality": {
+      "bugs": 17,
+      "vulnerabilities": 3,
+      "code_smells": 1068,
+      "security_hotspots": 1,
+      "avg_coverage": 87.1,
+      "avg_duplication": 0.4,
+      "repos_below_90_cov_overall": 8,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 1,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 2,
+        "critical": 2,
+        "major": 8,
+        "minor": 5,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 1,
+        "minor": 2,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 298,
+        "critical": 47,
+        "major": 251,
+        "minor": 368,
+        "info": 104
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "ipaffs-Imports-MS-AntiVirus-Stub"
+      ],
+      "inactive_branches": 11,
+      "false_positives": 0,
+      "false_positives_no_justification": 0,
+      "suppressions": 0,
+      "suppressions_no_justification": 0,
+      "missing_config": [
+        "ipaffs-Imports-FUNC-Risk-Locking",
+        "ipaffs-Imports-SpringBoot-CommonSecurity"
+      ],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "ipaffs-Imports-Mapping-Library",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "ipaffs-Imports-MS-AntiVirus-Stub",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 4,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "ipaffs-Imports-MS-FrontEndNotification",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 12,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": true,
+          "hygiene_issue": "Review: 12 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        },
+        {
+          "project_name": "ipaffs-Imports-Notification-Schema",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 3,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "2 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "ipaffs-Imports-SpringBoot-CommonSecurity",
+          "platform": "SonarQube",
+          "main_branch": "main",
+          "non_main_branches": 5,
+          "inactive_branches_90": 5,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "5 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>IPAFFS covers 49 projects totalling 255,585 lines of code. All projects pass their Quality Gate. 349 Blocker or Critical issues require immediate attention. Average coverage is 87.1%. Average duplication is 0.4%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 47 passed &nbsp;&nbsp; ❌ 0 failed &nbsp;&nbsp; 2 not computed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 3 (Major 1, Minor 2) | Hotspots 1</li>\n<li><strong>Reliability:</strong> Bugs 17 (Blocker 2, Critical 2, Major 8, Minor 5)</li>\n<li><strong>Maintainability:</strong> Code Smells 1,068 (Blocker 298, Critical 47, Major 251, Minor 368, Info 104)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<ul>\n<li>2 projects have no scan data or LOC figures.</li>\n<li>2 projects have missing metric values due to configuration issues.</li>\n<li>2 projects have no Quality Gate status computed.</li>\n</ul>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>1 inactive project with no recent analysis.</li>\n<li>11 stale branches (90+ days) across 4 projects.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>300 Blocker, 49 Critical issues — fix on priority.</li>\n<li>260 Major issues — good to target for the next sprint.</li>\n<li>375 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>1 Security Hotspot — worth reviewing to confirm they are not exploitable.</li>\n<li>2 projects with missing metrics — review scanner setup to get full visibility.</li>\n<li>2 projects with no scan data — restore scanner configuration.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>1 inactive project — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "Exports": {
+    "group_name": "Exports",
+    "platform_filter": "sonarqube",
+    "total_projects": 1,
+    "total_projects_in_map": 1,
+    "matched": 1,
+    "unmatched": [],
+    "total_loc": 84649,
+    "quality_gate": {
+      "passed": 1,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 11,
+      "security_hotspots": 0,
+      "avg_coverage": 93.1,
+      "avg_duplication": 0.8,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 11,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 0,
+      "false_positives": 44,
+      "false_positives_no_justification": 4,
+      "suppressions": 70,
+      "suppressions_no_justification": 48,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>Exports covers 1 project totalling 84,649 lines of code. All projects pass their Quality Gate. Average coverage is 93.1%. Average duplication is 0.8%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 1 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 11 (Minor 11)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>44 False Positives, 4 without justification.</li>\n<li>70 Accepted issues, 48 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>11 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n</ul>"
+  },
+  "REACH-Chemicals": {
+    "group_name": "REACH-Chemicals",
+    "platform_filter": "sonarqube",
+    "total_projects": 18,
+    "total_projects_in_map": 18,
+    "matched": 18,
+    "unmatched": [],
+    "total_loc": 43512,
+    "quality_gate": {
+      "passed": 17,
+      "failed": 1,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 2,
+      "security_hotspots": 0,
+      "avg_coverage": 80.9,
+      "avg_duplication": 0.1,
+      "repos_below_90_cov_overall": 3,
+      "repos_below_90_cov_new": 1,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 2,
+        "minor": 0,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "\"UK REACH-IT Reach Liquibase\"",
+        "\"UK REACH-IT Reach Metrics\"",
+        "\"UK REACH-IT: REACH Support Admin UI\"",
+        "\"UK REACH-IT: Storage Model\"",
+        "\"UK REACH-IT: Symantec Client\""
+      ],
+      "inactive_branches": 30,
+      "false_positives": 1,
+      "false_positives_no_justification": 0,
+      "suppressions": 0,
+      "suppressions_no_justification": 0,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "\"UK REACH-IT REACH Monitoring\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT Reach Notify\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 3,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT: Audit\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT: File\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT: NipNots\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT: REACH Support Admin UI\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 6,
+          "inactive_branches_90": 6,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "6 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT: Security\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 9,
+          "inactive_branches_90": 7,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "7 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT: Spring\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 6,
+          "inactive_branches_90": 5,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "5 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT: Storage Model\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "UK REACH-IT",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 5,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "UK REACH-IT Storage: Azure Blob Storage",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "2 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "UK REACH-IT: Frontend",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 5,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [
+      {
+        "name": "UK REACH-IT Storage: Azure Blob Storage",
+        "reason": "0% coverage"
+      }
+    ],
+    "project_ai_summary": "<p>REACH-Chemicals covers 18 projects totalling 43,512 lines of code. 1 project failed the Quality Gate. Average coverage is 80.9%. Average duplication is 0.1%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 17 passed &nbsp;&nbsp; ❌ 1 failed</p>\n<p class=\"sub-item\">Failure: <strong>UK REACH-IT Storage: Azure Blob Storage</strong> (0% coverage)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 2 (Major 2)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<ul>\n<li>1 project has missing metric values due to configuration issues.</li>\n</ul>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>5 inactive projects with no recent analysis.</li>\n<li>30 stale branches (90+ days) across 12 projects.</li>\n<li>8 projects not using DEFRA Default Quality Gate.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failure (UK REACH-IT Storage: Azure Blob Storage) — teams to review and remediate.</li>\n<li>2 Major issues — good to target for the next sprint.</li>\n<li>1 project with missing metrics — review scanner setup to get full visibility.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>5 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "PHES": {
+    "group_name": "PHES",
+    "platform_filter": "sonarqube",
+    "total_projects": 11,
+    "total_projects_in_map": 11,
+    "matched": 11,
+    "unmatched": [],
+    "total_loc": 102323,
+    "quality_gate": {
+      "passed": 11,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 5,
+      "security_hotspots": 0,
+      "avg_coverage": 94.1,
+      "avg_duplication": 0.2,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 5,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 1,
+      "false_positives": 1,
+      "false_positives_no_justification": 0,
+      "suppressions": 2,
+      "suppressions_no_justification": 2,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "plants-form-configuration-microservice",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>PHES covers 11 projects totalling 102,323 lines of code. All projects pass their Quality Gate. Average coverage is 94.1%. Average duplication is 0.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 11 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 5 (Minor 5)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>1 stale branch (90+ days) across 1 project.</li>\n<li>2 Accepted issues, 2 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>5 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n</ul>"
+  },
+  "Trade Plants Portal": {
+    "group_name": "Trade Plants Portal",
+    "platform_filter": "sonarqube",
+    "total_projects": 6,
+    "total_projects_in_map": 6,
+    "matched": 6,
+    "unmatched": [],
+    "total_loc": 55177,
+    "quality_gate": {
+      "passed": 6,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 5,
+      "security_hotspots": 0,
+      "avg_coverage": 93.5,
+      "avg_duplication": 0.3,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 5,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 0,
+      "false_positives": 1,
+      "false_positives_no_justification": 0,
+      "suppressions": 0,
+      "suppressions_no_justification": 0,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>Trade Plants Portal covers 6 projects totalling 55,177 lines of code. All projects pass their Quality Gate. Average coverage is 93.5%. Average duplication is 0.3%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 6 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 5 (Minor 5)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<p>No governance issues flagged for this group.</p>\n<h3>Recommended Actions</h3>\n<ul>\n<li>5 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n</ul>"
+  },
+  "Trade Dynamics": {
+    "group_name": "Trade Dynamics",
+    "platform_filter": "sonarqube",
+    "total_projects": 5,
+    "total_projects_in_map": 5,
+    "matched": 5,
+    "unmatched": [],
+    "total_loc": 47146,
+    "quality_gate": {
+      "passed": 5,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 0,
+      "security_hotspots": 0,
+      "avg_coverage": 94.7,
+      "avg_duplication": 0.0,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 1,
+      "false_positives": 0,
+      "false_positives_no_justification": 0,
+      "suppressions": 2,
+      "suppressions_no_justification": 2,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "plants-form-configuration-microservice",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>Trade Dynamics covers 5 projects totalling 47,146 lines of code. All projects pass their Quality Gate. Average coverage is 94.7%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 5 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 0 (none)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>1 stale branch (90+ days) across 1 project.</li>\n<li>2 Accepted issues, 2 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n</ul>"
+  },
+  "projects": [
+    {
+      "name": "IPAFFS",
+      "group_name": "IPAFFS",
+      "platform_filter": "sonarqube",
+      "total_projects": 49,
+      "total_projects_in_map": 49,
+      "matched": 49,
+      "unmatched": [],
+      "total_loc": 255585,
+      "quality_gate": {
+        "passed": 47,
+        "failed": 0,
+        "unknown": 2
+      },
+      "code_quality": {
+        "bugs": 17,
+        "vulnerabilities": 3,
+        "code_smells": 1068,
+        "security_hotspots": 1,
+        "avg_coverage": 87.1,
+        "avg_duplication": 0.4,
+        "repos_below_90_cov_overall": 8,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 1,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 2,
+          "critical": 2,
+          "major": 8,
+          "minor": 5,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 1,
+          "minor": 2,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 298,
+          "critical": 47,
+          "major": 251,
+          "minor": 368,
+          "info": 104
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "ipaffs-Imports-MS-AntiVirus-Stub"
+        ],
+        "inactive_branches": 11,
+        "false_positives": 0,
+        "false_positives_no_justification": 0,
+        "suppressions": 0,
+        "suppressions_no_justification": 0,
+        "missing_config": [
+          "ipaffs-Imports-FUNC-Risk-Locking",
+          "ipaffs-Imports-SpringBoot-CommonSecurity"
+        ],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "ipaffs-Imports-Mapping-Library",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "ipaffs-Imports-MS-AntiVirus-Stub",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 4,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "ipaffs-Imports-MS-FrontEndNotification",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 12,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": true,
+            "hygiene_issue": "Review: 12 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+          },
+          {
+            "project_name": "ipaffs-Imports-Notification-Schema",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 3,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "2 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "ipaffs-Imports-SpringBoot-CommonSecurity",
+            "platform": "SonarQube",
+            "main_branch": "main",
+            "non_main_branches": 5,
+            "inactive_branches_90": 5,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "5 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Exports",
+      "group_name": "Exports",
+      "platform_filter": "sonarqube",
+      "total_projects": 1,
+      "total_projects_in_map": 1,
+      "matched": 1,
+      "unmatched": [],
+      "total_loc": 84649,
+      "quality_gate": {
+        "passed": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 11,
+        "security_hotspots": 0,
+        "avg_coverage": 93.1,
+        "avg_duplication": 0.8,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 11,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 0,
+        "false_positives": 44,
+        "false_positives_no_justification": 4,
+        "suppressions": 70,
+        "suppressions_no_justification": 48,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "REACH-Chemicals",
+      "group_name": "REACH-Chemicals",
+      "platform_filter": "sonarqube",
+      "total_projects": 18,
+      "total_projects_in_map": 18,
+      "matched": 18,
+      "unmatched": [],
+      "total_loc": 43512,
+      "quality_gate": {
+        "passed": 17,
+        "failed": 1,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 2,
+        "security_hotspots": 0,
+        "avg_coverage": 80.9,
+        "avg_duplication": 0.1,
+        "repos_below_90_cov_overall": 3,
+        "repos_below_90_cov_new": 1,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 2,
+          "minor": 0,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "\"UK REACH-IT Reach Liquibase\"",
+          "\"UK REACH-IT Reach Metrics\"",
+          "\"UK REACH-IT: REACH Support Admin UI\"",
+          "\"UK REACH-IT: Storage Model\"",
+          "\"UK REACH-IT: Symantec Client\""
+        ],
+        "inactive_branches": 30,
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "suppressions": 0,
+        "suppressions_no_justification": 0,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "\"UK REACH-IT REACH Monitoring\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT Reach Notify\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 3,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT: Audit\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT: File\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT: NipNots\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT: REACH Support Admin UI\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 6,
+            "inactive_branches_90": 6,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "6 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT: Security\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 9,
+            "inactive_branches_90": 7,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "7 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT: Spring\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 6,
+            "inactive_branches_90": 5,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "5 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT: Storage Model\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "UK REACH-IT",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 5,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "UK REACH-IT Storage: Azure Blob Storage",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "2 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "UK REACH-IT: Frontend",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 5,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [
+        {
+          "name": "UK REACH-IT Storage: Azure Blob Storage",
+          "reason": "0% coverage"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "PHES",
+      "group_name": "PHES",
+      "platform_filter": "sonarqube",
+      "total_projects": 11,
+      "total_projects_in_map": 11,
+      "matched": 11,
+      "unmatched": [],
+      "total_loc": 102323,
+      "quality_gate": {
+        "passed": 11,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 5,
+        "security_hotspots": 0,
+        "avg_coverage": 94.1,
+        "avg_duplication": 0.2,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 5,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 1,
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "suppressions": 2,
+        "suppressions_no_justification": 2,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "plants-form-configuration-microservice",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Trade Plants Portal",
+      "group_name": "Trade Plants Portal",
+      "platform_filter": "sonarqube",
+      "total_projects": 6,
+      "total_projects_in_map": 6,
+      "matched": 6,
+      "unmatched": [],
+      "total_loc": 55177,
+      "quality_gate": {
+        "passed": 6,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 5,
+        "security_hotspots": 0,
+        "avg_coverage": 93.5,
+        "avg_duplication": 0.3,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 5,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 0,
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "suppressions": 0,
+        "suppressions_no_justification": 0,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Trade Dynamics",
+      "group_name": "Trade Dynamics",
+      "platform_filter": "sonarqube",
+      "total_projects": 5,
+      "total_projects_in_map": 5,
+      "matched": 5,
+      "unmatched": [],
+      "total_loc": 47146,
+      "quality_gate": {
+        "passed": 5,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 0,
+        "security_hotspots": 0,
+        "avg_coverage": 94.7,
+        "avg_duplication": 0.0,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 1,
+        "false_positives": 0,
+        "false_positives_no_justification": 0,
+        "suppressions": 2,
+        "suppressions_no_justification": 2,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "plants-form-configuration-microservice",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    }
+  ]
+}

@@ -1,0 +1,2891 @@
+{
+  "IDM": {
+    "group_name": "IDM",
+    "platform_filter": "sonarcloud",
+    "total_projects": 17,
+    "total_projects_in_map": 17,
+    "matched": 17,
+    "unmatched": [],
+    "total_loc": 246594,
+    "quality_gate": {
+      "passed": 11,
+      "failed": 5,
+      "unknown": 1
+    },
+    "code_quality": {
+      "bugs": 16,
+      "vulnerabilities": 43,
+      "code_smells": 960,
+      "security_hotspots": 53,
+      "avg_coverage": 66.1,
+      "avg_duplication": 2.5,
+      "repos_below_90_cov_overall": 7,
+      "repos_below_90_cov_new": 5,
+      "repos_above_3_dup_overall": 4,
+      "repos_above_3_dup_new": 3
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 16,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 43,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 22,
+        "major": 687,
+        "minor": 218,
+        "info": 33
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "All.App.AuthZ",
+        "All.Infrastructure.MVP",
+        "All.Libraries.Events",
+        "All.Libraries.Metrics",
+        "Customer.App.WriteAPI",
+        "Customer.CRM.All",
+        "Defra-APHA-CITES",
+        "Identity.B2C.Policies",
+        "Portal.App.Web"
+      ],
+      "inactive_branches": 4,
+      "false_positives": 135,
+      "false_positives_no_justification": 25,
+      "suppressions": 752,
+      "suppressions_no_justification": 136,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "Customer.App.WriteAPI",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Customer.CRM.All",
+          "platform": "SonarCloud",
+          "main_branch": "develop",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'develop' (expected main or master); 3 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [
+      {
+        "name": "CustomerCache.App.CustomerAPI",
+        "reason": "reliability rating = 3, 2 critical issues, 5 major issues"
+      },
+      {
+        "name": "Identity.App.AccountManagement",
+        "reason": "security rating = 3, 5% coverage, 1 critical issues, 24 major issues"
+      },
+      {
+        "name": "Identity.App.Content",
+        "reason": "86.3% coverage, 4 major issues"
+      },
+      {
+        "name": "Identity.App.Registration",
+        "reason": "security rating = 3, 1 critical issues, 2 major issues"
+      },
+      {
+        "name": "Portal.App.Web",
+        "reason": "reliability rating = 3, 32.78% coverage, 24.2% duplicates, 1 critical issues, 17 major issues"
+      }
+    ],
+    "project_ai_summary": "<p>IDM covers 17 projects totalling 246,594 lines of code. 5 projects failed the Quality Gate. 22 Blocker or Critical issues require immediate attention. Average coverage is 66.1%. Average duplication is 2.5%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 11 passed &nbsp;&nbsp; ❌ 5 failed &nbsp;&nbsp; 1 not computed</p>\n<p class=\"sub-item\">Failure: <strong>CustomerCache.App.CustomerAPI</strong> (reliability rating = 3, 2 critical issues, 5 major issues)</p>\n<p class=\"sub-item\">Failure: <strong>Identity.App.AccountManagement</strong> (security rating = 3, 5% coverage, 1 critical issues, 24 major issues)</p>\n<p class=\"sub-item\">Failure: <strong>Identity.App.Content</strong> (86.3% coverage, 4 major issues)</p>\n<p class=\"sub-item\">Failure: <strong>Identity.App.Registration</strong> (security rating = 3, 1 critical issues, 2 major issues)</p>\n<p class=\"sub-item\">Failure: <strong>Portal.App.Web</strong> (reliability rating = 3, 32.78% coverage, 24.2% duplicates, 1 critical issues, 17 major issues)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 43 (Major 43) | Hotspots 53</li>\n<li><strong>Reliability:</strong> Bugs 16 (Major 16)</li>\n<li><strong>Maintainability:</strong> Code Smells 960 (Critical 22, Major 687, Minor 218, Info 33)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<ul>\n<li>3 projects have missing metric values due to configuration issues.</li>\n<li>1 project has no Quality Gate status computed.</li>\n</ul>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>9 inactive projects with no recent analysis.</li>\n<li>4 stale branches (90+ days) across 2 projects.</li>\n<li>135 False Positives, 25 without justification.</li>\n<li>752 Accepted issues, 136 without justification.</li>\n<li>3 projects not using DEFRA Default Quality Gate.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failures (CustomerCache.App.CustomerAPI, Identity.App.AccountManagement, Identity.App.Content and 2 more) — teams to review and remediate.</li>\n<li>22 Critical issues — fix on priority.</li>\n<li>746 Major issues — good to target for the next sprint.</li>\n<li>218 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>53 Security Hotspots — worth reviewing to confirm they are not exploitable.</li>\n<li>3 projects with missing metrics — review scanner setup to get full visibility.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>9 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "SFI": {
+    "group_name": "SFI",
+    "platform_filter": "sonarcloud",
+    "total_projects": 5,
+    "total_projects_in_map": 6,
+    "matched": 5,
+    "unmatched": [
+      "grants-payment-service"
+    ],
+    "total_loc": 35652,
+    "quality_gate": {
+      "passed": 4,
+      "failed": 1,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 52,
+      "security_hotspots": 0,
+      "avg_coverage": 95.1,
+      "avg_duplication": 0.2,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 3,
+        "minor": 37,
+        "info": 12
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 0,
+      "false_positives": 4,
+      "false_positives_no_justification": 1,
+      "suppressions": 1,
+      "suppressions_no_justification": 1,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [
+      {
+        "name": "land-grants-api",
+        "reason": "2 major issues"
+      }
+    ],
+    "project_ai_summary": "<p>SFI covers 5 projects totalling 35,652 lines of code. 1 project failed the Quality Gate. Average coverage is 95.1%. Average duplication is 0.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 4 passed &nbsp;&nbsp; ❌ 1 failed</p>\n<p class=\"sub-item\">Failure: <strong>land-grants-api</strong> (2 major issues)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 52 (Major 3, Minor 37, Info 12)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>4 False Positives, 1 without justification.</li>\n<li>1 Accepted issue, 1 without justification.</li>\n<li>3 projects not using DEFRA Default Quality Gate.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failure (land-grants-api) — teams to review and remediate.</li>\n<li>3 Major issues — good to target for the next sprint.</li>\n<li>37 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n</ul>"
+  },
+  "Future Grants ": {
+    "group_name": "Future Grants ",
+    "platform_filter": "sonarcloud",
+    "total_projects": 3,
+    "total_projects_in_map": 3,
+    "matched": 3,
+    "unmatched": [],
+    "total_loc": 18492,
+    "quality_gate": {
+      "passed": 3,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 76,
+      "security_hotspots": 0,
+      "avg_coverage": 96.2,
+      "avg_duplication": 0.2,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 73,
+        "info": 3
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 0,
+      "false_positives": 18,
+      "false_positives_no_justification": 17,
+      "suppressions": 10,
+      "suppressions_no_justification": 7,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>Future Grants  covers 3 projects totalling 18,492 lines of code. All projects pass their Quality Gate. Average coverage is 96.2%. Average duplication is 0.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 3 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 76 (Minor 73, Info 3)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>18 False Positives, 17 without justification.</li>\n<li>10 Accepted issues, 7 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>73 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n</ul>"
+  },
+  "Single Front Door": {
+    "group_name": "Single Front Door",
+    "platform_filter": "sonarcloud",
+    "total_projects": 10,
+    "total_projects_in_map": 10,
+    "matched": 10,
+    "unmatched": [],
+    "total_loc": 20740,
+    "quality_gate": {
+      "passed": 8,
+      "failed": 2,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 0,
+      "security_hotspots": 0,
+      "avg_coverage": 95.2,
+      "avg_duplication": 0.2,
+      "repos_below_90_cov_overall": 1,
+      "repos_below_90_cov_new": 1,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 1
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "fcp-sfd-data",
+        "fcp-sfd-messaging-gateway"
+      ],
+      "inactive_branches": 0,
+      "false_positives": 13,
+      "false_positives_no_justification": 9,
+      "suppressions": 22,
+      "suppressions_no_justification": 22,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [
+      {
+        "name": "fcp-sfd-frontend-internal",
+        "reason": "6.1% duplicates"
+      },
+      {
+        "name": "fcp-sfd-object-processor",
+        "reason": "80.1% coverage"
+      }
+    ],
+    "project_ai_summary": "<p>Single Front Door covers 10 projects totalling 20,740 lines of code. 2 projects failed the Quality Gate. Average coverage is 95.2%. Average duplication is 0.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 8 passed &nbsp;&nbsp; ❌ 2 failed</p>\n<p class=\"sub-item\">Failure: <strong>fcp-sfd-frontend-internal</strong> (6.1% duplicates)</p>\n<p class=\"sub-item\">Failure: <strong>fcp-sfd-object-processor</strong> (80.1% coverage)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 0 (none)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>2 inactive projects with no recent analysis.</li>\n<li>13 False Positives, 9 without justification.</li>\n<li>22 Accepted issues, 22 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failures (fcp-sfd-frontend-internal, fcp-sfd-object-processor) — teams to review and remediate.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>2 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "Animal Health & Wealth": {
+    "group_name": "Animal Health & Wealth",
+    "platform_filter": "sonarcloud",
+    "total_projects": 19,
+    "total_projects_in_map": 19,
+    "matched": 19,
+    "unmatched": [],
+    "total_loc": 113756,
+    "quality_gate": {
+      "passed": 19,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 2,
+      "code_smells": 282,
+      "security_hotspots": 1,
+      "avg_coverage": 94.4,
+      "avg_duplication": 0.2,
+      "repos_below_90_cov_overall": 1,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 2,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 3,
+        "critical": 8,
+        "major": 90,
+        "minor": 142,
+        "info": 39
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "ffc-ahwr-document-generator",
+        "ffc-ahwr-message-generator",
+        "ffc-ahwr-sfd-messaging-proxy",
+        "ffc-ahwr-farmer-apply",
+        "ffc-ahwr-dashboard",
+        "ffc-ahwr-mi-reporting",
+        "ffc-ahwr-event"
+      ],
+      "inactive_branches": 0,
+      "false_positives": 25,
+      "false_positives_no_justification": 0,
+      "suppressions": 22,
+      "suppressions_no_justification": 3,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>Animal Health & Wealth covers 19 projects totalling 113,756 lines of code. All projects pass their Quality Gate. 11 Blocker or Critical issues require immediate attention. Average coverage is 94.4%. Average duplication is 0.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 19 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 2 (Major 2) | Hotspots 1</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 282 (Blocker 3, Critical 8, Major 90, Minor 142, Info 39)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>7 inactive projects with no recent analysis.</li>\n<li>22 Accepted issues, 3 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>3 Blocker, 8 Critical issues — fix on priority.</li>\n<li>92 Major issues — good to target for the next sprint.</li>\n<li>142 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>1 Security Hotspot — worth reviewing to confirm they are not exploitable.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>7 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "Trade Platform API": {
+    "group_name": "Trade Platform API",
+    "platform_filter": "sonarcloud",
+    "total_projects": 16,
+    "total_projects_in_map": 16,
+    "matched": 16,
+    "unmatched": [],
+    "total_loc": 52493,
+    "quality_gate": {
+      "passed": 16,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 9,
+      "vulnerabilities": 5,
+      "code_smells": 336,
+      "security_hotspots": 4,
+      "avg_coverage": 87.6,
+      "avg_duplication": 2.3,
+      "repos_below_90_cov_overall": 3,
+      "repos_below_90_cov_new": 1,
+      "repos_above_3_dup_overall": 5,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 1,
+        "minor": 8,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 2,
+        "critical": 0,
+        "major": 0,
+        "minor": 3,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 6,
+        "major": 151,
+        "minor": 91,
+        "info": 88
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "Defra.Trade.API.Daera.Certificates",
+        "Defra.Trade.API.CertificatesStore",
+        "Defra.Trade.Events.EHCO.GCSubscriber",
+        "Defra.Trade.Events.DAERA.GCNotifier",
+        "Defra.Trade.Events.IDCOMS.GCEnricher",
+        "Defra.Trade.Events.SUS.RemosSignUpSubscriber",
+        "Defra.Trade.API.Fish",
+        "Defra.Trade.API.Fish.ReferenceData",
+        "Defra.Trade.API.Imports",
+        "Defra.Trade.API.Imports.ReferenceData",
+        "Defra.Trade.API.Imports.ReferenceData.UAT",
+        "Defra.Trade.Dev.Portal",
+        "Defra.Trade.Events.Services.CatchCertificates",
+        "Defra.Trade.OnBoarding.Api",
+        "Defra.Trade.SCI.Customer.Api"
+      ],
+      "inactive_branches": 34,
+      "false_positives": 17,
+      "false_positives_no_justification": 0,
+      "suppressions": 175,
+      "suppressions_no_justification": 52,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "Defra.Trade.API.Daera.Certificates",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "2 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.API.CertificatesStore",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 5,
+          "inactive_branches_90": 5,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 5 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.CatchCertificates",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.EHCO.GCSubscriber",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.DAERA.GCNotifier",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.SUS.RemosSignUpSubscriber",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.API.Fish",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.API.Imports",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.API.Imports.ReferenceData",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.API.Imports.ReferenceData.UAT",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Dev.Portal",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 6,
+          "inactive_branches_90": 6,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 6 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.CatchCertificates",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.OnBoarding.Api",
+          "platform": "SonarCloud",
+          "main_branch": "Dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'Dev' (expected main or master); 3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.SCI.Customer.Api",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 3 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>Trade Platform API covers 16 projects totalling 52,493 lines of code. All projects pass their Quality Gate. 8 Blocker or Critical issues require immediate attention. Average coverage is 87.6%. Average duplication is 2.3%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 16 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 5 (Blocker 2, Minor 3) | Hotspots 4</li>\n<li><strong>Reliability:</strong> Bugs 9 (Major 1, Minor 8)</li>\n<li><strong>Maintainability:</strong> Code Smells 336 (Critical 6, Major 151, Minor 91, Info 88)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>15 inactive projects with no recent analysis.</li>\n<li>34 stale branches (90+ days) across 14 projects.</li>\n<li>175 Accepted issues, 52 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>2 Blocker, 6 Critical issues — fix on priority.</li>\n<li>152 Major issues — good to target for the next sprint.</li>\n<li>102 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>4 Security Hotspots — worth reviewing to confirm they are not exploitable.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>15 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "Trade Platform Service": {
+    "group_name": "Trade Platform Service",
+    "platform_filter": "sonarcloud",
+    "total_projects": 19,
+    "total_projects_in_map": 19,
+    "matched": 19,
+    "unmatched": [],
+    "total_loc": 123179,
+    "quality_gate": {
+      "passed": 17,
+      "failed": 2,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 28,
+      "vulnerabilities": 0,
+      "code_smells": 1673,
+      "security_hotspots": 9,
+      "avg_coverage": 93.5,
+      "avg_duplication": 2.6,
+      "repos_below_90_cov_overall": 3,
+      "repos_below_90_cov_new": 4,
+      "repos_above_3_dup_overall": 6,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 17,
+        "major": 11,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 4,
+        "critical": 104,
+        "major": 1010,
+        "minor": 179,
+        "info": 376
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "Defra.Trade.Cloning.Gateway.Api",
+        "Defra.Trade.Cloning.Api",
+        "Defra.Trade.Cloning.Processor",
+        "Defra.Trade.Cloning.Web",
+        "Defra.Trade.Events.Services.Cloning.Scheduler",
+        "Defra.Trade.Cloning.Adapter.Api"
+      ],
+      "inactive_branches": 7,
+      "false_positives": 2,
+      "false_positives_no_justification": 1,
+      "suppressions": 3,
+      "suppressions_no_justification": 0,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "Defra.Trade.Cloning.Gateway.Api",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Cloning.Api",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Cloning.Processor",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Cloning.Web",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.Cloning.Scheduler",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.CrmAdapter",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.CaseNotifier",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.FileStorePublisher",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.FileStoreMover",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Customer.EventStream",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.FileStore",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Application.Status",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.TradeStoreUpdater",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        }
+      ]
+    },
+    "qg_failed_projects": [
+      {
+        "name": "Defra.Trade.CrmAdapter",
+        "reason": "1 major issues"
+      },
+      {
+        "name": "Defra.Trade.Events.Services.CaseNotifier",
+        "reason": "20% coverage"
+      }
+    ],
+    "project_ai_summary": "<p>Trade Platform Service covers 19 projects totalling 123,179 lines of code. 2 projects failed the Quality Gate. 125 Blocker or Critical issues require immediate attention. Average coverage is 93.5%. Average duplication is 2.6%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 17 passed &nbsp;&nbsp; ❌ 2 failed</p>\n<p class=\"sub-item\">Failure: <strong>Defra.Trade.CrmAdapter</strong> (1 major issues)</p>\n<p class=\"sub-item\">Failure: <strong>Defra.Trade.Events.Services.CaseNotifier</strong> (20% coverage)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 9</li>\n<li><strong>Reliability:</strong> Bugs 28 (Critical 17, Major 11)</li>\n<li><strong>Maintainability:</strong> Code Smells 1,673 (Blocker 4, Critical 104, Major 1010, Minor 179, Info 376)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>6 inactive projects with no recent analysis.</li>\n<li>7 stale branches (90+ days) across 6 projects.</li>\n<li>2 False Positives, 1 without justification.</li>\n<li>1 project not using DEFRA Default Quality Gate.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failures (Defra.Trade.CrmAdapter, Defra.Trade.Events.Services.CaseNotifier) — teams to review and remediate.</li>\n<li>4 Blocker, 121 Critical issues — fix on priority.</li>\n<li>1021 Major issues — good to target for the next sprint.</li>\n<li>179 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>9 Security Hotspots — worth reviewing to confirm they are not exploitable.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>6 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "Risk Engine": {
+    "group_name": "Risk Engine",
+    "platform_filter": "sonarcloud",
+    "total_projects": 14,
+    "total_projects_in_map": 15,
+    "matched": 14,
+    "unmatched": [
+      "Defra.Trade.CommodityRiskCategorisation.Decider"
+    ],
+    "total_loc": 65954,
+    "quality_gate": {
+      "passed": 13,
+      "failed": 1,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 23,
+      "vulnerabilities": 3,
+      "code_smells": 3129,
+      "security_hotspots": 19,
+      "avg_coverage": 76.1,
+      "avg_duplication": 2.0,
+      "repos_below_90_cov_overall": 8,
+      "repos_below_90_cov_new": 1,
+      "repos_above_3_dup_overall": 2,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 18,
+        "minor": 5,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 2,
+        "critical": 0,
+        "major": 0,
+        "minor": 1,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 2,
+        "critical": 93,
+        "major": 2033,
+        "minor": 382,
+        "info": 619
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "Defra.Trade.Events.Logic.RiskAssessment.RiskRuleOverride",
+        "Defra.Trade.Events.RiskAssessment.Decisions",
+        "Defra.Trade.RiskAssessment.Reporting",
+        "Defra.Trade.BulkUploadProcessing",
+        "Defra.Trade.Risk.Engine.Reporting.Api",
+        "Defra.Trade.ReferenceDataSync",
+        "Defra.Trade.Events.Services.ChedppPublisher"
+      ],
+      "inactive_branches": 23,
+      "false_positives": 5,
+      "false_positives_no_justification": 0,
+      "suppressions": 8,
+      "suppressions_no_justification": 3,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "Defra.Trade.RiskAssessment.Api",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 7,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.RiskAssessment.UI",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 9,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.RiskAssessmentPublisher",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 5,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 4,
+          "inactive_branches_90": 4,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 4 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.CommodityRiskCategorisation.Decider",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 4,
+          "inactive_branches_90": 4,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "4 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.RiskAssessment.Reporting",
+          "platform": "SonarCloud",
+          "main_branch": "master",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.ReferenceData",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 6,
+          "inactive_branches_90": 6,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 6 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.ReferenceDataSync",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "Defra.Trade.Events.Services.ChedppPublisher",
+          "platform": "SonarCloud",
+          "main_branch": "dev",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": true,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [
+      {
+        "name": "Defra.Trade.Events.RiskAssessment.Decisions",
+        "reason": "73.68% coverage, 1 major issues"
+      }
+    ],
+    "project_ai_summary": "<p>Risk Engine covers 14 projects totalling 65,954 lines of code. 1 project failed the Quality Gate. 97 Blocker or Critical issues require immediate attention. Average coverage is 76.1%. Average duplication is 2.0%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 13 passed &nbsp;&nbsp; ❌ 1 failed</p>\n<p class=\"sub-item\">Failure: <strong>Defra.Trade.Events.RiskAssessment.Decisions</strong> (73.68% coverage, 1 major issues)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 3 (Blocker 2, Minor 1) | Hotspots 19</li>\n<li><strong>Reliability:</strong> Bugs 23 (Major 18, Minor 5)</li>\n<li><strong>Maintainability:</strong> Code Smells 3,129 (Blocker 2, Critical 93, Major 2033, Minor 382, Info 619)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>7 inactive projects with no recent analysis.</li>\n<li>23 stale branches (90+ days) across 7 projects.</li>\n<li>8 Accepted issues, 3 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failure (Defra.Trade.Events.RiskAssessment.Decisions) — teams to review and remediate.</li>\n<li>4 Blocker, 93 Critical issues — fix on priority.</li>\n<li>2051 Major issues — good to target for the next sprint.</li>\n<li>388 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>19 Security Hotspots — worth reviewing to confirm they are not exploitable.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>7 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "NIPTS": {
+    "group_name": "NIPTS",
+    "platform_filter": "sonarcloud",
+    "total_projects": 6,
+    "total_projects_in_map": 7,
+    "matched": 6,
+    "unmatched": [
+      "DEFRA_nipts-pts-checker-web-ui"
+    ],
+    "total_loc": 28115,
+    "quality_gate": {
+      "passed": 4,
+      "failed": 2,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 2,
+      "vulnerabilities": 0,
+      "code_smells": 45,
+      "security_hotspots": 2,
+      "avg_coverage": 80.3,
+      "avg_duplication": 1.3,
+      "repos_below_90_cov_overall": 1,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 1,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 2,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 1,
+        "major": 35,
+        "minor": 0,
+        "info": 9
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 0,
+      "false_positives": 14,
+      "false_positives_no_justification": 3,
+      "suppressions": 0,
+      "suppressions_no_justification": 0,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [
+      {
+        "name": "DEFRA_nipts-pts-web",
+        "reason": "reliability rating = 4, 1 critical issues, 1 major issues, new_security_hotspots_reviewed = 66.7"
+      },
+      {
+        "name": "DEFRA_nipts-pts-checker-web-api",
+        "reason": "30 major issues"
+      }
+    ],
+    "project_ai_summary": "<p>NIPTS covers 6 projects totalling 28,115 lines of code. 2 projects failed the Quality Gate. 3 Blocker or Critical issues require immediate attention. Average coverage is 80.3%. Average duplication is 1.3%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 4 passed &nbsp;&nbsp; ❌ 2 failed</p>\n<p class=\"sub-item\">Failure: <strong>DEFRA_nipts-pts-web</strong> (reliability rating = 4, 1 critical issues, 1 major issues, new_security_hotspots_reviewed = 66.7)</p>\n<p class=\"sub-item\">Failure: <strong>DEFRA_nipts-pts-checker-web-api</strong> (30 major issues)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 2</li>\n<li><strong>Reliability:</strong> Bugs 2 (Critical 2)</li>\n<li><strong>Maintainability:</strong> Code Smells 45 (Critical 1, Major 35, Info 9)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>14 False Positives, 3 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failures (DEFRA_nipts-pts-web, DEFRA_nipts-pts-checker-web-api) — teams to review and remediate.</li>\n<li>3 Critical issues — fix on priority.</li>\n<li>35 Major issues — good to target for the next sprint.</li>\n<li>2 Security Hotspots — worth reviewing to confirm they are not exploitable.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n</ul>"
+  },
+  "NIRMS": {
+    "group_name": "NIRMS",
+    "platform_filter": "sonarcloud",
+    "total_projects": 1,
+    "total_projects_in_map": 1,
+    "matched": 1,
+    "unmatched": [],
+    "total_loc": 331,
+    "quality_gate": {
+      "passed": 1,
+      "failed": 0,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 0,
+      "security_hotspots": 0,
+      "avg_coverage": 83.4,
+      "avg_duplication": 0.0,
+      "repos_below_90_cov_overall": 1,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 0,
+      "false_positives": 0,
+      "false_positives_no_justification": 0,
+      "suppressions": 0,
+      "suppressions_no_justification": 0,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": []
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>NIRMS covers 1 project totalling 331 lines of code. All projects pass their Quality Gate. Average coverage is 83.4%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 1 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 0 (none)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<p>No governance issues flagged for this group.</p>\n<h3>Recommended Actions</h3>\n<p>All projects passing the Quality Gate with no Blocker or Critical issues. Continue monitoring through the quarterly review cadence.</p>"
+  },
+  "FES": {
+    "group_name": "FES",
+    "platform_filter": "sonarcloud",
+    "total_projects": 9,
+    "total_projects_in_map": 9,
+    "matched": 9,
+    "unmatched": [],
+    "total_loc": 44652,
+    "quality_gate": {
+      "passed": 7,
+      "failed": 2,
+      "unknown": 0
+    },
+    "code_quality": {
+      "bugs": 1,
+      "vulnerabilities": 0,
+      "code_smells": 381,
+      "security_hotspots": 8,
+      "avg_coverage": 97.7,
+      "avg_duplication": 0.2,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 1,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 339,
+        "critical": 0,
+        "major": 22,
+        "minor": 20,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "eutd-mmo-bc"
+      ],
+      "inactive_branches": 0,
+      "false_positives": 11,
+      "false_positives_no_justification": 11,
+      "suppressions": 0,
+      "suppressions_no_justification": 0,
+      "missing_config": [],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "eutd-mmo-fes-external-frontend",
+          "platform": "SonarCloud",
+          "main_branch": "main",
+          "non_main_branches": 13,
+          "inactive_branches_90": 0,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": false,
+          "repos_with_non_main_branch_count_over_threshold": true,
+          "hygiene_issue": "Review: 13 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        }
+      ]
+    },
+    "qg_failed_projects": [
+      {
+        "name": "eutd-mmo-fes-orchestration",
+        "reason": "80 blocker issues"
+      },
+      {
+        "name": "eutd-mmo-fes-pdf",
+        "reason": "3 major issues"
+      }
+    ],
+    "project_ai_summary": "<p>FES covers 9 projects totalling 44,652 lines of code. 2 projects failed the Quality Gate. 339 Blocker or Critical issues require immediate attention. Average coverage is 97.7%. Average duplication is 0.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 7 passed &nbsp;&nbsp; ❌ 2 failed</p>\n<p class=\"sub-item\">Failure: <strong>eutd-mmo-fes-orchestration</strong> (80 blocker issues)</p>\n<p class=\"sub-item\">Failure: <strong>eutd-mmo-fes-pdf</strong> (3 major issues)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 8</li>\n<li><strong>Reliability:</strong> Bugs 1 (Major 1)</li>\n<li><strong>Maintainability:</strong> Code Smells 381 (Blocker 339, Major 22, Minor 20)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>1 inactive project with no recent analysis.</li>\n<li>11 False Positives, 11 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failures (eutd-mmo-fes-orchestration, eutd-mmo-fes-pdf) — teams to review and remediate.</li>\n<li>339 Blocker issues — fix on priority.</li>\n<li>23 Major issues — good to target for the next sprint.</li>\n<li>20 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>8 Security Hotspots — worth reviewing to confirm they are not exploitable.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>1 inactive project — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "PLP": {
+    "group_name": "PLP",
+    "platform_filter": "sonarcloud",
+    "total_projects": 2,
+    "total_projects_in_map": 2,
+    "matched": 2,
+    "unmatched": [],
+    "total_loc": 10425,
+    "quality_gate": {
+      "passed": 1,
+      "failed": 0,
+      "unknown": 1
+    },
+    "code_quality": {
+      "bugs": 0,
+      "vulnerabilities": 0,
+      "code_smells": 2,
+      "security_hotspots": 0,
+      "avg_coverage": 99.2,
+      "avg_duplication": 0.0,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 0,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 2,
+        "minor": 0,
+        "info": 0
+      }
+    },
+    "governance": {
+      "inactive_projects": [],
+      "inactive_branches": 3,
+      "false_positives": 4,
+      "false_positives_no_justification": 2,
+      "suppressions": 1,
+      "suppressions_no_justification": 0,
+      "missing_config": [
+        "trade-exports-packinglistai-ui"
+      ],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "trade-exports-packinglistai-ui",
+          "platform": "SonarCloud",
+          "main_branch": "main",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "3 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>PLP covers 2 projects totalling 10,425 lines of code. All projects pass their Quality Gate. Average coverage is 99.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 1 passed &nbsp;&nbsp; ❌ 0 failed &nbsp;&nbsp; 1 not computed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 2 (Major 2)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<ul>\n<li>1 project has no scan data or LOC figures.</li>\n<li>1 project has missing metric values due to configuration issues.</li>\n<li>1 project has no Quality Gate status computed.</li>\n</ul>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>3 stale branches (90+ days) across 1 project.</li>\n<li>4 False Positives, 2 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>2 Major issues — good to target for the next sprint.</li>\n<li>1 project with missing metrics — review scanner setup to get full visibility.</li>\n<li>1 project with no scan data — restore scanner configuration.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n</ul>"
+  },
+  "BTMS": {
+    "group_name": "BTMS",
+    "platform_filter": "sonarcloud",
+    "total_projects": 12,
+    "total_projects_in_map": 12,
+    "matched": 12,
+    "unmatched": [],
+    "total_loc": 31768,
+    "quality_gate": {
+      "passed": 8,
+      "failed": 0,
+      "unknown": 4
+    },
+    "code_quality": {
+      "bugs": 2,
+      "vulnerabilities": 5,
+      "code_smells": 219,
+      "security_hotspots": 47,
+      "avg_coverage": 94.3,
+      "avg_duplication": 0.1,
+      "repos_below_90_cov_overall": 0,
+      "repos_below_90_cov_new": 0,
+      "repos_above_3_dup_overall": 0,
+      "repos_above_3_dup_new": 0
+    },
+    "severity_breakdown": {
+      "bugs": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 2,
+        "minor": 0,
+        "info": 0
+      },
+      "vulnerabilities": {
+        "blocker": 0,
+        "critical": 0,
+        "major": 5,
+        "minor": 0,
+        "info": 0
+      },
+      "code_smells": {
+        "blocker": 1,
+        "critical": 19,
+        "major": 76,
+        "minor": 86,
+        "info": 37
+      }
+    },
+    "governance": {
+      "inactive_projects": [
+        "btms-backend",
+        "btms-backend-stub",
+        "btms-search-acceptance-tests"
+      ],
+      "inactive_branches": 1,
+      "false_positives": 0,
+      "false_positives_no_justification": 0,
+      "suppressions": 1,
+      "suppressions_no_justification": 1,
+      "missing_config": [
+        "btms-backend-perf-tests",
+        "btms-frontend",
+        "btms-search-acceptance-tests",
+        "btms-telemetry-extensions"
+      ],
+      "high_duplication": [],
+      "branch_issues": [
+        {
+          "project_name": "btms-frontend",
+          "platform": "SonarCloud",
+          "main_branch": "main",
+          "non_main_branches": 1,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        }
+      ]
+    },
+    "qg_failed_projects": [],
+    "project_ai_summary": "<p>BTMS covers 12 projects totalling 31,768 lines of code. All projects pass their Quality Gate. 20 Blocker or Critical issues require immediate attention. Average coverage is 94.3%. Average duplication is 0.1%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 8 passed &nbsp;&nbsp; ❌ 0 failed &nbsp;&nbsp; 4 not computed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 5 (Major 5) | Hotspots 47</li>\n<li><strong>Reliability:</strong> Bugs 2 (Major 2)</li>\n<li><strong>Maintainability:</strong> Code Smells 219 (Blocker 1, Critical 19, Major 76, Minor 86, Info 37)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<ul>\n<li>4 projects have no scan data or LOC figures.</li>\n<li>10 projects have missing metric values due to configuration issues.</li>\n<li>4 projects have no Quality Gate status computed.</li>\n</ul>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>3 inactive projects with no recent analysis.</li>\n<li>1 stale branch (90+ days) across 1 project.</li>\n<li>1 Accepted issue, 1 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>1 Blocker, 19 Critical issues — fix on priority.</li>\n<li>83 Major issues — good to target for the next sprint.</li>\n<li>86 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>47 Security Hotspots — worth reviewing to confirm they are not exploitable.</li>\n<li>10 projects with missing metrics — review scanner setup to get full visibility.</li>\n<li>4 projects with no scan data — restore scanner configuration.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>3 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+  },
+  "projects": [
+    {
+      "name": "IDM",
+      "group_name": "IDM",
+      "platform_filter": "sonarcloud",
+      "total_projects": 17,
+      "total_projects_in_map": 17,
+      "matched": 17,
+      "unmatched": [],
+      "total_loc": 246594,
+      "quality_gate": {
+        "passed": 11,
+        "failed": 5,
+        "unknown": 1
+      },
+      "code_quality": {
+        "bugs": 16,
+        "vulnerabilities": 43,
+        "code_smells": 960,
+        "security_hotspots": 53,
+        "avg_coverage": 66.1,
+        "avg_duplication": 2.5,
+        "repos_below_90_cov_overall": 7,
+        "repos_below_90_cov_new": 5,
+        "repos_above_3_dup_overall": 4,
+        "repos_above_3_dup_new": 3
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 16,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 43,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 22,
+          "major": 687,
+          "minor": 218,
+          "info": 33
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "All.App.AuthZ",
+          "All.Infrastructure.MVP",
+          "All.Libraries.Events",
+          "All.Libraries.Metrics",
+          "Customer.App.WriteAPI",
+          "Customer.CRM.All",
+          "Defra-APHA-CITES",
+          "Identity.B2C.Policies",
+          "Portal.App.Web"
+        ],
+        "inactive_branches": 4,
+        "false_positives": 135,
+        "false_positives_no_justification": 25,
+        "suppressions": 752,
+        "suppressions_no_justification": 136,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "Customer.App.WriteAPI",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Customer.CRM.All",
+            "platform": "SonarCloud",
+            "main_branch": "develop",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'develop' (expected main or master); 3 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [
+        {
+          "name": "CustomerCache.App.CustomerAPI",
+          "reason": "reliability rating = 3, 2 critical issues, 5 major issues"
+        },
+        {
+          "name": "Identity.App.AccountManagement",
+          "reason": "security rating = 3, 5% coverage, 1 critical issues, 24 major issues"
+        },
+        {
+          "name": "Identity.App.Content",
+          "reason": "86.3% coverage, 4 major issues"
+        },
+        {
+          "name": "Identity.App.Registration",
+          "reason": "security rating = 3, 1 critical issues, 2 major issues"
+        },
+        {
+          "name": "Portal.App.Web",
+          "reason": "reliability rating = 3, 32.78% coverage, 24.2% duplicates, 1 critical issues, 17 major issues"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "SFI",
+      "group_name": "SFI",
+      "platform_filter": "sonarcloud",
+      "total_projects": 5,
+      "total_projects_in_map": 6,
+      "matched": 5,
+      "unmatched": [
+        "grants-payment-service"
+      ],
+      "total_loc": 35652,
+      "quality_gate": {
+        "passed": 4,
+        "failed": 1,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 52,
+        "security_hotspots": 0,
+        "avg_coverage": 95.1,
+        "avg_duplication": 0.2,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 3,
+          "minor": 37,
+          "info": 12
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 0,
+        "false_positives": 4,
+        "false_positives_no_justification": 1,
+        "suppressions": 1,
+        "suppressions_no_justification": 1,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [
+        {
+          "name": "land-grants-api",
+          "reason": "2 major issues"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Future Grants ",
+      "group_name": "Future Grants ",
+      "platform_filter": "sonarcloud",
+      "total_projects": 3,
+      "total_projects_in_map": 3,
+      "matched": 3,
+      "unmatched": [],
+      "total_loc": 18492,
+      "quality_gate": {
+        "passed": 3,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 76,
+        "security_hotspots": 0,
+        "avg_coverage": 96.2,
+        "avg_duplication": 0.2,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 73,
+          "info": 3
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 0,
+        "false_positives": 18,
+        "false_positives_no_justification": 17,
+        "suppressions": 10,
+        "suppressions_no_justification": 7,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Single Front Door",
+      "group_name": "Single Front Door",
+      "platform_filter": "sonarcloud",
+      "total_projects": 10,
+      "total_projects_in_map": 10,
+      "matched": 10,
+      "unmatched": [],
+      "total_loc": 20740,
+      "quality_gate": {
+        "passed": 8,
+        "failed": 2,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 0,
+        "security_hotspots": 0,
+        "avg_coverage": 95.2,
+        "avg_duplication": 0.2,
+        "repos_below_90_cov_overall": 1,
+        "repos_below_90_cov_new": 1,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 1
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "fcp-sfd-data",
+          "fcp-sfd-messaging-gateway"
+        ],
+        "inactive_branches": 0,
+        "false_positives": 13,
+        "false_positives_no_justification": 9,
+        "suppressions": 22,
+        "suppressions_no_justification": 22,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [
+        {
+          "name": "fcp-sfd-frontend-internal",
+          "reason": "6.1% duplicates"
+        },
+        {
+          "name": "fcp-sfd-object-processor",
+          "reason": "80.1% coverage"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Animal Health & Wealth",
+      "group_name": "Animal Health & Wealth",
+      "platform_filter": "sonarcloud",
+      "total_projects": 19,
+      "total_projects_in_map": 19,
+      "matched": 19,
+      "unmatched": [],
+      "total_loc": 113756,
+      "quality_gate": {
+        "passed": 19,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 2,
+        "code_smells": 282,
+        "security_hotspots": 1,
+        "avg_coverage": 94.4,
+        "avg_duplication": 0.2,
+        "repos_below_90_cov_overall": 1,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 2,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 3,
+          "critical": 8,
+          "major": 90,
+          "minor": 142,
+          "info": 39
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "ffc-ahwr-document-generator",
+          "ffc-ahwr-message-generator",
+          "ffc-ahwr-sfd-messaging-proxy",
+          "ffc-ahwr-farmer-apply",
+          "ffc-ahwr-dashboard",
+          "ffc-ahwr-mi-reporting",
+          "ffc-ahwr-event"
+        ],
+        "inactive_branches": 0,
+        "false_positives": 25,
+        "false_positives_no_justification": 0,
+        "suppressions": 22,
+        "suppressions_no_justification": 3,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Trade Platform API",
+      "group_name": "Trade Platform API",
+      "platform_filter": "sonarcloud",
+      "total_projects": 16,
+      "total_projects_in_map": 16,
+      "matched": 16,
+      "unmatched": [],
+      "total_loc": 52493,
+      "quality_gate": {
+        "passed": 16,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 9,
+        "vulnerabilities": 5,
+        "code_smells": 336,
+        "security_hotspots": 4,
+        "avg_coverage": 87.6,
+        "avg_duplication": 2.3,
+        "repos_below_90_cov_overall": 3,
+        "repos_below_90_cov_new": 1,
+        "repos_above_3_dup_overall": 5,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 1,
+          "minor": 8,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 2,
+          "critical": 0,
+          "major": 0,
+          "minor": 3,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 6,
+          "major": 151,
+          "minor": 91,
+          "info": 88
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "Defra.Trade.API.Daera.Certificates",
+          "Defra.Trade.API.CertificatesStore",
+          "Defra.Trade.Events.EHCO.GCSubscriber",
+          "Defra.Trade.Events.DAERA.GCNotifier",
+          "Defra.Trade.Events.IDCOMS.GCEnricher",
+          "Defra.Trade.Events.SUS.RemosSignUpSubscriber",
+          "Defra.Trade.API.Fish",
+          "Defra.Trade.API.Fish.ReferenceData",
+          "Defra.Trade.API.Imports",
+          "Defra.Trade.API.Imports.ReferenceData",
+          "Defra.Trade.API.Imports.ReferenceData.UAT",
+          "Defra.Trade.Dev.Portal",
+          "Defra.Trade.Events.Services.CatchCertificates",
+          "Defra.Trade.OnBoarding.Api",
+          "Defra.Trade.SCI.Customer.Api"
+        ],
+        "inactive_branches": 34,
+        "false_positives": 17,
+        "false_positives_no_justification": 0,
+        "suppressions": 175,
+        "suppressions_no_justification": 52,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "Defra.Trade.API.Daera.Certificates",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "2 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.API.CertificatesStore",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 5,
+            "inactive_branches_90": 5,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 5 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.CatchCertificates",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.EHCO.GCSubscriber",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.DAERA.GCNotifier",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.SUS.RemosSignUpSubscriber",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.API.Fish",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.API.Imports",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.API.Imports.ReferenceData",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.API.Imports.ReferenceData.UAT",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Dev.Portal",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 6,
+            "inactive_branches_90": 6,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 6 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.CatchCertificates",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.OnBoarding.Api",
+            "platform": "SonarCloud",
+            "main_branch": "Dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'Dev' (expected main or master); 3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.SCI.Customer.Api",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 3 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Trade Platform Service",
+      "group_name": "Trade Platform Service",
+      "platform_filter": "sonarcloud",
+      "total_projects": 19,
+      "total_projects_in_map": 19,
+      "matched": 19,
+      "unmatched": [],
+      "total_loc": 123179,
+      "quality_gate": {
+        "passed": 17,
+        "failed": 2,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 28,
+        "vulnerabilities": 0,
+        "code_smells": 1673,
+        "security_hotspots": 9,
+        "avg_coverage": 93.5,
+        "avg_duplication": 2.6,
+        "repos_below_90_cov_overall": 3,
+        "repos_below_90_cov_new": 4,
+        "repos_above_3_dup_overall": 6,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 17,
+          "major": 11,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 4,
+          "critical": 104,
+          "major": 1010,
+          "minor": 179,
+          "info": 376
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "Defra.Trade.Cloning.Gateway.Api",
+          "Defra.Trade.Cloning.Api",
+          "Defra.Trade.Cloning.Processor",
+          "Defra.Trade.Cloning.Web",
+          "Defra.Trade.Events.Services.Cloning.Scheduler",
+          "Defra.Trade.Cloning.Adapter.Api"
+        ],
+        "inactive_branches": 7,
+        "false_positives": 2,
+        "false_positives_no_justification": 1,
+        "suppressions": 3,
+        "suppressions_no_justification": 0,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "Defra.Trade.Cloning.Gateway.Api",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Cloning.Api",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Cloning.Processor",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Cloning.Web",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.Cloning.Scheduler",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.CrmAdapter",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.CaseNotifier",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.FileStorePublisher",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.FileStoreMover",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Customer.EventStream",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.FileStore",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Application.Status",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.TradeStoreUpdater",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          }
+        ]
+      },
+      "qg_failed_projects": [
+        {
+          "name": "Defra.Trade.CrmAdapter",
+          "reason": "1 major issues"
+        },
+        {
+          "name": "Defra.Trade.Events.Services.CaseNotifier",
+          "reason": "20% coverage"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "Risk Engine",
+      "group_name": "Risk Engine",
+      "platform_filter": "sonarcloud",
+      "total_projects": 14,
+      "total_projects_in_map": 15,
+      "matched": 14,
+      "unmatched": [
+        "Defra.Trade.CommodityRiskCategorisation.Decider"
+      ],
+      "total_loc": 65954,
+      "quality_gate": {
+        "passed": 13,
+        "failed": 1,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 23,
+        "vulnerabilities": 3,
+        "code_smells": 3129,
+        "security_hotspots": 19,
+        "avg_coverage": 76.1,
+        "avg_duplication": 2.0,
+        "repos_below_90_cov_overall": 8,
+        "repos_below_90_cov_new": 1,
+        "repos_above_3_dup_overall": 2,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 18,
+          "minor": 5,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 2,
+          "critical": 0,
+          "major": 0,
+          "minor": 1,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 2,
+          "critical": 93,
+          "major": 2033,
+          "minor": 382,
+          "info": 619
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "Defra.Trade.Events.Logic.RiskAssessment.RiskRuleOverride",
+          "Defra.Trade.Events.RiskAssessment.Decisions",
+          "Defra.Trade.RiskAssessment.Reporting",
+          "Defra.Trade.BulkUploadProcessing",
+          "Defra.Trade.Risk.Engine.Reporting.Api",
+          "Defra.Trade.ReferenceDataSync",
+          "Defra.Trade.Events.Services.ChedppPublisher"
+        ],
+        "inactive_branches": 23,
+        "false_positives": 5,
+        "false_positives_no_justification": 0,
+        "suppressions": 8,
+        "suppressions_no_justification": 3,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "Defra.Trade.RiskAssessment.Api",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 7,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.RiskAssessment.UI",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 9,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.RiskAssessmentPublisher",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 5,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 4,
+            "inactive_branches_90": 4,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 4 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.CommodityRiskCategorisation.Decider",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 4,
+            "inactive_branches_90": 4,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "4 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.RiskAssessment.Reporting",
+            "platform": "SonarCloud",
+            "main_branch": "master",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.ReferenceData",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 6,
+            "inactive_branches_90": 6,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 6 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.ReferenceDataSync",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "Defra.Trade.Events.Services.ChedppPublisher",
+            "platform": "SonarCloud",
+            "main_branch": "dev",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": true,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 2 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [
+        {
+          "name": "Defra.Trade.Events.RiskAssessment.Decisions",
+          "reason": "73.68% coverage, 1 major issues"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "NIPTS",
+      "group_name": "NIPTS",
+      "platform_filter": "sonarcloud",
+      "total_projects": 6,
+      "total_projects_in_map": 7,
+      "matched": 6,
+      "unmatched": [
+        "DEFRA_nipts-pts-checker-web-ui"
+      ],
+      "total_loc": 28115,
+      "quality_gate": {
+        "passed": 4,
+        "failed": 2,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 2,
+        "vulnerabilities": 0,
+        "code_smells": 45,
+        "security_hotspots": 2,
+        "avg_coverage": 80.3,
+        "avg_duplication": 1.3,
+        "repos_below_90_cov_overall": 1,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 1,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 2,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 1,
+          "major": 35,
+          "minor": 0,
+          "info": 9
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 0,
+        "false_positives": 14,
+        "false_positives_no_justification": 3,
+        "suppressions": 0,
+        "suppressions_no_justification": 0,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [
+        {
+          "name": "DEFRA_nipts-pts-web",
+          "reason": "reliability rating = 4, 1 critical issues, 1 major issues, new_security_hotspots_reviewed = 66.7"
+        },
+        {
+          "name": "DEFRA_nipts-pts-checker-web-api",
+          "reason": "30 major issues"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "NIRMS",
+      "group_name": "NIRMS",
+      "platform_filter": "sonarcloud",
+      "total_projects": 1,
+      "total_projects_in_map": 1,
+      "matched": 1,
+      "unmatched": [],
+      "total_loc": 331,
+      "quality_gate": {
+        "passed": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 0,
+        "security_hotspots": 0,
+        "avg_coverage": 83.4,
+        "avg_duplication": 0.0,
+        "repos_below_90_cov_overall": 1,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 0,
+        "false_positives": 0,
+        "false_positives_no_justification": 0,
+        "suppressions": 0,
+        "suppressions_no_justification": 0,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": []
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "FES",
+      "group_name": "FES",
+      "platform_filter": "sonarcloud",
+      "total_projects": 9,
+      "total_projects_in_map": 9,
+      "matched": 9,
+      "unmatched": [],
+      "total_loc": 44652,
+      "quality_gate": {
+        "passed": 7,
+        "failed": 2,
+        "unknown": 0
+      },
+      "code_quality": {
+        "bugs": 1,
+        "vulnerabilities": 0,
+        "code_smells": 381,
+        "security_hotspots": 8,
+        "avg_coverage": 97.7,
+        "avg_duplication": 0.2,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 1,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 339,
+          "critical": 0,
+          "major": 22,
+          "minor": 20,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "eutd-mmo-bc"
+        ],
+        "inactive_branches": 0,
+        "false_positives": 11,
+        "false_positives_no_justification": 11,
+        "suppressions": 0,
+        "suppressions_no_justification": 0,
+        "missing_config": [],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "eutd-mmo-fes-external-frontend",
+            "platform": "SonarCloud",
+            "main_branch": "main",
+            "non_main_branches": 13,
+            "inactive_branches_90": 0,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": false,
+            "repos_with_non_main_branch_count_over_threshold": true,
+            "hygiene_issue": "Review: 13 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+          }
+        ]
+      },
+      "qg_failed_projects": [
+        {
+          "name": "eutd-mmo-fes-orchestration",
+          "reason": "80 blocker issues"
+        },
+        {
+          "name": "eutd-mmo-fes-pdf",
+          "reason": "3 major issues"
+        }
+      ],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "PLP",
+      "group_name": "PLP",
+      "platform_filter": "sonarcloud",
+      "total_projects": 2,
+      "total_projects_in_map": 2,
+      "matched": 2,
+      "unmatched": [],
+      "total_loc": 10425,
+      "quality_gate": {
+        "passed": 1,
+        "failed": 0,
+        "unknown": 1
+      },
+      "code_quality": {
+        "bugs": 0,
+        "vulnerabilities": 0,
+        "code_smells": 2,
+        "security_hotspots": 0,
+        "avg_coverage": 99.2,
+        "avg_duplication": 0.0,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 0,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 2,
+          "minor": 0,
+          "info": 0
+        }
+      },
+      "governance": {
+        "inactive_projects": [],
+        "inactive_branches": 3,
+        "false_positives": 4,
+        "false_positives_no_justification": 2,
+        "suppressions": 1,
+        "suppressions_no_justification": 0,
+        "missing_config": [
+          "trade-exports-packinglistai-ui"
+        ],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "trade-exports-packinglistai-ui",
+            "platform": "SonarCloud",
+            "main_branch": "main",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "3 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    },
+    {
+      "name": "BTMS",
+      "group_name": "BTMS",
+      "platform_filter": "sonarcloud",
+      "total_projects": 12,
+      "total_projects_in_map": 12,
+      "matched": 12,
+      "unmatched": [],
+      "total_loc": 31768,
+      "quality_gate": {
+        "passed": 8,
+        "failed": 0,
+        "unknown": 4
+      },
+      "code_quality": {
+        "bugs": 2,
+        "vulnerabilities": 5,
+        "code_smells": 219,
+        "security_hotspots": 47,
+        "avg_coverage": 94.3,
+        "avg_duplication": 0.1,
+        "repos_below_90_cov_overall": 0,
+        "repos_below_90_cov_new": 0,
+        "repos_above_3_dup_overall": 0,
+        "repos_above_3_dup_new": 0
+      },
+      "severity_breakdown": {
+        "bugs": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 2,
+          "minor": 0,
+          "info": 0
+        },
+        "vulnerabilities": {
+          "blocker": 0,
+          "critical": 0,
+          "major": 5,
+          "minor": 0,
+          "info": 0
+        },
+        "code_smells": {
+          "blocker": 1,
+          "critical": 19,
+          "major": 76,
+          "minor": 86,
+          "info": 37
+        }
+      },
+      "governance": {
+        "inactive_projects": [
+          "btms-backend",
+          "btms-backend-stub",
+          "btms-search-acceptance-tests"
+        ],
+        "inactive_branches": 1,
+        "false_positives": 0,
+        "false_positives_no_justification": 0,
+        "suppressions": 1,
+        "suppressions_no_justification": 1,
+        "missing_config": [
+          "btms-backend-perf-tests",
+          "btms-frontend",
+          "btms-search-acceptance-tests",
+          "btms-telemetry-extensions"
+        ],
+        "high_duplication": [],
+        "branch_issues": [
+          {
+            "project_name": "btms-frontend",
+            "platform": "SonarCloud",
+            "main_branch": "main",
+            "non_main_branches": 1,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          }
+        ]
+      },
+      "qg_failed_projects": [],
+      "project_ai_summary": "",
+      "status": "",
+      "path_to_green": ""
+    }
+  ]
+}

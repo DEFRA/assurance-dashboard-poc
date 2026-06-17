@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Code Quality Reports</title>
+<link rel="stylesheet" href="https://assets.publishing.service.gov.uk/government-frontend/govuk-frontend-4.7.0.min.css">
+<style>
+:root{
+  --bg:#f4f6f8;
+  --surface:#ffffff;
+  --border:#d8dde3;
+  --text:#0b0c0c;
+  --muted:#505a5f;
+  --primary:#1d70b8;
+  --primary-dark:#003078;
+  --success:#00703c;
+  --shadow-sm:0 1px 2px rgba(11,12,12,.06);
+  --shadow-md:0 6px 20px rgba(11,12,12,.08);
+  --shadow-lg:0 16px 40px rgba(11,12,12,.12);
+  --page-width:1100px;
+  --page-pad:24px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#f7f9fb 0%,#f3f2f1 100%);
+  color:var(--text);
+  font-family:"GDS Transport",arial,sans-serif;
+  font-size:19px;
+  line-height:1.5;
+  min-height:100vh;
+}
+.defra-header{
+  background:#fff;
+  border-bottom:8px solid var(--success);
+  box-shadow:var(--shadow-sm);
+}
+.defra-header__inner{
+  max-width:var(--page-width);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:18px var(--page-pad);
+  min-height:96px;
+}
+.defra-header__logo{height:54px;width:auto}
+.defra-header__title{
+  font-size:26px;
+  font-weight:700;
+  color:var(--text);
+  text-decoration:none;
+}
+.wrap{
+  max-width:var(--page-width);
+  margin:0 auto;
+  padding:48px var(--page-pad) 64px;
+}
+.intro{
+  background:#f3f7fb;
+  border-left:6px solid var(--primary);
+  padding:20px 24px;
+  margin-bottom:40px;
+}
+.intro h1{
+  margin:0 0 10px;
+  font-size:34px;
+  font-weight:700;
+  color:var(--primary-dark);
+}
+.intro p{margin:0;color:var(--muted);font-size:19px}
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;
+}
+.card{
+  display:flex;
+  flex-direction:column;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-top:6px solid var(--primary);
+  border-radius:12px;
+  padding:28px 26px;
+  text-decoration:none;
+  color:inherit;
+  box-shadow:var(--shadow-md);
+  transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;
+}
+.card:hover,.card:focus{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-lg);
+  border-top-color:var(--primary-dark);
+  outline:none;
+}
+.card:focus-visible{outline:3px solid #ffdd00;outline-offset:2px}
+.card__badge{
+  display:inline-block;
+  align-self:flex-start;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:16px;
+  color:#fff;
+}
+.badge-cloud{background:#1d70b8}
+.badge-test{background:#00703c}
+.badge-upgrade{background:#f47738}
+.card__title{
+  font-size:24px;
+  font-weight:700;
+  margin:0 0 8px;
+  color:var(--text);
+}
+.card__desc{
+  font-size:17px;
+  color:var(--muted);
+  margin:0 0 22px;
+  flex:1;
+}
+.card__cta{
+  font-size:17px;
+  font-weight:600;
+  color:var(--primary);
+}
+.card:hover .card__cta{color:var(--primary-dark)}
+.card__cta::after{content:" \2192";font-weight:700}
+.site-footer{
+  max-width:var(--page-width);
+  margin:0 auto;
+  padding:24px var(--page-pad) 48px;
+  color:var(--muted);
+  font-size:15px;
+  border-top:1px solid var(--border);
+}
+</style>
+</head>
+<body>
+<header class="defra-header" role="banner">
+  <div class="defra-header__inner">
+    <img src="https://digital.defra.gov.uk/public/images/defra-logo.svg" alt="" role="presentation" class="defra-header__logo">
+    <a href="index.html" class="defra-header__title">Code Quality Reports</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <h1>Sonar Hygiene &amp; Code Quality Reports</h1>
+    <p>Select a Sonar server below to view its governance and code quality report.</p>
+  </div>
+
+  <div class="card-grid">
+    <a class="card" href="sonarcloud/governance_report.html">
+      <span class="card__badge badge-cloud">SonarCloud</span>
+      <h2 class="card__title">SonarCloud</h2>
+      <p class="card__desc">Cloud-hosted analysis across Defra services, including governance hygiene, quality gates and per-group assurance.</p>
+      <span class="card__cta">View report</span>
+    </a>
+
+    <a class="card" href="sonarqube-test/governance_report.html">
+      <span class="card__badge badge-test">SonarQube Test</span>
+      <h2 class="card__title">SonarQube (Test)</h2>
+      <p class="card__desc">Test instance analysis covering code quality metrics, quality gate status and portfolio governance signals.</p>
+      <span class="card__cta">View report</span>
+    </a>
+
+    <a class="card" href="sonarqube-upgrade/governance_report.html">
+      <span class="card__badge badge-upgrade">SonarQube Upgrade</span>
+      <h2 class="card__title">SonarQube (Upgrade)</h2>
+      <p class="card__desc">Upgrade instance analysis with governance hygiene, quality assurance summaries and downloadable PDF reports.</p>
+      <span class="card__cta">View report</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  Department for Environment, Food &amp; Rural Affairs &middot; Code Quality Reporting
+</footer>
+</body>
+</html>
