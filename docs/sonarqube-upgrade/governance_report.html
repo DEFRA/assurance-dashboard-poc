@@ -2051,7 +2051,7 @@ function renderAll(){
   var sn = 0;
 
   $('s1').innerHTML=sect(++sn,'Inactive Projects',
-    'Flagged when last analysis date exceeds 360 days (12 months). Inactive projects consume storage and LOC quota.','{n} inactive projects found',
+    'Flagged when last analysis date exceeds 365 days (1 year). Inactive projects consume storage and LOC quota.','{n} inactive projects found',
     ['Project Name','Last Analysis','Days Since'],
     S.inactive_projects,
     function(r){return td(r.project_name)+td(getLastAnalysis(r))+td(r.days_since_last_analysis)},
@@ -2457,7 +2457,7 @@ function initGroupSearch(){
         } else if(allGroups && Array.isArray(allGroups.projects)){
           projectData = allGroups.projects.find(function(proj){ return proj.name === g.name; });
         }
-                                if(projectData && projectData.project_ai_summary){
+                                        if(projectData && projectData.project_ai_summary){
           var btnLabel = g.name + ' - Summary';
           var statusBadge = '';
           var pathToGreen = '';
@@ -2479,7 +2479,7 @@ function initGroupSearch(){
                          '</div>';
           }
           
-          var summaryHtml = projectData.project_ai_summary.replace(/\\n\\n/g, '</p><p style="margin:0;color:#0b0c0c;line-height:1.6;margin-top:16px">');
+          var summaryHtml = projectData.project_ai_summary.replace(/\\n/g, '\n').replace(/\n\s*\n+/g, '</p><p style="margin:0;color:#0b0c0c;line-height:1.6;margin-top:16px">');
           aiDiv.innerHTML =
             '<div class="ai-toggle-wrap">' +
               '<button type="button" class="ai-toggle-btn">' +
@@ -2493,7 +2493,7 @@ function initGroupSearch(){
           aiDiv.querySelector('.ai-toggle-btn').onclick = function(){
             var w = this.parentNode;
             w.classList.toggle('expanded');
-            this.textContent = (w.classList.contains('expanded') ? '▲ ' : '▼ ') + btnLabel;
+            this.innerHTML = (w.classList.contains('expanded') ? '▲ ' : '▼ ') + btnLabel + statusBadge;
           };
           var tbl = aiDiv.querySelector('.sonar-summary-table');
           if(tbl){

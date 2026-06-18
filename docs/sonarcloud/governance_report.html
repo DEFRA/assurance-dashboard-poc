@@ -1073,30 +1073,6 @@ tbody tr:hover{background:#f8fbfd}
   color:#0b0c0c;
 }
 
-/* ── PDF Download Button ── */
-.pdf-dl-btn{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  background:#00703c;
-  color:#fff!important;
-  text-decoration:none!important;
-  padding:10px 22px;
-  border-radius:6px;
-  font-family:"GDS Transport",arial,sans-serif;
-  font-size:16px;
-  font-weight:700;
-  letter-spacing:.2px;
-  box-shadow:0 2px 6px rgba(0,112,60,.22);
-  transition:background .15s,box-shadow .15s;
-  margin-bottom:14px;
-}
-.pdf-dl-btn:hover{
-  background:#005a30;
-  box-shadow:0 4px 12px rgba(0,112,60,.35);
-}
-
-
 /* hero adjustments so logo aligns to top of middle pane */
 .defra-hero{display:none}
 
@@ -1844,7 +1820,7 @@ tbody tr:hover{background:#f8fbfd}
   </nav>
   <h1 class="gr-title" id="grTitle"></h1>
   <p class="gr-sub" id="grSub"></p>
-  <div id="groupPdfLink" style="margin:10px 0 4px"></div>
+ 
   <div id="groupAiSummary"></div>
   <ul class="gr-list" id="grList"></ul>
   <div class="gr-pager">
@@ -1885,20 +1861,17 @@ tbody tr:hover{background:#f8fbfd}
 (function(){
 var DATA,AGING;
 var GROUP_MAP = {};
-var PDF_MANIFEST = {};
 Promise.all([
  
   fetch('governance_report_data.json').then(r => r.json()),
   fetch('sonar_aging_merged.json').then(r => r.json()).catch(() => []),
-  fetch('project_group_map.json').then(r => r.json()).catch(() => ({})),
-  fetch('pdf_manifest.json').then(r => r.json()).catch(() => ({}))
+  fetch('project_group_map.json').then(r => r.json()).catch(() => ({}))
 
 ]).
 then(function(res){
   DATA = res[0];
   AGING = res[1];
   GROUP_MAP = res[2] || {};
-  PDF_MANIFEST = res[3] || {};
   renderAll();
   initSearch();
   initGroupSearch();
@@ -2043,7 +2016,7 @@ function renderAll(){
   var sn = 0;
 
   $('s1').innerHTML=sect(++sn,'Inactive Projects',
-    'Flagged when last analysis date exceeds 360 days (12 months). Inactive projects consume storage and LOC quota.','{n} inactive projects found',
+    'Flagged when last analysis date exceeds 365 days (1 year). Inactive projects consume storage and LOC quota.','{n} inactive projects found',
     ['Project Name','Last Analysis','Days Since'],
     S.inactive_projects,
     function(r){return td(r.project_name)+td(getLastAnalysis(r))+td(r.days_since_last_analysis)},
@@ -2443,14 +2416,7 @@ function initGroupSearch(){
     breadcrumbGroup.textContent = g.name;
     window.scrollTo(0, 0);
 
-    // PDF download link
-    var pdfLinkDiv = $('groupPdfLink');
-    if(pdfLinkDiv){
-      var pdfEntry = (PDF_MANIFEST.pdf_groups||[]).find(function(e){return e.group_name===g.name;});
-      pdfLinkDiv.innerHTML = pdfEntry
-        ? '<a href="'+esc(pdfEntry.file)+'" download class="pdf-dl-btn">&#8595;&nbsp;Download PDF Report</a>'
-        : '';
-    }
+   
 
     // Load group AI summary if available
     var aiDiv = $('groupAiSummary');
@@ -2465,7 +2431,7 @@ function initGroupSearch(){
         } else if(allGroups && Array.isArray(allGroups.projects)){
           projectData = allGroups.projects.find(function(proj){ return proj.name === g.name; });
         }
-                                if(projectData && projectData.project_ai_summary){
+                                        if(projectData && projectData.project_ai_summary){
           var btnLabel = g.name + ' - Summary';
           var statusBadge = '';
           var pathToGreen = '';
@@ -2487,7 +2453,7 @@ function initGroupSearch(){
                          '</div>';
           }
           
-          var summaryHtml = projectData.project_ai_summary.replace(/\\n\\n/g, '</p><p style="margin:0;color:#0b0c0c;line-height:1.6;margin-top:16px">');
+          var summaryHtml = projectData.project_ai_summary.replace(/\\n/g, '\n').replace(/\n\s*\n+/g, '</p><p style="margin:0;color:#0b0c0c;line-height:1.6;margin-top:16px">');
           aiDiv.innerHTML =
             '<div class="ai-toggle-wrap">' +
               '<button type="button" class="ai-toggle-btn">' +
@@ -2501,7 +2467,7 @@ function initGroupSearch(){
           aiDiv.querySelector('.ai-toggle-btn').onclick = function(){
             var w = this.parentNode;
             w.classList.toggle('expanded');
-            this.textContent = (w.classList.contains('expanded') ? '▲ ' : '▼ ') + btnLabel;
+            this.innerHTML = (w.classList.contains('expanded') ? '▲ ' : '▼ ') + btnLabel + statusBadge;
           };
           var tbl = aiDiv.querySelector('.sonar-summary-table');
           if(tbl){
@@ -2541,8 +2507,6 @@ function initGroupSearch(){
     grSub.textContent = '';
     var aiDiv = $('groupAiSummary');
     if(aiDiv) aiDiv.innerHTML = '';
-    var pdfLinkDiv = $('groupPdfLink');
-    if(pdfLinkDiv) pdfLinkDiv.innerHTML = '';
     curItems = [];
     curGroupName = '';
     curPage = 1;

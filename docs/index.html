@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Code Quality Reports</title>
+<title>Code Quality Reports - Sonar Servers</title>
 <link rel="stylesheet" href="https://assets.publishing.service.gov.uk/government-frontend/govuk-frontend-4.7.0.min.css">
 <style>
 :root{
@@ -129,13 +129,56 @@ body{
 }
 .card:hover .card__cta{color:var(--primary-dark)}
 .card__cta::after{content:" \2192";font-weight:700}
-.site-footer{
+/* =========================================
+   DEFRA-STYLE FOOTER (ALIGNED)
+   ========================================= */
+.defra-footer{
+  background:#f3f2f1;
+  border-top:8px solid #00703c;
+  margin-top:40px;
+  padding:18px 0 14px;
+  font-family:"GDS Transport",arial,sans-serif;
+}
+.defra-footer__inner{
   max-width:var(--page-width);
   margin:0 auto;
-  padding:24px var(--page-pad) 48px;
-  color:var(--muted);
-  font-size:15px;
-  border-top:1px solid var(--border);
+  padding:0 var(--page-pad);
+}
+.defra-footer__links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0;
+  font-size:16px;
+  color:#0b0c0c;
+}
+.footer-item{
+  position:relative;
+  padding-right:18px;
+  margin-right:18px;
+  font-weight:400;
+}
+.footer-item::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:50%;
+  width:6px;
+  height:6px;
+  border-top:2px solid #505a5f;
+  border-right:2px solid #505a5f;
+  transform:translateY(-50%) rotate(45deg);
+}
+.footer-item:last-child{
+  margin-right:0;
+  padding-right:0;
+}
+.footer-item:last-child::after{
+  display:none;
+}
+.defra-footer__meta{
+  font-size:14px;
+  color:#505a5f;
+  line-height:1.4;
 }
 </style>
 </head>
@@ -143,42 +186,50 @@ body{
 <header class="defra-header" role="banner">
   <div class="defra-header__inner">
     <img src="https://digital.defra.gov.uk/public/images/defra-logo.svg" alt="" role="presentation" class="defra-header__logo">
-    <a href="index.html" class="defra-header__title">Code Quality Reports</a>
+    <a href="index.html" class="defra-header__title">Code Quality Reports - Sonar Servers</a>
   </div>
 </header>
 
 <main class="wrap">
-  <div class="intro">
-    <h1>Sonar Hygiene &amp; Code Quality Reports</h1>
-    <p>Select a Sonar server below to view its governance and code quality report.</p>
-  </div>
-
+  
   <div class="card-grid">
     <a class="card" href="sonarcloud/governance_report.html">
       <span class="card__badge badge-cloud">SonarCloud</span>
       <h2 class="card__title">SonarCloud</h2>
-      <p class="card__desc">Cloud-hosted analysis across Defra services, including governance hygiene, quality gates and per-group assurance.</p>
+      <p class="card__desc">Cloud-hosted instance.</p>
       <span class="card__cta">View report</span>
     </a>
 
     <a class="card" href="sonarqube-test/governance_report.html">
       <span class="card__badge badge-test">SonarQube Test</span>
       <h2 class="card__title">SonarQube (Test)</h2>
-      <p class="card__desc">Test instance analysis covering code quality metrics, quality gate status and portfolio governance signals.</p>
+      <p class="card__desc">Test instance - For POCs</p>
       <span class="card__cta">View report</span>
     </a>
 
     <a class="card" href="sonarqube-upgrade/governance_report.html">
       <span class="card__badge badge-upgrade">SonarQube Upgrade</span>
       <h2 class="card__title">SonarQube (Upgrade)</h2>
-      <p class="card__desc">Upgrade instance analysis with governance hygiene, quality assurance summaries and downloadable PDF reports.</p>
+      <p class="card__desc">Upgrade instance </p>
       <span class="card__cta">View report</span>
     </a>
   </div>
 </main>
 
-<footer class="site-footer">
-  Department for Environment, Food &amp; Rural Affairs &middot; Code Quality Reporting
+<footer class="defra-footer" role="contentinfo">
+  <div class="defra-footer__inner">
+
+    <div class="defra-footer__links">
+      <span class="footer-item">Privacy</span>
+      <span class="footer-item">Cookies</span>
+      <span class="footer-item">Accessibility statement</span>
+    </div>
+
+    <div class="defra-footer__meta">
+      Maintained by Cross Cutting Technical Services - Quality Assurance & Test.
+    </div>
+
+  </div>
 </footer>
 </body>
 </html>

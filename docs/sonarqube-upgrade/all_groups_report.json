@@ -48,9 +48,7 @@
       }
     },
     "governance": {
-      "inactive_projects": [
-        "ipaffs-Imports-MS-AntiVirus-Stub"
-      ],
+      "inactive_projects": [],
       "inactive_branches": 11,
       "false_positives": 0,
       "false_positives_no_justification": 0,
@@ -85,17 +83,6 @@
           "hygiene_issue": "3 inactive branches (90+ days)"
         },
         {
-          "project_name": "ipaffs-Imports-MS-FrontEndNotification",
-          "platform": "SonarQube",
-          "main_branch": "master",
-          "non_main_branches": 12,
-          "inactive_branches_90": 0,
-          "repos_non_standard_main_branch": false,
-          "repos_with_inactive_non_main_branches": false,
-          "repos_with_non_main_branch_count_over_threshold": true,
-          "hygiene_issue": "Review: 12 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
-        },
-        {
           "project_name": "ipaffs-Imports-Notification-Schema",
           "platform": "SonarQube",
           "main_branch": "master",
@@ -120,7 +107,9 @@
       ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "<p>IPAFFS covers 49 projects totalling 255,585 lines of code. All projects pass their Quality Gate. 349 Blocker or Critical issues require immediate attention. Average coverage is 87.1%. Average duplication is 0.4%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 47 passed &nbsp;&nbsp; ❌ 0 failed &nbsp;&nbsp; 2 not computed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 3 (Major 1, Minor 2) | Hotspots 1</li>\n<li><strong>Reliability:</strong> Bugs 17 (Blocker 2, Critical 2, Major 8, Minor 5)</li>\n<li><strong>Maintainability:</strong> Code Smells 1,068 (Blocker 298, Critical 47, Major 251, Minor 368, Info 104)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<ul>\n<li>2 projects have no scan data or LOC figures.</li>\n<li>2 projects have missing metric values due to configuration issues.</li>\n<li>2 projects have no Quality Gate status computed.</li>\n</ul>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>1 inactive project with no recent analysis.</li>\n<li>11 stale branches (90+ days) across 4 projects.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>300 Blocker, 49 Critical issues — fix on priority.</li>\n<li>260 Major issues — good to target for the next sprint.</li>\n<li>375 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>1 Security Hotspot — worth reviewing to confirm they are not exploitable.</li>\n<li>2 projects with missing metrics — review scanner setup to get full visibility.</li>\n<li>2 projects with no scan data — restore scanner configuration.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>1 inactive project — confirm with teams whether these are still needed.</li>\n</ul>"
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 49 repositories assessed, 47 have passed their Quality Gates, while 2 have not yet been assessed. However, a number of high-severity issues remain, including 2 blocker bugs and 2 critical bugs, along with 8 major bugs and 3 vulnerabilities. There is also a high number of code smells (298 blocker, 47 critical, and 251 major).\n\nDefra Development standards are not consistently met. Eight repositories are below the 90% test coverage target, and one repository exceeds the 3% code duplication limit. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there are two repositories without scanner configuration and eleven stale branches. These issues affect visibility and the accuracy of reporting.",
+    "status": "Red",
+    "path_to_green": "Resolve the 2 blocker and 2 critical bugs as a priority, then work through the 8 major bugs and the outstanding code smells to reduce technical debt; Improve test coverage in the 8 repositories below 90% and reduce duplication in the 1 repository above 3%; Add scanner configuration to the 2 repositories missing it and remove the 11 stale branches to restore visibility."
   },
   "Exports": {
     "group_name": "Exports",
@@ -182,7 +171,9 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "<p>Exports covers 1 project totalling 84,649 lines of code. All projects pass their Quality Gate. Average coverage is 93.1%. Average duplication is 0.8%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 1 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 11 (Minor 11)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>44 False Positives, 4 without justification.</li>\n<li>70 Accepted issues, 48 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>11 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n</ul>"
+    "project_ai_summary": "The service shows a high level of code quality within its single repository. The Quality Gate has passed, and there are no bugs or vulnerabilities identified. Only a small number of code smells are present (11 minor). The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 93.1% test coverage and 0.8% code duplication.\n\nFrom a governance perspective, 48 suppressions and 4 false positives have been recorded without justification comments. Adding these comments would improve auditability.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "REACH-Chemicals": {
     "group_name": "REACH-Chemicals",
@@ -235,12 +226,9 @@
     "governance": {
       "inactive_projects": [
         "\"UK REACH-IT Reach Liquibase\"",
-        "\"UK REACH-IT Reach Metrics\"",
-        "\"UK REACH-IT: REACH Support Admin UI\"",
-        "\"UK REACH-IT: Storage Model\"",
-        "\"UK REACH-IT: Symantec Client\""
+        "\"UK REACH-IT Reach Metrics\""
       ],
-      "inactive_branches": 30,
+      "inactive_branches": 42,
       "false_positives": 1,
       "false_positives_no_justification": 0,
       "suppressions": 0,
@@ -248,6 +236,28 @@
       "missing_config": [],
       "high_duplication": [],
       "branch_issues": [
+        {
+          "project_name": "\"UK REACH-IT Reach Liquibase\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 3,
+          "inactive_branches_90": 3,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "3 inactive branches (90+ days)"
+        },
+        {
+          "project_name": "\"UK REACH-IT Reach Metrics\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "2 inactive branches (90+ days)"
+        },
         {
           "project_name": "\"UK REACH-IT REACH Monitoring\"",
           "platform": "SonarQube",
@@ -319,22 +329,22 @@
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 9,
-          "inactive_branches_90": 7,
+          "inactive_branches_90": 9,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "7 inactive branches (90+ days)"
+          "hygiene_issue": "9 inactive branches (90+ days)"
         },
         {
           "project_name": "\"UK REACH-IT: Spring\"",
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 6,
-          "inactive_branches_90": 5,
+          "inactive_branches_90": 6,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "5 inactive branches (90+ days)"
+          "hygiene_issue": "6 inactive branches (90+ days)"
         },
         {
           "project_name": "\"UK REACH-IT: Storage Model\"",
@@ -348,15 +358,26 @@
           "hygiene_issue": "3 inactive branches (90+ days)"
         },
         {
+          "project_name": "\"UK REACH-IT: Symantec Client\"",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 2,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "2 inactive branches (90+ days)"
+        },
+        {
           "project_name": "UK REACH-IT",
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 5,
-          "inactive_branches_90": 1,
+          "inactive_branches_90": 2,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
+          "hygiene_issue": "2 inactive branches (90+ days)"
         },
         {
           "project_name": "UK REACH-IT Storage: Azure Blob Storage",
@@ -374,11 +395,11 @@
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 5,
-          "inactive_branches_90": 1,
+          "inactive_branches_90": 2,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
+          "hygiene_issue": "2 inactive branches (90+ days)"
         }
       ]
     },
@@ -388,7 +409,9 @@
         "reason": "0% coverage"
       }
     ],
-    "project_ai_summary": "<p>REACH-Chemicals covers 18 projects totalling 43,512 lines of code. 1 project failed the Quality Gate. Average coverage is 80.9%. Average duplication is 0.1%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 17 passed &nbsp;&nbsp; ❌ 1 failed</p>\n<p class=\"sub-item\">Failure: <strong>UK REACH-IT Storage: Azure Blob Storage</strong> (0% coverage)</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 2 (Major 2)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<ul>\n<li>1 project has missing metric values due to configuration issues.</li>\n</ul>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>5 inactive projects with no recent analysis.</li>\n<li>30 stale branches (90+ days) across 12 projects.</li>\n<li>8 projects not using DEFRA Default Quality Gate.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Quality Gate failure (UK REACH-IT Storage: Azure Blob Storage) — teams to review and remediate.</li>\n<li>2 Major issues — good to target for the next sprint.</li>\n<li>1 project with missing metrics — review scanner setup to get full visibility.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n<li>5 inactive projects — confirm with teams whether these are still needed.</li>\n</ul>"
+    "project_ai_summary": "The service shows reasonable code quality across its 18 repositories, with no blocker or critical issues identified. Of the 18 repositories assessed, 17 have passed their Quality Gates, while one has failed its Quality Gate, relating to a repository with 0% coverage. Only 2 major code smells are present. The service largely aligns with Service Standard 14 (operating a reliable service).\n\nDefra Development standards are not consistently met. Three repositories are below the 90% test coverage target. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there are two inactive projects and 42 stale branches across fifteen repositories. These are worth reviewing as part of regular housekeeping.",
+    "status": "Amber",
+    "path_to_green": "Resolve the Quality Gate failure by improving coverage in the affected repository; Improve test coverage in the 3 repositories below 90% to meet Defra standards; Address the 2 major code smells; Review the 2 inactive projects and remove the 42 stale branches to reduce noise in reports."
   },
   "PHES": {
     "group_name": "PHES",
@@ -440,29 +463,19 @@
     },
     "governance": {
       "inactive_projects": [],
-      "inactive_branches": 1,
+      "inactive_branches": 0,
       "false_positives": 1,
       "false_positives_no_justification": 0,
       "suppressions": 2,
       "suppressions_no_justification": 2,
       "missing_config": [],
       "high_duplication": [],
-      "branch_issues": [
-        {
-          "project_name": "plants-form-configuration-microservice",
-          "platform": "SonarQube",
-          "main_branch": "master",
-          "non_main_branches": 1,
-          "inactive_branches_90": 1,
-          "repos_non_standard_main_branch": false,
-          "repos_with_inactive_non_main_branches": true,
-          "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
-        }
-      ]
+      "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "<p>PHES covers 11 projects totalling 102,323 lines of code. All projects pass their Quality Gate. Average coverage is 94.1%. Average duplication is 0.2%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 11 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 5 (Minor 5)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>1 stale branch (90+ days) across 1 project.</li>\n<li>2 Accepted issues, 2 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>5 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n</ul>"
+    "project_ai_summary": "The service shows a high level of code quality across its 11 repositories. All Quality Gates have passed, and there are no bugs or vulnerabilities identified. Only a small number of code smells are present (5 minor). The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.1% test coverage and 0.2% code duplication.\n\nFrom a governance perspective, two suppressions have been recorded without justification comments. This is a minor hygiene item worth addressing for auditability.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "Trade Plants Portal": {
     "group_name": "Trade Plants Portal",
@@ -524,7 +537,9 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "<p>Trade Plants Portal covers 6 projects totalling 55,177 lines of code. All projects pass their Quality Gate. Average coverage is 93.5%. Average duplication is 0.3%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 6 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 5 (Minor 5)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<p>No governance issues flagged for this group.</p>\n<h3>Recommended Actions</h3>\n<ul>\n<li>5 Minor issues — worth reviewing as part of regular backlog grooming.</li>\n</ul>"
+    "project_ai_summary": "The service shows a high level of code quality across its 6 repositories. All Quality Gates have passed, and there are no bugs or vulnerabilities identified. Only a small number of code smells are present (5 minor). The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 93.5% test coverage and 0.3% code duplication.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "Trade Dynamics": {
     "group_name": "Trade Dynamics",
@@ -576,29 +591,19 @@
     },
     "governance": {
       "inactive_projects": [],
-      "inactive_branches": 1,
+      "inactive_branches": 0,
       "false_positives": 0,
       "false_positives_no_justification": 0,
       "suppressions": 2,
       "suppressions_no_justification": 2,
       "missing_config": [],
       "high_duplication": [],
-      "branch_issues": [
-        {
-          "project_name": "plants-form-configuration-microservice",
-          "platform": "SonarQube",
-          "main_branch": "master",
-          "non_main_branches": 1,
-          "inactive_branches_90": 1,
-          "repos_non_standard_main_branch": false,
-          "repos_with_inactive_non_main_branches": true,
-          "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
-        }
-      ]
+      "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "<p>Trade Dynamics covers 5 projects totalling 47,146 lines of code. All projects pass their Quality Gate. Average coverage is 94.7%.</p>\n<h3>Quality Gate Status</h3>\n<p>✔ 5 passed &nbsp;&nbsp; ❌ 0 failed</p>\n<h3>Issues (severity-led)</h3>\n<ul>\n<li><strong>Security:</strong> Vulnerabilities 0 (none) | Hotspots 0</li>\n<li><strong>Reliability:</strong> Bugs 0 (none)</li>\n<li><strong>Maintainability:</strong> Code Smells 0 (none)</li>\n</ul>\n<h3>Configuration &amp; Missing Data</h3>\n<p>No configuration gaps found.</p>\n<h3>Governance &amp; Hygiene</h3>\n<ul>\n<li>1 stale branch (90+ days) across 1 project.</li>\n<li>2 Accepted issues, 2 without justification.</li>\n</ul>\n<h3>Recommended Actions</h3>\n<ul>\n<li>Suppressed and False Positive issues without justification — add comments for auditability.</li>\n<li>Stale branches add noise to reports — apply branch housekeeping.</li>\n</ul>"
+    "project_ai_summary": "The service shows excellent code quality across its 5 repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or code smells identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.7% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, two suppressions have been recorded without justification comments. This is a minor hygiene item worth addressing for auditability.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "projects": [
     {
@@ -651,9 +656,7 @@
         }
       },
       "governance": {
-        "inactive_projects": [
-          "ipaffs-Imports-MS-AntiVirus-Stub"
-        ],
+        "inactive_projects": [],
         "inactive_branches": 11,
         "false_positives": 0,
         "false_positives_no_justification": 0,
@@ -686,17 +689,6 @@
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
             "hygiene_issue": "3 inactive branches (90+ days)"
-          },
-          {
-            "project_name": "ipaffs-Imports-MS-FrontEndNotification",
-            "platform": "SonarQube",
-            "main_branch": "master",
-            "non_main_branches": 12,
-            "inactive_branches_90": 0,
-            "repos_non_standard_main_branch": false,
-            "repos_with_inactive_non_main_branches": false,
-            "repos_with_non_main_branch_count_over_threshold": true,
-            "hygiene_issue": "Review: 12 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
           },
           {
             "project_name": "ipaffs-Imports-Notification-Schema",
@@ -844,12 +836,9 @@
       "governance": {
         "inactive_projects": [
           "\"UK REACH-IT Reach Liquibase\"",
-          "\"UK REACH-IT Reach Metrics\"",
-          "\"UK REACH-IT: REACH Support Admin UI\"",
-          "\"UK REACH-IT: Storage Model\"",
-          "\"UK REACH-IT: Symantec Client\""
+          "\"UK REACH-IT Reach Metrics\""
         ],
-        "inactive_branches": 30,
+        "inactive_branches": 42,
         "false_positives": 1,
         "false_positives_no_justification": 0,
         "suppressions": 0,
@@ -857,6 +846,28 @@
         "missing_config": [],
         "high_duplication": [],
         "branch_issues": [
+          {
+            "project_name": "\"UK REACH-IT Reach Liquibase\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 3,
+            "inactive_branches_90": 3,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "3 inactive branches (90+ days)"
+          },
+          {
+            "project_name": "\"UK REACH-IT Reach Metrics\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "2 inactive branches (90+ days)"
+          },
           {
             "project_name": "\"UK REACH-IT REACH Monitoring\"",
             "platform": "SonarQube",
@@ -928,22 +939,22 @@
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 9,
-            "inactive_branches_90": 7,
+            "inactive_branches_90": 9,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "7 inactive branches (90+ days)"
+            "hygiene_issue": "9 inactive branches (90+ days)"
           },
           {
             "project_name": "\"UK REACH-IT: Spring\"",
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 6,
-            "inactive_branches_90": 5,
+            "inactive_branches_90": 6,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "5 inactive branches (90+ days)"
+            "hygiene_issue": "6 inactive branches (90+ days)"
           },
           {
             "project_name": "\"UK REACH-IT: Storage Model\"",
@@ -957,15 +968,26 @@
             "hygiene_issue": "3 inactive branches (90+ days)"
           },
           {
+            "project_name": "\"UK REACH-IT: Symantec Client\"",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 2,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "2 inactive branches (90+ days)"
+          },
+          {
             "project_name": "UK REACH-IT",
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 5,
-            "inactive_branches_90": 1,
+            "inactive_branches_90": 2,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
+            "hygiene_issue": "2 inactive branches (90+ days)"
           },
           {
             "project_name": "UK REACH-IT Storage: Azure Blob Storage",
@@ -983,11 +1005,11 @@
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 5,
-            "inactive_branches_90": 1,
+            "inactive_branches_90": 2,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
+            "hygiene_issue": "2 inactive branches (90+ days)"
           }
         ]
       },
@@ -1052,26 +1074,14 @@
       },
       "governance": {
         "inactive_projects": [],
-        "inactive_branches": 1,
+        "inactive_branches": 0,
         "false_positives": 1,
         "false_positives_no_justification": 0,
         "suppressions": 2,
         "suppressions_no_justification": 2,
         "missing_config": [],
         "high_duplication": [],
-        "branch_issues": [
-          {
-            "project_name": "plants-form-configuration-microservice",
-            "platform": "SonarQube",
-            "main_branch": "master",
-            "non_main_branches": 1,
-            "inactive_branches_90": 1,
-            "repos_non_standard_main_branch": false,
-            "repos_with_inactive_non_main_branches": true,
-            "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
-          }
-        ]
+        "branch_issues": []
       },
       "qg_failed_projects": [],
       "project_ai_summary": "",
@@ -1194,26 +1204,14 @@
       },
       "governance": {
         "inactive_projects": [],
-        "inactive_branches": 1,
+        "inactive_branches": 0,
         "false_positives": 0,
         "false_positives_no_justification": 0,
         "suppressions": 2,
         "suppressions_no_justification": 2,
         "missing_config": [],
         "high_duplication": [],
-        "branch_issues": [
-          {
-            "project_name": "plants-form-configuration-microservice",
-            "platform": "SonarQube",
-            "main_branch": "master",
-            "non_main_branches": 1,
-            "inactive_branches_90": 1,
-            "repos_non_standard_main_branch": false,
-            "repos_with_inactive_non_main_branches": true,
-            "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
-          }
-        ]
+        "branch_issues": []
       },
       "qg_failed_projects": [],
       "project_ai_summary": "",
