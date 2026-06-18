@@ -789,7 +789,7 @@ tbody tr:hover{background:#f8fbfd}
 /* =========================================
    TOOLTIPS
    ========================================= */
-.tooltip{position:relative;display:inline-block;cursor:help}
+/* .tooltip{position:relative;display:inline-block;cursor:help}
 .tooltip .tt{
   visibility:hidden;
   width:360px;
@@ -808,7 +808,45 @@ tbody tr:hover{background:#f8fbfd}
   border-radius:12px;
   box-shadow:var(--shadow-lg);
 }
-.tooltip:hover .tt{visibility:visible}
+.tooltip:hover .tt{visibility:visible} */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip .tt {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  width: 360px;
+  background: #111827;
+  color: #fff;
+  text-align: left;
+  border: none;
+  padding: 14px 16px;
+  position: absolute;
+  z-index: 1000;
+
+  bottom: calc(100% + 8px);   /* cleaner than fixed 32px */
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 15px;
+  line-height: 1.45;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+
+  transition: opacity 0.15s ease;
+  white-space: normal;
+}
+
+.tooltip:hover .tt {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* =========================================
    AI SECTIONS
@@ -1804,7 +1842,7 @@ tbody tr:hover{background:#f8fbfd}
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../index.html">All Reports</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">SonarQube Upgrade Home</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">SonarQube Prod Home</li>
   </ol>
 </nav>
 <div class="inset" style="border-left-color:#1d70b8;background:#f3f7fb;margin-bottom:25px;padding:20px;">
@@ -1836,7 +1874,7 @@ tbody tr:hover{background:#f8fbfd}
         <a class="govuk-breadcrumbs__link" href="../index.html">All Reports</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <button class="govuk-breadcrumbs__link" id="breadcrumbHome">SonarQube Upgrade Home</button>
+        <button class="govuk-breadcrumbs__link" id="breadcrumbHome">SonarQube Prod Home</button>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page" id="breadcrumbGroup">Group results</li>
     </ol>
@@ -2825,6 +2863,7 @@ function initSearch(){
     try{if(agChart){agChart.destroy();agChart=null;}
     var cv=$('pcAgingCanvas'),cp=cv.parentNode;cp.removeChild(cv);var nc=document.createElement('canvas');nc.id='pcAgingCanvas';cp.appendChild(nc);
     var agd=buildAgingData(p);
+
     /* inline plugin: draw value just above each bar in a contrasting dark colour */
     var barLabelPlugin={
       id:'barLabels',
@@ -2846,18 +2885,35 @@ function initSearch(){
         });
       }
     };
+
+    /* defer one frame so display:none→flex layout is complete before Chart.js reads canvas size */
     requestAnimationFrame(function(){
       var rawMax=agd.maxVal>0?agd.maxVal:5;
+      /* add ~15% headroom so bar-top labels are never clipped */
       var yMax=Math.ceil(rawMax*1.20);
       agChart=new Chart(nc.getContext('2d'),{
         type:'bar',
-        data:{labels:agd.labels,datasets:[
-          {label:'Bugs',           data:agd.bug,  backgroundColor:'#E24B4A',borderWidth:0,borderRadius:3,minBarLength:3},
-          {label:'Code Smells',    data:agd.smell,backgroundColor:'#EF9F27',borderWidth:0,borderRadius:3,minBarLength:3},
-          {label:'Vulnerabilities',data:agd.vuln, backgroundColor:'#87CEEB',borderWidth:0,borderRadius:3,minBarLength:3}
-        ]},
+        data:{
+          labels:agd.labels,
+          datasets:[
+            {label:'Bugs',           data:agd.bug,  backgroundColor:'#E24B4A',borderWidth:0,borderRadius:3,minBarLength:3},
+            {label:'Code Smells',    data:agd.smell,backgroundColor:'#EF9F27',borderWidth:0,borderRadius:3,minBarLength:3},
+            {label:'Vulnerabilities',data:agd.vuln, backgroundColor:'#87CEEB',borderWidth:0,borderRadius:3,minBarLength:3}
+          ]
+        },
         plugins:[barLabelPlugin],
-        options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{enabled:false}},scales:{x:{grid:{display:false},ticks:{maxRotation:40,font:{size:12,weight:'bold'},color:'#000'}},y:{beginAtZero:true,suggestedMax:yMax,ticks:{precision:0,stepSize:Math.max(1,Math.ceil(rawMax/5)),font:{size:12,weight:'bold'},color:'#000'}}}}
+        options:{
+          responsive:true,
+          maintainAspectRatio:false,
+          plugins:{
+            legend:{display:false},
+            tooltip:{enabled:false}
+          },
+          scales:{
+            x:{grid:{display:false},ticks:{maxRotation:40,font:{size:12,weight:'bold'},color:'#000'}},
+            y:{beginAtZero:true,suggestedMax:yMax,ticks:{precision:0,stepSize:Math.max(1,Math.ceil(rawMax/5)),font:{size:12,weight:'bold'},color:'#000'}}
+          }
+        }
       });
     });
     }catch(e){console.error('Chart error:',e)}

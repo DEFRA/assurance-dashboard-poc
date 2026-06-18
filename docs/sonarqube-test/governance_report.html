@@ -1875,7 +1875,7 @@ tbody tr:hover{background:#f8fbfd}
 <div id="projectModal"><div class="np-wrap"><button class="np-close" id="closeModal">&times;</button><div class="np-card">
 <div class="np-header"><div class="np-name" id="pcName"></div><div class="np-hdr-qg"><span id="pcQgName" class="qg-name"></span><span id="pcQgPill" class="qg-pill"></span></div></div>
 <div class="np-card-body">
-<div class="np-sbar">Issue aging distribution</div>
+<div class="np-sbar">Issue Aging Distribution <span style="font-weight:700;font-size:0.82em;color:#505a5f">— Overall Code: Open Issues Across Years</span></div>
 <div class="np-chart-area"><div class="np-legend" id="pcLegend"></div><div class="np-chart-wrap"><canvas id="pcAgingCanvas"></canvas></div></div>
 <div id="pcStructured" style="padding:16px 18px;font-family:'GDS Transport',arial,sans-serif;font-size:25px;color:#0b0c0c;line-height:1.55"></div>
 </div></div></div></div>
@@ -2851,16 +2851,44 @@ function initSearch(){
     document.addEventListener('mousemove',function(e){if(!drag)return;el.style.left=ox+(e.clientX-sx)+'px';el.style.top=oy+(e.clientY-sy)+'px'});
     document.addEventListener('mouseup',function(){if(drag){drag=false;document.body.style.userSelect=''}})})();
 
-    /* aging chart */
-    try{if(agChart){agChart.destroy();agChart=null}
+    try{if(agChart){agChart.destroy();agChart=null;}
     var cv=$('pcAgingCanvas'),cp=cv.parentNode;cp.removeChild(cv);var nc=document.createElement('canvas');nc.id='pcAgingCanvas';cp.appendChild(nc);
     var agd=buildAgingData(p);
-    var yMax=agd.maxVal>0?agd.maxVal:5;
-    agChart=new Chart(nc.getContext('2d'),{type:'bar',data:{labels:agd.labels,datasets:[
-      {label:'Bugs',data:agd.bug,backgroundColor:'#E24B4A',borderWidth:0,borderRadius:3,minBarLength:3},
-      {label:'Code smells',data:agd.smell,backgroundColor:'#EF9F27',borderWidth:0,borderRadius:3,minBarLength:3},
-      {label:'Vulnerabilities',data:agd.vuln,backgroundColor:'#87CEEB',borderWidth:0,borderRadius:3,minBarLength:3}
-    ]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(0,0,0,0.8)',titleFont:{size:14},bodyFont:{size:13},padding:10,displayColors:true,callbacks:{label:function(ctx){return ctx.dataset.label+': '+ctx.parsed.y}}}},scales:{x:{grid:{display:false},ticks:{maxRotation:40,font:{size:13,weight:'bold'},color:'#000000'}},y:{beginAtZero:true,suggestedMax:yMax,ticks:{precision:0,stepSize:Math.max(1,Math.ceil(yMax/5)),font:{size:13,weight:'bold'},color:'#000000'}}}}});;
+    /* inline plugin: draw value just above each bar in a contrasting dark colour */
+    var barLabelPlugin={
+      id:'barLabels',
+      afterDatasetsDraw:function(chart){
+        var ctx=chart.ctx;
+        chart.data.datasets.forEach(function(ds,di){
+          var meta=chart.getDatasetMeta(di);
+          meta.data.forEach(function(bar,i){
+            var val=ds.data[i];
+            if(!val||val===0)return;
+            ctx.save();
+            ctx.font='bold 11px Arial,sans-serif';
+            ctx.fillStyle='#111';
+            ctx.textAlign='center';
+            ctx.textBaseline='bottom';
+            ctx.fillText(val, bar.x, bar.y-3);
+            ctx.restore();
+          });
+        });
+      }
+    };
+    requestAnimationFrame(function(){
+      var rawMax=agd.maxVal>0?agd.maxVal:5;
+      var yMax=Math.ceil(rawMax*1.20);
+      agChart=new Chart(nc.getContext('2d'),{
+        type:'bar',
+        data:{labels:agd.labels,datasets:[
+          {label:'Bugs',           data:agd.bug,  backgroundColor:'#E24B4A',borderWidth:0,borderRadius:3,minBarLength:3},
+          {label:'Code Smells',    data:agd.smell,backgroundColor:'#EF9F27',borderWidth:0,borderRadius:3,minBarLength:3},
+          {label:'Vulnerabilities',data:agd.vuln, backgroundColor:'#87CEEB',borderWidth:0,borderRadius:3,minBarLength:3}
+        ]},
+        plugins:[barLabelPlugin],
+        options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{enabled:false}},scales:{x:{grid:{display:false},ticks:{maxRotation:40,font:{size:12,weight:'bold'},color:'#000'}},y:{beginAtZero:true,suggestedMax:yMax,ticks:{precision:0,stepSize:Math.max(1,Math.ceil(rawMax/5)),font:{size:12,weight:'bold'},color:'#000'}}}}
+      });
+    });
     }catch(e){console.error('Chart error:',e)}
   }
 
