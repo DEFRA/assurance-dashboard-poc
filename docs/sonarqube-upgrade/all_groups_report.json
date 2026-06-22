@@ -107,9 +107,9 @@
       ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 49 repositories assessed, 47 have passed their Quality Gates, while 2 have not yet been assessed. High-severity issues are present, including 2 blocker bugs and 2 critical bugs, along with 3 vulnerabilities. There is also a high number of code smells (298 blocker, 47 critical, and 251 major).\n\nDefra Development standards are not consistently met. Eight repositories are below the 90% test coverage target, and one repository exceeds the 3% code duplication limit. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, 11 stale branches and two repositories without scanner configuration have been identified. These issues affect the completeness and accuracy of reporting.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 49 repositories assessed, 47 have passed their Quality Gates, while two have not yet been assessed. The codebase contains 2 blocker bugs and 2 critical bugs, alongside 8 major bugs and 3 vulnerabilities, and a high number of code smells (298 blocker, 47 critical, and 251 major), indicating significant reliability and maintainability risks. One security hotspot has also been flagged for review.\n\nAll repositories meet Defra Development standards, maintaining 87.2% test coverage and 0.4% code duplication.\n\nFrom a governance perspective, two repositories are missing scanner configuration, limiting metric visibility for those projects. Eleven stale branches have been identified across the portfolio and would benefit from housekeeping.",
     "status": "Red",
-    "path_to_green": "Resolve the 2 blocker and 2 critical bugs as a priority, then work through the outstanding code smells to reduce technical debt; Improve test coverage in the 8 repositories below 90% and reduce duplication in the 1 repository above 3% to meet Defra Development standards; Add scanner configuration to the 2 repositories missing it and remove the 11 stale branches to restore full visibility."
+    "path_to_green": "Resolve the 2 blocker and 2 critical bugs as a priority; review and remediate the 8 major bugs, 3 vulnerabilities, and 1 security hotspot to reduce reliability risk; work through the high volume of code smells to reduce technical debt; add scanner configuration to the 2 repositories missing it; review the 2 unassessed repositories and remove the 11 stale branches to maintain branch hygiene."
   },
   "Exports": {
     "group_name": "Exports",
@@ -171,7 +171,7 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a high level of code quality within its single repository. The Quality Gate has passed, and there are no bugs or vulnerabilities identified. Only a small number of minor code smells are present. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 93.1% test coverage and 0.8% code duplication.\n\nFrom a governance perspective, 44 false positives and 70 accepted issues have been recorded within the repository. This volume of suppressed findings warrants review to confirm all decisions remain valid and are adequately documented for auditability.",
+    "project_ai_summary": "The service shows a high level of code quality within its single repository. The Quality Gate has passed, and there are no bugs, vulnerabilities, or security hotspots identified. A small number of minor code smells are present, which do not affect the overall quality posture. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 93.1% test coverage and 0.8% code duplication.\n\nFrom a governance perspective, 44 false positives have been recorded within the repository, of which four lack justification comments. Additionally, 70 accepted issues have been identified, with 48 lacking justification comments, which weakens auditability and makes suppression decisions difficult to trace.",
     "status": "Green",
     "path_to_green": ""
   },
@@ -228,7 +228,7 @@
         "\"UK REACH-IT Reach Liquibase\"",
         "\"UK REACH-IT Reach Metrics\""
       ],
-      "inactive_branches": 45,
+      "inactive_branches": 47,
       "false_positives": 1,
       "false_positives_no_justification": 0,
       "suppressions": 0,
@@ -384,11 +384,11 @@
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 5,
-          "inactive_branches_90": 3,
+          "inactive_branches_90": 4,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "3 inactive branches (90+ days)"
+          "hygiene_issue": "4 inactive branches (90+ days)"
         },
         {
           "project_name": "UK REACH-IT Storage: Azure Blob Storage",
@@ -406,11 +406,11 @@
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 5,
-          "inactive_branches_90": 3,
+          "inactive_branches_90": 4,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "3 inactive branches (90+ days)"
+          "hygiene_issue": "4 inactive branches (90+ days)"
         }
       ]
     },
@@ -420,9 +420,9 @@
         "reason": "0% coverage"
       }
     ],
-    "project_ai_summary": "The service shows good overall code quality across its 18 repositories. Of the 18 repositories assessed, 17 have passed their Quality Gates, while one has failed, indicating a risk to reliability and maintainability. No bugs or vulnerabilities have been identified, though two major code smells are present. The service does not currently meet Service Standard 14 (operating a reliable service).\n\nDefra Development standards are not consistently met. Three repositories are below the 90% test coverage target. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, two inactive projects and 45 stale branches have been identified. One false positive has also been recorded. These are worth addressing as part of regular housekeeping to maintain a clean and accurate portfolio.",
+    "project_ai_summary": "The service largely aligns with Service Standard 14 (operating a reliable service). Of the 18 repositories assessed, 17 have passed their Quality Gates, while one has failed. The failing repository did not meet new-code conditions, primarily due to insufficient test coverage on new code. Two major code smells have been identified but present no immediate reliability risk.\n\nDefra Development standards are not consistently met. One repository is below the 90% coverage target for new code.\n\nFrom a governance perspective, two inactive projects have been identified with no recent analysis activity. Forty-seven stale branches have been recorded across the portfolio, which adds noise to reports and warrants housekeeping.",
     "status": "Amber",
-    "path_to_green": "Resolve the Quality Gate failure in the one repository that has not passed; Improve test coverage in the 3 repositories below 90% to meet Defra Development standards; Review and archive the 2 inactive projects and address the 45 stale branches to reduce reporting noise."
+    "path_to_green": "Resolve the Quality Gate failure by improving test coverage on new code in the affected repository; improve test coverage in the one repository below 90% for new code to meet Defra standards; review and archive the two inactive projects; remove the 47 stale branches to reduce noise in reports."
   },
   "PHES": {
     "group_name": "PHES",
@@ -484,7 +484,7 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a high level of code quality across all 11 repositories. All Quality Gates have passed, and there are no bugs or vulnerabilities identified. Only a small number of minor code smells are present. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.1% test coverage and 0.2% code duplication.\n\nFrom a governance perspective, one false positive and two accepted issues have been recorded. These are minor hygiene items that do not affect the quality posture but are worth reviewing to maintain auditability.",
+    "project_ai_summary": "The service shows a high level of code quality across all 11 repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or security hotspots identified. Only a small number of minor code smells are present. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.1% test coverage and 0.2% code duplication.\n\nFrom a governance perspective, two accepted issues have been identified without justification comments. Adding justification comments to these suppressed issues would strengthen auditability and ensure suppression decisions remain traceable.",
     "status": "Green",
     "path_to_green": ""
   },
@@ -548,7 +548,7 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a high level of code quality across all six repositories. All Quality Gates have passed, and there are no bugs or vulnerabilities identified. Only a small number of minor code smells are present. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 93.5% test coverage and 0.3% code duplication.\n\nFrom a governance perspective, one false positive has been recorded. This is a minor hygiene item that does not affect the quality posture but is worth reviewing for auditability.",
+    "project_ai_summary": "The service shows a high level of code quality across all six repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or security hotspots identified. A small number of minor code smells are present, which do not affect the overall quality posture. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 93.5% test coverage and 0.3% code duplication.",
     "status": "Green",
     "path_to_green": ""
   },
@@ -612,7 +612,7 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows excellent code quality across all five repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or code smells identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.7% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, two accepted issues have been recorded. These are minor hygiene items that do not affect the quality posture but are worth reviewing for auditability.",
+    "project_ai_summary": "The service shows excellent code quality across all five repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, code smells, or security hotspots identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.7% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, two accepted issues have been identified without justification comments. Adding justification comments to these suppressed issues would strengthen the auditability of the codebase.",
     "status": "Green",
     "path_to_green": ""
   },
@@ -849,7 +849,7 @@
           "\"UK REACH-IT Reach Liquibase\"",
           "\"UK REACH-IT Reach Metrics\""
         ],
-        "inactive_branches": 45,
+        "inactive_branches": 47,
         "false_positives": 1,
         "false_positives_no_justification": 0,
         "suppressions": 0,
@@ -1005,11 +1005,11 @@
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 5,
-            "inactive_branches_90": 3,
+            "inactive_branches_90": 4,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "3 inactive branches (90+ days)"
+            "hygiene_issue": "4 inactive branches (90+ days)"
           },
           {
             "project_name": "UK REACH-IT Storage: Azure Blob Storage",
@@ -1027,11 +1027,11 @@
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 5,
-            "inactive_branches_90": 3,
+            "inactive_branches_90": 4,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "3 inactive branches (90+ days)"
+            "hygiene_issue": "4 inactive branches (90+ days)"
           }
         ]
       },

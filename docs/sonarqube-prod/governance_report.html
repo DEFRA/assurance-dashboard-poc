@@ -2074,8 +2074,8 @@ function renderAll(){
 
   /* AI narrative — collapsible toggle, collapsed by default */
   if(DATA.ai_insights&&DATA.ai_insights.narrative){
-    var btnTxt='▼ SonarQube(Upgrade Server) - Health Summary';
-    var btnTxtExp='▲ SonarQube(Upgrade Server) - Health Summary';
+    var btnTxt='▼ SonarQube(Prod Server) - Health Summary';
+    var btnTxtExp='▲ SonarQube(Prod Server) - Health Summary';
     $('aiNarrative').innerHTML=
       '<div class="ai-toggle-wrap">' +
         '<button type="button" class="ai-toggle-btn" onclick="this.parentNode.classList.toggle(\'expanded\');this.textContent=this.parentNode.classList.contains(\'expanded\')?\''+btnTxtExp+'\':\''+btnTxt+'\'">' +

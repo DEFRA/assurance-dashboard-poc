@@ -1,6 +1,4 @@
 
 {  
-  "PHES": ["plants-admin-ui","plants-application-form-microservice","plants-authentication-microservice","plants-backend-adapter-microservice","plants-certificate-microservice","plants-common","plants-common-ui","plants-exporter-ui","plants-file-storage-microservice","plants-form-configuration-microservice","plants-reference-data-microservice"],
-  "Trade Plants Portal": ["plants-admin-ui","plants-application-form-microservice","plants-authentication-microservice","plants-backend-adapter-microservice","plants-certificate-microservice","plants-common"],
   "Trade Dynamics": ["plants-common-ui","plants-exporter-ui","plants-file-storage-microservice","plants-form-configuration-microservice","plants-reference-data-microservice"]
 }

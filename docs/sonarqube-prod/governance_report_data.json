@@ -1,16 +1,16 @@
 {
-  "generated": "2026-06-18 21:57:46",
-  "server_name": "sonarqube-prod",
-  "data_extracted_on": "18/06/2026 21:20",
+  "generated": "2026-06-22 00:14:18",
+  "server_name": "sonarcube-prod",
+  "data_extracted_on": "21/06/2026 23:08",
   "platform_filter": "sonarqube",
   "total_repos": 210,
-  "total_loc": 1370532,
+  "total_loc": 1371836,
   "private_repos": 1,
   "public_repos": 209,
   "consolidated_metrics": {
     "inactive_projects": {
-      "repos_inactive_over_1_years": 64,
-      "repos_inactive_over_2_years": 49,
+      "repos_inactive_over_1_years": 15,
+      "repos_inactive_over_2_years": 19,
       "repos_inactive_over_4_years": 30,
       "repos_inactive_over_6_years": 0,
       "repos_inactive_over_8_years": 0
@@ -47,390 +47,390 @@
         "project_name": "Integration-Platform",
         "platform": "SonarQube",
         "last_analysis_date": "2020-11-17",
-        "days_since_last_analysis": 2039
+        "days_since_last_analysis": 2042
       },
       {
         "project_name": "TracesX_Mapping",
         "platform": "SonarQube",
         "last_analysis_date": "2020-11-30",
-        "days_since_last_analysis": 2026
+        "days_since_last_analysis": 2029
       },
       {
         "project_name": "Defra.Trade.ImportAttestation",
         "platform": "SonarQube",
         "last_analysis_date": "2021-01-18",
-        "days_since_last_analysis": 1977
+        "days_since_last_analysis": 1980
       },
       {
         "project_name": "Defra.Trade.Eventstore.Ui",
         "platform": "SonarQube",
         "last_analysis_date": "2021-06-12",
-        "days_since_last_analysis": 1832
+        "days_since_last_analysis": 1835
       },
       {
         "project_name": "Defra.Trade.Events.Services.Scheduler",
         "platform": "SonarQube",
         "last_analysis_date": "2021-08-13",
-        "days_since_last_analysis": 1770
+        "days_since_last_analysis": 1773
       },
       {
         "project_name": "Defra.Trade.Events.Services.SCICustomer",
         "platform": "SonarQube",
         "last_analysis_date": "2021-08-25",
-        "days_since_last_analysis": 1758
+        "days_since_last_analysis": 1761
       },
       {
         "project_name": "Defra.Trade.Events.Services.CustomerPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2021-09-15",
-        "days_since_last_analysis": 1737
+        "days_since_last_analysis": 1740
       },
       {
         "project_name": "Defra.Trade.Events.Services.TradeStoreUpdater",
         "platform": "SonarQube",
         "last_analysis_date": "2021-09-21",
-        "days_since_last_analysis": 1731
+        "days_since_last_analysis": 1734
       },
       {
         "project_name": "Defra.Trade.Events.CoreServices.InfoPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2021-09-23",
-        "days_since_last_analysis": 1729
+        "days_since_last_analysis": 1732
       },
       {
         "project_name": "Defra.Trade.Events.Traces.Certificates",
         "platform": "SonarQube",
         "last_analysis_date": "2021-10-04",
-        "days_since_last_analysis": 1718
+        "days_since_last_analysis": 1721
       },
       {
         "project_name": "Defra.Trade.Events.Services.CaseNotifier",
         "platform": "SonarQube",
         "last_analysis_date": "2021-10-14",
-        "days_since_last_analysis": 1708
+        "days_since_last_analysis": 1711
       },
       {
         "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
         "platform": "SonarQube",
         "last_analysis_date": "2021-10-14",
-        "days_since_last_analysis": 1708
+        "days_since_last_analysis": 1711
       },
       {
         "project_name": "Defra.Trade.Events.Certifier.Synchroniser",
         "platform": "SonarQube",
         "last_analysis_date": "2021-11-11",
-        "days_since_last_analysis": 1680
+        "days_since_last_analysis": 1683
       },
       {
         "project_name": "Defra.Trade.Events.Customer.EventStream",
         "platform": "SonarQube",
         "last_analysis_date": "2021-11-18",
-        "days_since_last_analysis": 1673
+        "days_since_last_analysis": 1676
       },
       {
         "project_name": "Defra.Trade.Events.Notify",
         "platform": "SonarQube",
         "last_analysis_date": "2021-11-19",
-        "days_since_last_analysis": 1672
+        "days_since_last_analysis": 1675
       },
       {
         "project_name": "Defra.Trade.CustomerExtension.Api",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-16",
-        "days_since_last_analysis": 1614
+        "days_since_last_analysis": 1617
       },
       {
         "project_name": "Defra.Trade.Events.Charges.ChargeableEventsPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-20",
-        "days_since_last_analysis": 1610
+        "days_since_last_analysis": 1613
       },
       {
         "project_name": "Defra.Trade.Events.Charges.BatchOutputService",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-21",
-        "days_since_last_analysis": 1609
+        "days_since_last_analysis": 1612
       },
       {
         "project_name": "Defra.Trade.CrmAdapter",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-29",
-        "days_since_last_analysis": 1601
+        "days_since_last_analysis": 1604
       },
       {
         "project_name": "Defra.Trade.Events.Services.RiskAssessmentPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-31",
-        "days_since_last_analysis": 1599
+        "days_since_last_analysis": 1602
       },
       {
         "project_name": "Defra.Trade.ReferenceData.UI",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1597
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.CHARGE.UI",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1597
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.Charge.Api",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1597
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.ReferenceData",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1597
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.Application.Status",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1597
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.Events.Services.CasePublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-03",
-        "days_since_last_analysis": 1596
+        "days_since_last_analysis": 1599
       },
       {
         "project_name": "Defra.Trade.ReferenceAnalytics",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-08",
-        "days_since_last_analysis": 1591
+        "days_since_last_analysis": 1594
       },
       {
         "project_name": "Defra.Trade.Certificate.Gateway.Api",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-09",
-        "days_since_last_analysis": 1590
+        "days_since_last_analysis": 1593
       },
       {
         "project_name": "Defra.Trade.API.Fish.ReferenceData",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-10",
-        "days_since_last_analysis": 1589
+        "days_since_last_analysis": 1592
       },
       {
         "project_name": "Defra.Trade.CustomerExtension.UI",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-13",
-        "days_since_last_analysis": 1586
+        "days_since_last_analysis": 1589
       },
       {
         "project_name": "enotification-event-listener-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-07-13",
-        "days_since_last_analysis": 1436
+        "days_since_last_analysis": 1439
       },
       {
         "project_name": "DEFRA-REF",
         "platform": "SonarQube",
         "last_analysis_date": "2022-08-15",
-        "days_since_last_analysis": 1403
+        "days_since_last_analysis": 1406
       },
       {
         "project_name": "FGAS-WEB",
         "platform": "SonarQube",
         "last_analysis_date": "2022-08-17",
-        "days_since_last_analysis": 1401
+        "days_since_last_analysis": 1404
       },
       {
         "project_name": "ODS-WEB",
         "platform": "SonarQube",
         "last_analysis_date": "2022-08-17",
-        "days_since_last_analysis": 1401
+        "days_since_last_analysis": 1404
       },
       {
         "project_name": "enotification-event-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-08-31",
-        "days_since_last_analysis": 1387
+        "days_since_last_analysis": 1390
       },
       {
         "project_name": "bulk-upload-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-01",
-        "days_since_last_analysis": 1386
+        "days_since_last_analysis": 1389
       },
       {
         "project_name": "notification-search-migration-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-07",
-        "days_since_last_analysis": 1380
+        "days_since_last_analysis": 1383
       },
       {
         "project_name": "enotification-submission-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-12",
-        "days_since_last_analysis": 1375
+        "days_since_last_analysis": 1378
       },
       {
         "project_name": "TracesX-Checks",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-13",
-        "days_since_last_analysis": 1374
+        "days_since_last_analysis": 1377
       },
       {
         "project_name": "enotification-processing-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-22",
-        "days_since_last_analysis": 1365
+        "days_since_last_analysis": 1368
       },
       {
         "project_name": "frontend-accountcreation-microservice-manual",
         "platform": "SonarQube",
         "last_analysis_date": "2023-04-06",
-        "days_since_last_analysis": 1169
+        "days_since_last_analysis": 1172
       },
       {
         "project_name": "EPR Laps Queries And Complaints",
         "platform": "SonarQube",
         "last_analysis_date": "2023-10-05",
-        "days_since_last_analysis": 987
+        "days_since_last_analysis": 990
       },
       {
         "project_name": "epr-laps-accounts",
         "platform": "SonarQube",
         "last_analysis_date": "2023-10-05",
-        "days_since_last_analysis": 987
+        "days_since_last_analysis": 990
       },
       {
         "project_name": "epr-laps-usermanagement",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-13",
-        "days_since_last_analysis": 918
+        "days_since_last_analysis": 921
       },
       {
         "project_name": "epr-logging-api",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-18",
-        "days_since_last_analysis": 913
+        "days_since_last_analysis": 916
       },
       {
         "project_name": "Laps User management",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-20",
-        "days_since_last_analysis": 911
+        "days_since_last_analysis": 914
       },
       {
         "project_name": "epr-laps-home",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-22",
-        "days_since_last_analysis": 909
+        "days_since_last_analysis": 912
       },
       {
         "project_name": "mapping-library",
         "platform": "SonarQube",
         "last_analysis_date": "2024-01-17",
-        "days_since_last_analysis": 883
+        "days_since_last_analysis": 886
       },
       {
         "project_name": "RSP-ATM",
         "platform": "SonarQube",
         "last_analysis_date": "2024-01-25",
-        "days_since_last_analysis": 875
+        "days_since_last_analysis": 878
       },
       {
         "project_name": "\"UK REACH-IT Reach Metrics\"",
         "platform": "SonarQube",
         "last_analysis_date": "2025-01-27",
-        "days_since_last_analysis": 507
+        "days_since_last_analysis": 510
       },
       {
         "project_name": "mmo-cc-functionapp",
         "platform": "SonarQube",
         "last_analysis_date": "2025-03-04",
-        "days_since_last_analysis": 471
+        "days_since_last_analysis": 474
       },
       {
         "project_name": "\"UK REACH-IT Reach Liquibase\"",
         "platform": "SonarQube",
         "last_analysis_date": "2025-05-08",
-        "days_since_last_analysis": 406
+        "days_since_last_analysis": 409
       },
       {
         "project_name": "Imports-FUNC-Auto-Clearance",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-15",
-        "days_since_last_analysis": 368
+        "days_since_last_analysis": 371
       },
       {
         "project_name": "Imports-FUNC-Archive-Notifications",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-15",
-        "days_since_last_analysis": 368
+        "days_since_last_analysis": 371
       },
       {
         "project_name": "Imports-frontend-control",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 367
+        "days_since_last_analysis": 370
       },
       {
         "project_name": "Imports-frontend-bordernotification",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 367
-      },
-      {
-        "project_name": "Imports-Proxy",
-        "platform": "SonarQube",
-        "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 367
-      },
-      {
-        "project_name": "Imports-frontend-upload",
-        "platform": "SonarQube",
-        "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 367
-      },
-      {
-        "project_name": "Imports-SpringBoot-Common",
-        "platform": "SonarQube",
-        "last_analysis_date": "2025-06-17",
-        "days_since_last_analysis": 366
-      },
-      {
-        "project_name": "Imports-SpringBoot-CommonSecurity",
-        "platform": "SonarQube",
-        "last_analysis_date": "2025-06-17",
-        "days_since_last_analysis": 366
-      },
-      {
-        "project_name": "Imports-FUNC-Risk-Assessment",
-        "platform": "SonarQube",
-        "last_analysis_date": "2025-06-17",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 370
       },
       {
         "project_name": "Imports-FUNC-Notify",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 370
+      },
+      {
+        "project_name": "Imports-frontend-upload",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-16",
+        "days_since_last_analysis": 370
+      },
+      {
+        "project_name": "Imports-Proxy",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-16",
+        "days_since_last_analysis": 370
+      },
+      {
+        "project_name": "Imports-SpringBoot-CommonSecurity",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
+      },
+      {
+        "project_name": "Imports-SpringBoot-Common",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
+      },
+      {
+        "project_name": "Imports-FUNC-Risk-Assessment",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
       },
       {
         "project_name": "Imports-FUNC-Risk-Interface",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-17",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 369
       },
       {
         "project_name": "Imports-FUNC-Risk-Locking",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-17",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 369
       }
     ],
     "inactive_projects_consolidated": {
-      "repos_inactive_over_1_years": 64,
-      "repos_inactive_over_2_years": 49,
+      "repos_inactive_over_1_years": 15,
+      "repos_inactive_over_2_years": 19,
       "repos_inactive_over_4_years": 30,
       "repos_inactive_over_6_years": 0,
       "repos_inactive_over_8_years": 0
@@ -684,12 +684,12 @@
         "project_name": "epr-payment-service",
         "platform": "SonarQube",
         "main_branch": "main",
-        "non_main_branches": 14,
+        "non_main_branches": 15,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "Defra.Trade.Certificate.Gateway.Api",
@@ -1113,12 +1113,12 @@
         "project_name": "epr-calculator-service",
         "platform": "SonarQube",
         "main_branch": "main",
-        "non_main_branches": 32,
+        "non_main_branches": 30,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 32 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 30 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "Imports-frontend-decision",
@@ -1202,11 +1202,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3,
+        "inactive_branches_90": 4,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "3 inactive branches (90+ days)"
+        "hygiene_issue": "4 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-pom-api-submission-status",
@@ -1235,11 +1235,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3,
+        "inactive_branches_90": 4,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "3 inactive branches (90+ days)"
+        "hygiene_issue": "4 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-prn-common-logging",
@@ -1973,7 +1973,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3
+        "inactive_branches_90": 4
       },
       {
         "project_name": "epr-pom-api-submission-status",
@@ -1994,7 +1994,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3
+        "inactive_branches_90": 4
       },
       {
         "project_name": "epr-prn-common-logging",
@@ -2191,7 +2191,7 @@
         "project_name": "epr-payment-service",
         "platform": "SonarQube",
         "main_branch": "main",
-        "non_main_branches": 14,
+        "non_main_branches": 15,
         "inactive_branches_90": 0
       },
       {
@@ -2226,7 +2226,7 @@
         "project_name": "epr-calculator-service",
         "platform": "SonarQube",
         "main_branch": "main",
-        "non_main_branches": 32,
+        "non_main_branches": 30,
         "inactive_branches_90": 0
       },
       {
@@ -2421,9 +2421,9 @@
         "project_name": "epr-payment-service",
         "platform": "SonarQube",
         "main_branch": "main",
-        "non_main_branches": 14,
+        "non_main_branches": 15,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "Defra.Trade.Certificate.Gateway.Api",
@@ -2733,9 +2733,9 @@
         "project_name": "epr-calculator-service",
         "platform": "SonarQube",
         "main_branch": "main",
-        "non_main_branches": 32,
+        "non_main_branches": 30,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 32 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 30 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "Imports-frontend-decision",
@@ -2798,8 +2798,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3,
-        "hygiene_issue": "3 inactive branches (90+ days)"
+        "inactive_branches_90": 4,
+        "hygiene_issue": "4 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-pom-api-submission-status",
@@ -2822,8 +2822,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3,
-        "hygiene_issue": "3 inactive branches (90+ days)"
+        "inactive_branches_90": 4,
+        "hygiene_issue": "4 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-prn-common-logging",
@@ -3041,6 +3041,34 @@
         "false_positives": 1,
         "false_positives_no_justification": 1,
         "quality_issue": "1 false positives without justification"
+      },
+      {
+        "project_name": "epr_regulator_service_facade",
+        "platform": "SonarQube",
+        "false_positives": 3,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "UK REACH-IT: Frontend",
+        "platform": "SonarQube",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "epr-pom-web-api-gateway",
+        "platform": "SonarQube",
+        "false_positives": 3,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "plants-certificate-microservice",
+        "platform": "SonarQube",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
       }
     ],
     "false_positives_consolidated": {
@@ -3215,86 +3243,86 @@
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | CSS",
-        "details": "Days since last update=857 | Projects affected=34 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 857 days ago."
+        "details": "Days since last update=860 | Projects affected=34 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 860 days ago."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | C#",
-        "details": "Days since last update=857 | Projects affected=68 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 857 days ago."
+        "details": "Days since last update=860 | Projects affected=68 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 860 days ago."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | Docker",
-        "details": "Days since last update=857 | Projects affected=30 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 857 days ago."
+        "details": "Days since last update=860 | Projects affected=30 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 860 days ago."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "EPR | C#",
-        "details": "Days since last update=832 | Projects affected=1 | Last used=2026-06-18",
+        "details": "Days since last update=835 | Projects affected=1 | Last used=2026-06-18",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "DefraJavaCustomEcho | Java",
-        "details": "Days since last update=848 | Projects affected=1 | Last used=2026-06-15",
+        "details": "Days since last update=851 | Projects affected=1 | Last used=2026-06-15",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | Java",
-        "details": "Days since last update=857 | Projects affected=87 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 857 days ago."
+        "details": "Days since last update=860 | Projects affected=87 | Last used=2026-06-18",
+        "action": "Check and update the built-in rules; last updated 860 days ago."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "MMOJavascript | JavaScript",
-        "details": "Days since last update=848 | Projects affected=1 | Last used=2026-01-21",
+        "details": "Days since last update=851 | Projects affected=1 | Last used=2026-01-21",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | JavaScript",
-        "details": "Days since last update=857 | Projects affected=38 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 857 days ago."
+        "details": "Days since last update=860 | Projects affected=38 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 860 days ago."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | JSON",
-        "details": "Days since last update=1064 | Projects affected=1 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 1064 days ago."
+        "details": "Days since last update=1067 | Projects affected=1 | Last used=2026-06-18",
+        "action": "Check and update the built-in rules; last updated 1067 days ago."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | PL/SQL",
-        "details": "Days since last update=1064 | Projects affected=6 | Last used=2026-06-17",
-        "action": "Check and update the built-in rules; last updated 1064 days ago."
+        "details": "Days since last update=1067 | Projects affected=6 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 1067 days ago."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | TypeScript",
-        "details": "Days since last update=857 | Projects affected=2 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 857 days ago."
+        "details": "Days since last update=860 | Projects affected=2 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 860 days ago."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "Typescript MMO | TypeScript",
-        "details": "Days since last update=848 | Projects affected=0 | Last used=2026-01-21",
+        "details": "Days since last update=851 | Projects affected=0 | Last used=2026-01-21",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | HTML",
-        "details": "Days since last update=857 | Projects affected=39 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 857 days ago."
+        "details": "Days since last update=860 | Projects affected=39 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 860 days ago."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | XML",
-        "details": "Days since last update=1064 | Projects affected=13 | Last used=2026-06-18",
-        "action": "Check and update the built-in rules; last updated 1064 days ago."
+        "details": "Days since last update=1067 | Projects affected=13 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 1067 days ago."
       }
     ],
     "sonar_rules_analysis_defra": [],
@@ -3309,7 +3337,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 1596,
+        "inactive_days": 1599,
         "inactive_branches": 13
       }
     },
@@ -3321,7 +3349,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 1365,
+        "inactive_days": 1368,
         "inactive_branches": 12
       }
     },
@@ -3333,7 +3361,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 1591,
+        "inactive_days": 1594,
         "inactive_branches": 11
       }
     },
@@ -3345,7 +3373,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 911,
+        "inactive_days": 914,
         "inactive_branches": 11
       }
     },
@@ -3357,42 +3385,42 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 909,
+        "inactive_days": 912,
         "inactive_branches": 11
       }
     }
   ],
   "quick_wins": [
-    "Delete 292 stale branches across 96 projects — zero risk, instant cleanup",
-    "Add justification for 2 projects with ≤5 unjustified false positives each — quick audit fix"
+    "Delete 294 stale branches across 96 projects — zero risk, instant cleanup",
+    "Add justification for 6 projects with ≤5 unjustified false positives each — quick audit fix"
   ],
   "ai_insights": {
-    "narrative": "64 repositories have not had a Sonar scan for more than one year. Of these, 49 have not been scanned for over two years, and 30 have not been scanned for over four years. The most material hygiene risks in this portfolio of 210 repositories are concentrated in inactive projects, extensive stale non-main branches across 92 repositories, and scanner configuration gaps affecting 23 repositories. Quality gate compliance is strong, with no non-compliant gates detected; however, 14 quality profile findings indicate that several built-in and custom profiles require attention to stay current.",
+    "narrative": "The SonarQube Prod portfolio covers 210 repositories across a self-hosted instance. The most pressing concerns are rule profile hygiene and configuration coverage: multiple built-in profiles used widely across the portfolio have not been updated in over 860 days, and 23 repositories lack valid scanner configuration. Branch hygiene is also a significant area, with 92 repositories carrying inactive non-main branches. While Quality Gates are consistently applied and no non-compliant gates are in use, process discipline around accepted issues and false positives could be strengthened. Addressing rule profile staleness, configuration gaps, and branch hygiene would have the greatest impact on portfolio health.",
     "sections": {
-      "inactive_insights": "64 repositories have not had a Sonar scan for more than one year. Of these, 49 have not been scanned for over two years, and 30 have not been scanned for over four years. These stale projects increase noise in reports and represent unnecessary maintenance overhead.",
-      "inactive_action": "Request project POCs to review the 64 inactive repositories for continued relevance, with inactive ones to be removed or archived from the Sonar instance to optimise cost and maintain a clear project portfolio.",
-      "duplication_insights": "2 repositories exceed the defined duplication threshold, indicating a higher level of repeated code.",
-      "duplication_action": "Review these 2 repositories with project POCs to identify and reduce duplication, and improve code efficiency and maintainability.",
+      "inactive_insights": "64 repositories have not been scanned for more than one year. This breaks down as 15 inactive for 1-2 years, 19 inactive for 2-4 years, and 30 inactive for more than four years.",
+      "inactive_action": "Request project POCs to review these repositories for continued relevance, with inactive ones to be removed or archived from the SonarQube instance to optimise cost and maintain a clear project portfolio.",
+      "duplication_insights": "Two repositories exceed the duplication threshold (>15%) for overall code. The Quality Gate controls duplication on new code but does not enforce it on overall code, leading to increased maintenance effort and higher compute overhead on a self-hosted SonarQube instance.",
+      "duplication_action": "Review the identified repositories with respective project POCs to reduce duplication, optimise code efficiency, and improve overall maintainability.",
       "migration_insights": "",
       "migration_action": "",
-      "branch_repos_non_standard_main_branch_insights": "1 repository is set up in Sonar to scan a branch other than the expected main branch. This can lead to confusion and make reports less consistent across projects.",
+      "branch_repos_non_standard_main_branch_insights": "One repository is set up in Sonar to scan a branch other than the expected main branch. This can lead to confusion and make reports less consistent across projects.",
       "branch_repos_non_standard_main_branch_action": "Review this repository with the project POC to confirm the correct branch is set for scanning, and update it where needed for consistency.",
-      "branch_repos_with_inactive_non_main_branches_insights": "92 repositories have non-main branches such as feature or development branches that have not been scanned for more than 180 days, which may indicate stale or abandoned work.",
-      "branch_repos_with_inactive_non_main_branches_action": "Review these repositories with project POCs to confirm if the branches are still needed, and remove or clean them up to maintain a well-managed Sonar environment.",
+      "branch_repos_with_inactive_non_main_branches_insights": "92 repositories have non-main branches (e.g. feature or development branches) that have not been scanned for more than 90 days, which may indicate stale or abandoned work.",
+      "branch_repos_with_inactive_non_main_branches_action": "Review these repositories with project POCs to confirm whether the branches are still needed, and remove or clean them up to maintain a well-managed Sonar environment.",
       "branch_repos_with_non_main_branch_count_over_threshold_insights": "11 repositories have more non-main branches than the agreed threshold, which can clutter scan results and make reporting harder to follow.",
-      "branch_repos_with_non_main_branch_count_over_threshold_action": "Review these 11 repositories with project POCs to consolidate or remove surplus non-main branches and keep the branch count within the agreed threshold.",
+      "branch_repos_with_non_main_branch_count_over_threshold_action": "Review these repositories with project POCs to consolidate or remove surplus non-main branches and keep the branch count within the agreed threshold.",
       "naming_insights": "",
       "naming_action": "",
-      "false_positives_insights": "6 repositories have issues marked as false positives across the portfolio. Of these, 2 repositories have false-positive markings recorded without justification comments, weakening auditability.",
-      "false_positives_action": "Review the false-positive markings in the 2 repositories that lack justification comments and add comments so all suppression decisions remain auditable.",
-      "suppressions_insights": "3 repositories have accepted issues recorded without justification comments, making it difficult to assess whether the suppressions are valid and reducing auditability.",
-      "suppressions_action": "Add justification comments to the accepted issues in the 3 repositories so suppression decisions remain auditable.",
-      "quality_gates_insights": "All 210 repositories use a compliant Quality Gate, ensuring consistent quality assurance across the portfolio.",
-      "quality_gates_action": "No action needed; all repositories are compliant with the required Quality Gate configuration.",
-      "config_gaps_insights": "23 repositories have scanner configuration gaps that suppress metric collection, reducing visibility into code quality for a significant portion of the portfolio.",
-      "config_gaps_action": "Add the missing scanner configuration to the 23 repositories to restore metric visibility and ensure accurate quality reporting.",
-      "sonarqube_rules_insights": "14 quality profile findings have been identified across the portfolio. 10 built-in profiles covering key languages including Java (87 projects), HTML (39 projects), JavaScript (38 projects), and CSS (34 projects) have not been updated for over 857 days, with JSON, PL/SQL, and XML profiles last updated over 1,064 days ago. Additionally, 4 custom profiles do not inherit from a built-in profile, requiring manual updates to stay current with rule changes.",
-      "sonarqube_rules_action": "Review and update the 10 stale built-in language profiles to ensure rules are current and projects benefit from the latest analysis improvements; update the 4 custom profiles to inherit from their respective built-in profiles, or document the rationale for keeping them standalone.",
+      "false_positives_insights": "Six repositories contain false positives, with two lacking a justification comment, limiting traceability and auditability.",
+      "false_positives_action": "Review false-positive markings to confirm they are valid and consistently applied, and add justification comments where missing.",
+      "suppressions_insights": "Three repositories have accepted issues, all without justification comments, weakening auditability and making it difficult to understand why issues were suppressed.",
+      "suppressions_action": "Add justification comments to all accepted issues in the affected repositories so suppression decisions remain auditable.",
+      "quality_gates_insights": "",
+      "quality_gates_action": "",
+      "config_gaps_insights": "23 repositories lack valid scanner configuration, preventing analysis and metric computation.",
+      "config_gaps_action": "Fix configuration in the affected repositories to restore analysis and metric computation.",
+      "sonarqube_rules_insights": "14 rule profile findings have been identified across the portfolio. Nine built-in profiles covering key languages — including Java (87 projects), C# (68 projects), HTML (39 projects), JavaScript (38 projects), CSS (34 projects), and Docker (30 projects) — have not been updated for between 860 and 1,067 days. Additionally, four custom profiles do not inherit from a built-in profile, meaning they require manual updates to stay current.",
+      "sonarqube_rules_action": "Update all stale built-in profiles to ensure repositories benefit from the latest rule sets; make the four standalone custom profiles inherit from their respective built-in profiles, or document the justification for keeping them independent.",
       "sonarcloud_rules_insights": "",
       "sonarcloud_rules_action": ""
     }

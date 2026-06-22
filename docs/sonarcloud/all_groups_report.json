@@ -111,9 +111,9 @@
         "reason": "reliability rating = 3, 32.78% coverage, 24.2% duplicates, 1 critical issues, 17 major issues"
       }
     ],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 17 repositories assessed, 11 have passed their Quality Gates, while 5 have failed and one has not yet been assessed. A number of high-severity issues are present, including 16 major bugs and 43 major vulnerabilities, along with a high number of code smells (22 critical, 689 major, and 218 minor).\n\nDefra Development standards are not consistently met. Seven repositories are below the 90% test coverage target, and four exceed the 3% code duplication limit. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there are seven inactive projects, four stale branches, 25 false positives recorded without justification, and 136 suppressions without justification comments. These issues affect visibility and the accuracy of reporting.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 17 repositories assessed, 11 have passed their Quality Gates, while five have failed and one has not yet been assessed. The five failing repositories did not meet new-code conditions, primarily due to insufficient test coverage, unresolved security issues, and high code duplication on new code. The codebase also contains 16 major bugs and 43 major vulnerabilities, along with a high number of code smells (22 critical, 689 major, and 218 minor), indicating reliability and maintainability risks.\n\nDefra Development standards are not consistently met. Five repositories are below the 90% coverage target for new code, and three exceed the 3% duplication limit for new code.\n\nFrom a governance perspective, seven inactive projects and four stale branches have been identified. A high number of suppressions (752) and false positives (135) have been recorded, with 136 suppressions and 25 false positives lacking justification comments, which weakens auditability.",
     "status": "Red",
-    "path_to_green": "Resolve the 16 major bugs and 43 major vulnerabilities as a priority, then work through the critical and major code smells to reduce technical debt; Improve test coverage in the 7 repositories below 90% and reduce duplication in the 4 repositories above 3%; Review the 7 inactive projects, remove the 4 stale branches, and add justification comments to the 25 false positives and 136 suppressions to restore visibility."
+    "path_to_green": "Resolve the five Quality Gate failures by addressing coverage gaps, security issues, and code duplication on new code; Work through the 16 major bugs and 43 major vulnerabilities as a priority; Improve test coverage in the five repositories below 90% and reduce duplication in the three repositories above 3% for new code; Add justification comments to the 136 suppressions and 25 false positives that currently lack them; Review and archive the seven inactive projects and remove the four stale branches."
   },
   "SFI": {
     "group_name": "SFI",
@@ -124,16 +124,16 @@
     "unmatched": [
       "grants-payment-service"
     ],
-    "total_loc": 36784,
+    "total_loc": 36930,
     "quality_gate": {
-      "passed": 4,
-      "failed": 1,
+      "passed": 5,
+      "failed": 0,
       "unknown": 0
     },
     "code_quality": {
       "bugs": 0,
       "vulnerabilities": 0,
-      "code_smells": 52,
+      "code_smells": 50,
       "security_hotspots": 0,
       "avg_coverage": 95.2,
       "avg_duplication": 0.2,
@@ -160,7 +160,7 @@
       "code_smells": {
         "blocker": 0,
         "critical": 0,
-        "major": 3,
+        "major": 1,
         "minor": 37,
         "info": 12
       }
@@ -168,7 +168,7 @@
     "governance": {
       "inactive_projects": [],
       "inactive_branches": 0,
-      "false_positives": 4,
+      "false_positives": 5,
       "false_positives_no_justification": 1,
       "suppressions": 1,
       "suppressions_no_justification": 1,
@@ -176,15 +176,10 @@
       "high_duplication": [],
       "branch_issues": []
     },
-    "qg_failed_projects": [
-      {
-        "name": "land-grants-api",
-        "reason": "2 major issues"
-      }
-    ],
-    "project_ai_summary": "The service shows good code quality across its 5 repositories, with no bugs or vulnerabilities identified and only a small number of code smells present. Of the 5 repositories assessed, 4 have passed their Quality Gates, while one has failed, indicating some risk to reliability. The service largely aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 95.2% test coverage and 0.2% code duplication.\n\nFrom a governance perspective, one false positive and one suppression have been recorded without justification comments, which are minor hygiene items worth addressing for auditability.",
+    "qg_failed_projects": [],
+    "project_ai_summary": "The service largely aligns with Service Standard 14 (operating a reliable service). Of the five repositories assessed, all have passed their Quality Gates, with no bugs or vulnerabilities identified. A small number of code smells are present, including one major code smell.\n\nAll repositories meet Defra Development standards, maintaining 95.2% test coverage and 0.2% code duplication.\n\nFrom a governance perspective, one false positive and one accepted issue lack justification comments, which is worth addressing for auditability.",
     "status": "Amber",
-    "path_to_green": "Investigate and resolve the Quality Gate failure in the one affected repository; Add justification comments to the one false positive and one suppression to maintain auditability."
+    "path_to_green": "Address the one major code smell to achieve full Green status; Add justification comments to the one false positive and one accepted issue that currently lack them."
   },
   "Future Grants ": {
     "group_name": "Future Grants ",
@@ -193,7 +188,7 @@
     "total_projects_in_map": 3,
     "matched": 3,
     "unmatched": [],
-    "total_loc": 18506,
+    "total_loc": 18510,
     "quality_gate": {
       "passed": 3,
       "failed": 0,
@@ -202,7 +197,7 @@
     "code_quality": {
       "bugs": 0,
       "vulnerabilities": 0,
-      "code_smells": 76,
+      "code_smells": 72,
       "security_hotspots": 0,
       "avg_coverage": 96.2,
       "avg_duplication": 0.2,
@@ -230,7 +225,7 @@
         "blocker": 0,
         "critical": 0,
         "major": 0,
-        "minor": 73,
+        "minor": 69,
         "info": 3
       }
     },
@@ -246,7 +241,7 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a high level of code quality across all 3 repositories. All Quality Gates have passed, and there are no bugs or vulnerabilities identified. Only a small number of code smells are present. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 96.2% test coverage and 0.2% code duplication.\n\nFrom a governance perspective, 17 false positives and seven suppressions have been recorded without justification comments. These are hygiene items that do not affect the quality posture but are worth addressing for auditability.",
+    "project_ai_summary": "The service shows a high level of code quality across its three repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or major code smells identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 96.2% test coverage and 0.2% code duplication.\n\nFrom a governance perspective, 18 false positives have been recorded, of which 17 lack justification comments, and ten accepted issues have been identified, of which seven lack justification comments. Adding rationale to these decisions would strengthen auditability.",
     "status": "Green",
     "path_to_green": ""
   },
@@ -257,7 +252,7 @@
     "total_projects_in_map": 10,
     "matched": 10,
     "unmatched": [],
-    "total_loc": 21415,
+    "total_loc": 21799,
     "quality_gate": {
       "passed": 10,
       "failed": 0,
@@ -268,7 +263,7 @@
       "vulnerabilities": 0,
       "code_smells": 0,
       "security_hotspots": 0,
-      "avg_coverage": 95.9,
+      "avg_coverage": 95.8,
       "avg_duplication": 0.1,
       "repos_below_90_cov_overall": 1,
       "repos_below_90_cov_new": 0,
@@ -310,9 +305,9 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows excellent code quality across its 10 repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or code smells identified. The service largely aligns with Service Standard 14 (operating a reliable service).\n\nDefra Development standards are not consistently met. One repository is below the 90% test coverage target. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, 27 suppressions and four false positives have been recorded without justification comments, which are worth addressing for auditability.",
-    "status": "Amber",
-    "path_to_green": "Improve test coverage in the one repository below 90% to meet Defra standards; Add justification comments to the 27 suppressions and four false positives to maintain auditability."
+    "project_ai_summary": "The service shows excellent code quality across all ten repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or code smells identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 95.8% test coverage and 0.1% code duplication.\n\nFrom a governance perspective, 27 accepted issues have been recorded, none of which include a justification comment, and four of eight false positives also lack comments. Adding rationale to these suppression decisions would improve auditability across the service.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "Animal Health & Wealth": {
     "group_name": "Animal Health & Wealth",
@@ -321,7 +316,7 @@
     "total_projects_in_map": 19,
     "matched": 19,
     "unmatched": [],
-    "total_loc": 113709,
+    "total_loc": 113691,
     "quality_gate": {
       "passed": 19,
       "failed": 0,
@@ -376,9 +371,9 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows generally good code quality across its 19 repositories, with all Quality Gates passing and no bugs or vulnerabilities identified. However, the presence of high-severity code smells (3 blocker, 8 critical, and 90 major) prevents a fully reliable posture. The service does not currently meet Service Standard 14 (operating a reliable service).\n\nDefra Development standards are not consistently met. One repository is below the 90% test coverage target. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there is one inactive project and three suppressions recorded without justification comments, which are worth reviewing as part of regular housekeeping.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 19 repositories assessed, all have passed their Quality Gates; however, the codebase contains a number of high-severity code smells, including 3 blocker and 8 critical code smells alongside 90 major code smells, indicating significant maintainability risks. There are no bugs or vulnerabilities identified.\n\nDefra Development standards are not consistently met. One repository is below the 90% coverage target for new code.\n\nFrom a governance perspective, one inactive project has been identified, and three accepted issues lack justification comments.",
     "status": "Red",
-    "path_to_green": "Resolve the 3 blocker and 8 critical code smells as a priority, then address the major code smells to reduce technical debt; Improve test coverage in the one repository below 90% to meet Defra standards; Review the one inactive project and add justification comments to the three suppressions."
+    "path_to_green": "Resolve the 3 blocker and 8 critical code smells as a priority, then work through the 90 major code smells to reduce technical debt; Improve test coverage in the one repository below 90% for new code; Review and archive the inactive project and add justification comments to the three accepted issues that currently lack them."
   },
   "Trade Platform API": {
     "group_name": "Trade Platform API",
@@ -446,7 +441,7 @@
         "Defra.Trade.OnBoarding.Api",
         "Defra.Trade.SCI.Customer.Api"
       ],
-      "inactive_branches": 33,
+      "inactive_branches": 26,
       "false_positives": 17,
       "false_positives_no_justification": 0,
       "suppressions": 175,
@@ -455,26 +450,15 @@
       "high_duplication": [],
       "branch_issues": [
         {
-          "project_name": "Defra.Trade.API.Daera.Certificates",
-          "platform": "SonarCloud",
-          "main_branch": "master",
-          "non_main_branches": 2,
-          "inactive_branches_90": 2,
-          "repos_non_standard_main_branch": false,
-          "repos_with_inactive_non_main_branches": true,
-          "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "2 inactive branches (90+ days)"
-        },
-        {
           "project_name": "Defra.Trade.API.CertificatesStore",
           "platform": "SonarCloud",
           "main_branch": "dev",
-          "non_main_branches": 5,
-          "inactive_branches_90": 5,
+          "non_main_branches": 1,
+          "inactive_branches_90": 0,
           "repos_non_standard_main_branch": true,
-          "repos_with_inactive_non_main_branches": true,
+          "repos_with_inactive_non_main_branches": false,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 5 inactive branches (90+ days)"
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
         },
         {
           "project_name": "Defra.Trade.CatchCertificates",
@@ -600,9 +584,9 @@
       ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows reasonable code quality across its 16 repositories, with all Quality Gates passing. However, a number of high-severity issues remain, including 2 blocker vulnerabilities and one major bug, along with code smells (6 critical and 151 major). The service does not currently meet Service Standard 14 (operating a reliable service).\n\nDefra Development standards are not consistently met. Three repositories are below the 90% test coverage target, and five exceed the 3% code duplication limit. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there are 15 inactive projects, 33 stale branches, and 52 suppressions recorded without justification comments. These issues affect visibility and the accuracy of reporting.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 16 repositories assessed, all have passed their Quality Gates. However, the codebase contains 2 blocker vulnerabilities and 9 bugs (1 major and 8 minor), along with a high volume of code smells (6 critical and 151 major), indicating security and maintainability risks.\n\nDefra Development standards are not consistently met. One repository is below the 90% coverage target for new code.\n\nFrom a governance perspective, 15 inactive projects and 26 stale branches have been identified, indicating significant lifecycle management concerns. 52 accepted issues lack justification comments, which limits auditability.",
     "status": "Red",
-    "path_to_green": "Resolve the 2 blocker vulnerabilities as a priority, then address the critical and major code smells to reduce technical debt; Improve test coverage in the 3 repositories below 90% and reduce duplication in the 5 repositories above 3%; Review the 15 inactive projects, remove the 33 stale branches, and add justification comments to the 52 suppressions to restore visibility."
+    "path_to_green": "Resolve the 2 blocker vulnerabilities as a priority, then address the 6 critical code smells and remaining major issues; Improve test coverage in the one repository below 90% for new code; Review and archive the 15 inactive projects and remove the 26 stale branches; Add justification comments to the 52 accepted issues that currently lack them."
   },
   "Trade Platform Service": {
     "group_name": "Trade Platform Service",
@@ -801,9 +785,9 @@
       ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a moderate level of code quality across its 19 repositories, with all Quality Gates passing. However, a number of high-severity issues remain, including 17 critical bugs and 11 major bugs, along with a high number of code smells (4 blocker, 104 critical, and 1013 major). The service does not currently meet Service Standard 14 (operating a reliable service).\n\nDefra Development standards are not consistently met. Three repositories are below the 90% test coverage target, and seven exceed the 3% code duplication limit. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there are three inactive projects, four stale branches, and one false positive recorded without justification. These are worth reviewing as part of regular housekeeping.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 19 repositories assessed, all have passed their Quality Gates. The codebase contains 17 critical bugs and 11 major bugs, alongside a high volume of code smells (4 blocker, 104 critical, and 1013 major), representing significant reliability and maintainability risks.\n\nDefra Development standards are not consistently met. Two repositories are below the 90% coverage target for new code.\n\nFrom a governance perspective, three inactive projects and four stale branches have been identified. One false positive lacks a justification comment.",
     "status": "Red",
-    "path_to_green": "Resolve the 17 critical bugs and 4 blocker code smells as a priority, then work through the remaining critical and major code smells to reduce technical debt; Improve test coverage in the 3 repositories below 90% and reduce duplication in the 7 repositories above 3%; Review the three inactive projects, remove the four stale branches, and add a justification comment to the one false positive."
+    "path_to_green": "Resolve the 17 critical bugs and 4 blocker code smells as a priority, then work through the remaining major bugs and code smells; Improve test coverage in the two repositories below 90% for new code; Review and archive the three inactive projects and remove the four stale branches."
   },
   "Risk Engine": {
     "group_name": "Risk Engine",
@@ -864,7 +848,7 @@
         "Defra.Trade.ReferenceDataSync",
         "Defra.Trade.Events.Services.ChedppPublisher"
       ],
-      "inactive_branches": 23,
+      "inactive_branches": 15,
       "false_positives": 5,
       "false_positives_no_justification": 0,
       "suppressions": 8,
@@ -876,7 +860,7 @@
           "project_name": "Defra.Trade.RiskAssessment.Api",
           "platform": "SonarCloud",
           "main_branch": "dev",
-          "non_main_branches": 3,
+          "non_main_branches": 4,
           "inactive_branches_90": 0,
           "repos_non_standard_main_branch": true,
           "repos_with_inactive_non_main_branches": false,
@@ -887,7 +871,7 @@
           "project_name": "Defra.Trade.RiskAssessment.UI",
           "platform": "SonarCloud",
           "main_branch": "dev",
-          "non_main_branches": 3,
+          "non_main_branches": 5,
           "inactive_branches_90": 0,
           "repos_non_standard_main_branch": true,
           "repos_with_inactive_non_main_branches": false,
@@ -909,7 +893,7 @@
           "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
           "platform": "SonarCloud",
           "main_branch": "dev",
-          "non_main_branches": 5,
+          "non_main_branches": 2,
           "inactive_branches_90": 0,
           "repos_non_standard_main_branch": true,
           "repos_with_inactive_non_main_branches": false,
@@ -920,34 +904,12 @@
           "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
           "platform": "SonarCloud",
           "main_branch": "dev",
-          "non_main_branches": 4,
-          "inactive_branches_90": 4,
+          "non_main_branches": 2,
+          "inactive_branches_90": 1,
           "repos_non_standard_main_branch": true,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 4 inactive branches (90+ days)"
-        },
-        {
-          "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
-          "platform": "SonarCloud",
-          "main_branch": "master",
-          "non_main_branches": 2,
-          "inactive_branches_90": 1,
-          "repos_non_standard_main_branch": false,
-          "repos_with_inactive_non_main_branches": true,
-          "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
-        },
-        {
-          "project_name": "Defra.Trade.CommodityRiskCategorisation.Decider",
-          "platform": "SonarCloud",
-          "main_branch": "master",
-          "non_main_branches": 4,
-          "inactive_branches_90": 4,
-          "repos_non_standard_main_branch": false,
-          "repos_with_inactive_non_main_branches": true,
-          "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "4 inactive branches (90+ days)"
+          "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
         },
         {
           "project_name": "Defra.Trade.RiskAssessment.Reporting",
@@ -1001,9 +963,9 @@
         "reason": "73.68% coverage, 1 major issues"
       }
     ],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 14 repositories assessed, 13 have passed their Quality Gates, while one has failed. A number of high-severity issues remain, including 2 blocker vulnerabilities and 18 major bugs, along with a high number of code smells (2 blocker, 93 critical, and 2033 major).\n\nDefra Development standards are not consistently met. Eight repositories are below the 90% test coverage target, and two exceed the 3% code duplication limit. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there are six inactive projects, 23 stale branches, and three suppressions recorded without justification comments. These issues affect visibility and the accuracy of reporting.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 14 repositories assessed, 13 have passed their Quality Gates, while one has failed. The failing repository did not meet new-code conditions due to insufficient test coverage and unresolved issues on new code. The codebase also contains 2 blocker vulnerabilities and 23 bugs (18 major), alongside a high number of code smells (2 blocker, 93 critical, and 2033 major), indicating significant security, reliability, and maintainability risks.\n\nDefra Development standards are not consistently met. One repository is below the 90% coverage target for new code.\n\nFrom a governance perspective, six inactive projects and 15 stale branches have been identified. Three accepted issues lack justification comments.",
     "status": "Red",
-    "path_to_green": "Resolve the 2 blocker vulnerabilities and 2 blocker code smells as a priority, then address the 93 critical and remaining major issues to reduce technical debt; Improve test coverage in the 8 repositories below 90% and reduce duplication in the 2 repositories above 3%; Review the six inactive projects, remove the 23 stale branches, and add justification comments to the three suppressions to restore visibility."
+    "path_to_green": "Resolve the Quality Gate failure by improving test coverage on new code in the affected repository; Address the 2 blocker vulnerabilities and 2 blocker code smells as a priority, then work through the 93 critical code smells and 18 major bugs; Improve test coverage in the one repository below 90% for new code; Review and archive the six inactive projects and remove the 15 stale branches."
   },
   "NIPTS": {
     "group_name": "NIPTS",
@@ -1076,9 +1038,9 @@
         "reason": "11 major issues"
       }
     ],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 6 repositories assessed, 4 have passed their Quality Gates, while 2 have failed, indicating risks to reliability and maintainability. A number of high-severity issues are also present, including 2 critical bugs, along with code smells (1 critical and 35 major).\n\nDefra Development standards are not consistently met. One repository is below the 90% test coverage target, and one exceeds the 3% code duplication limit. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, three false positives have been recorded without justification comments, which are worth addressing for auditability.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the six repositories assessed, four have passed their Quality Gates, while two have failed. The failing repositories did not meet new-code conditions, primarily due to insufficient reliability ratings, unresolved critical issues, and unreviewed security hotspots. The codebase also contains 2 critical bugs and 1 critical code smell alongside 35 major code smells.\n\nAll repositories meet Defra Development standards, maintaining 79.6% test coverage and 1.3% code duplication.\n\nFrom a governance perspective, three false positives lack justification comments, which limits auditability.",
     "status": "Red",
-    "path_to_green": "Investigate and resolve the Quality Gate failures in the 2 affected repositories; Resolve the 2 critical bugs and address the critical and major code smells; Improve test coverage in the one repository below 90% and reduce duplication in the one repository above 3%; Add justification comments to the three false positives."
+    "path_to_green": "Resolve the two Quality Gate failures by addressing reliability issues, critical bugs, and unreviewed security hotspots on new code; Resolve the 2 critical bugs and 1 critical code smell as a priority; Add justification comments to the three false positives that currently lack them."
   },
   "NIRMS": {
     "group_name": "NIRMS",
@@ -1140,9 +1102,9 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows good code quality within its single repository, with the Quality Gate passing and no bugs, vulnerabilities, or code smells identified. The service largely aligns with Service Standard 14 (operating a reliable service).\n\nDefra Development standards are not consistently met. One repository is below the 90% test coverage target. These findings indicate gaps in code quality and testing coverage.",
-    "status": "Amber",
-    "path_to_green": "Improve test coverage in the single repository to reach the 90% target and meet Defra standards."
+    "project_ai_summary": "The service shows a high level of code quality within its single repository. The Quality Gate has passed, and there are no bugs, vulnerabilities, or code smells identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 83.4% test coverage and 0.0% code duplication.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "FES": {
     "group_name": "FES",
@@ -1153,14 +1115,14 @@
     "unmatched": [],
     "total_loc": 44714,
     "quality_gate": {
-      "passed": 7,
-      "failed": 2,
+      "passed": 8,
+      "failed": 1,
       "unknown": 0
     },
     "code_quality": {
       "bugs": 1,
       "vulnerabilities": 0,
-      "code_smells": 378,
+      "code_smells": 185,
       "security_hotspots": 8,
       "avg_coverage": 87.0,
       "avg_duplication": 0.2,
@@ -1185,7 +1147,7 @@
         "info": 0
       },
       "code_smells": {
-        "blocker": 337,
+        "blocker": 144,
         "critical": 0,
         "major": 22,
         "minor": 19,
@@ -1208,12 +1170,12 @@
           "project_name": "eutd-mmo-fes-external-frontend",
           "platform": "SonarCloud",
           "main_branch": "main",
-          "non_main_branches": 15,
+          "non_main_branches": 14,
           "inactive_branches_90": 0,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": false,
           "repos_with_non_main_branch_count_over_threshold": true,
-          "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+          "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
         },
         {
           "project_name": "eutd-mmo-fes-orchestration",
@@ -1232,15 +1194,11 @@
       {
         "name": "eutd-mmo-fes-external-frontend",
         "reason": "0% coverage, 5 blocker issues, 1 major issues"
-      },
-      {
-        "name": "eutd-mmo-fes-orchestration",
-        "reason": "80 blocker issues"
       }
     ],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 9 repositories assessed, 7 have passed their Quality Gates, while 2 have failed. A high number of high-severity code smells are present, including 337 blocker and 22 major, along with one major bug.\n\nDefra Development standards are not consistently met. One repository is below the 90% test coverage target. These findings indicate gaps in code quality and testing coverage.\n\nFrom a governance perspective, there is one inactive project and 11 false positives recorded without justification comments. These are worth reviewing to maintain auditability.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the nine repositories assessed, eight have passed their Quality Gates, while one has failed. The failing repository did not meet new-code conditions, primarily due to zero test coverage and a high number of unresolved blocker issues on new code. The codebase contains 144 blocker code smells and 22 major code smells alongside one major bug, indicating significant maintainability risks.\n\nDefra Development standards are not consistently met. One repository is below the 90% coverage target for new code.\n\nFrom a governance perspective, one inactive project has been identified, and 11 false positives have been recorded, none of which include a justification comment, limiting auditability.",
     "status": "Red",
-    "path_to_green": "Resolve the 337 blocker code smells as a priority, then address the remaining major issues to reduce technical debt; Investigate and resolve the Quality Gate failures in the 2 affected repositories; Improve test coverage in the one repository below 90%; Review the one inactive project and add justification comments to the 11 false positives."
+    "path_to_green": "Resolve the Quality Gate failure by addressing zero coverage and blocker issues on new code in the affected repository; Resolve the 144 blocker code smells as a priority; Improve test coverage in the one repository below 90% for new code; Add justification comments to the 11 false positives that currently lack them; Review and archive the inactive project."
   },
   "PLP": {
     "group_name": "PLP",
@@ -1316,9 +1274,9 @@
       ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows good code quality across its 2 repositories, with the assessed Quality Gate passing and only a small number of code smells present. One repository has not yet been assessed. The service largely aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 99.2% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, one repository is missing scanner configuration, three stale branches have been identified, and two false positives have been recorded without justification comments. These affect the completeness of reporting and are worth addressing.",
+    "project_ai_summary": "The service largely aligns with Service Standard 14 (operating a reliable service). Of the two repositories assessed, one has passed its Quality Gate, while one has not yet been assessed. There are no bugs or vulnerabilities identified, and only two major code smells are present.\n\nAll repositories meet Defra Development standards, maintaining 99.2% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, one repository lacks scanner configuration, which has prevented its Quality Gate from being computed and reduces visibility into that project. Three stale branches have also been identified, and two false positives lack justification comments.",
     "status": "Amber",
-    "path_to_green": "Add scanner configuration to the one repository missing it so its metrics can be assessed; Remove the three stale branches and add justification comments to the two false positives to maintain auditability."
+    "path_to_green": "Add scanner configuration to the one repository that is currently missing it to restore Quality Gate computation and metric visibility; Address the two major code smells; Remove the three stale branches and add justification comments to the two false positives that currently lack them."
   },
   "BTMS": {
     "group_name": "BTMS",
@@ -1327,10 +1285,10 @@
     "total_projects_in_map": 12,
     "matched": 12,
     "unmatched": [],
-    "total_loc": 31800,
+    "total_loc": 31843,
     "quality_gate": {
-      "passed": 7,
-      "failed": 1,
+      "passed": 8,
+      "failed": 0,
       "unknown": 4
     },
     "code_quality": {
@@ -1341,7 +1299,7 @@
       "avg_coverage": 94.3,
       "avg_duplication": 0.1,
       "repos_below_90_cov_overall": 0,
-      "repos_below_90_cov_new": 1,
+      "repos_below_90_cov_new": 0,
       "repos_above_3_dup_overall": 0,
       "repos_above_3_dup_new": 0
     },
@@ -1400,15 +1358,10 @@
         }
       ]
     },
-    "qg_failed_projects": [
-      {
-        "name": "btms-portal-frontend",
-        "reason": "86.2% coverage"
-      }
-    ],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 12 repositories assessed, 7 have passed their Quality Gates, while one has failed and 4 have not yet been assessed. A number of high-severity issues are present, including 5 major vulnerabilities, along with code smells (1 blocker, 19 critical, and 76 major).\n\nAll repositories meet Defra Development standards, maintaining 94.3% test coverage and 0.1% code duplication.\n\nFrom a governance perspective, four repositories are without scanner configuration, three inactive projects have been identified, and one suppression has been recorded without justification. These issues affect visibility and the accuracy of reporting.",
+    "qg_failed_projects": [],
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 12 repositories assessed, eight have passed their Quality Gates, while four have not yet been assessed due to missing scanner configuration. The codebase contains 1 blocker and 19 critical code smells, alongside 2 major bugs and 5 major vulnerabilities, indicating reliability and security risks.\n\nAll repositories meet Defra Development standards, maintaining 94.3% test coverage and 0.1% code duplication.\n\nFrom a governance perspective, four repositories lack scanner configuration, preventing analysis and Quality Gate computation for those projects. Three inactive projects and one stale branch have also been identified, and one accepted issue lacks a justification comment.",
     "status": "Red",
-    "path_to_green": "Resolve the 1 blocker and 19 critical code smells and the 5 major vulnerabilities as a priority; Investigate the Quality Gate failure and add scanner configuration to the 4 repositories missing it so all repositories can be assessed; Review the three inactive projects and add a justification comment to the one suppression."
+    "path_to_green": "Add scanner configuration to the four repositories currently missing it to restore analysis and Quality Gate computation; Resolve the 1 blocker and 19 critical code smells as a priority, then address the 2 major bugs and 5 major vulnerabilities; Review and archive the three inactive projects and remove the stale branch."
   },
   "projects": [
     {
@@ -1538,16 +1491,16 @@
       "unmatched": [
         "grants-payment-service"
       ],
-      "total_loc": 36784,
+      "total_loc": 36930,
       "quality_gate": {
-        "passed": 4,
-        "failed": 1,
+        "passed": 5,
+        "failed": 0,
         "unknown": 0
       },
       "code_quality": {
         "bugs": 0,
         "vulnerabilities": 0,
-        "code_smells": 52,
+        "code_smells": 50,
         "security_hotspots": 0,
         "avg_coverage": 95.2,
         "avg_duplication": 0.2,
@@ -1574,7 +1527,7 @@
         "code_smells": {
           "blocker": 0,
           "critical": 0,
-          "major": 3,
+          "major": 1,
           "minor": 37,
           "info": 12
         }
@@ -1582,7 +1535,7 @@
       "governance": {
         "inactive_projects": [],
         "inactive_branches": 0,
-        "false_positives": 4,
+        "false_positives": 5,
         "false_positives_no_justification": 1,
         "suppressions": 1,
         "suppressions_no_justification": 1,
@@ -1590,12 +1543,7 @@
         "high_duplication": [],
         "branch_issues": []
       },
-      "qg_failed_projects": [
-        {
-          "name": "land-grants-api",
-          "reason": "2 major issues"
-        }
-      ],
+      "qg_failed_projects": [],
       "project_ai_summary": "",
       "status": "",
       "path_to_green": ""
@@ -1608,7 +1556,7 @@
       "total_projects_in_map": 3,
       "matched": 3,
       "unmatched": [],
-      "total_loc": 18506,
+      "total_loc": 18510,
       "quality_gate": {
         "passed": 3,
         "failed": 0,
@@ -1617,7 +1565,7 @@
       "code_quality": {
         "bugs": 0,
         "vulnerabilities": 0,
-        "code_smells": 76,
+        "code_smells": 72,
         "security_hotspots": 0,
         "avg_coverage": 96.2,
         "avg_duplication": 0.2,
@@ -1645,7 +1593,7 @@
           "blocker": 0,
           "critical": 0,
           "major": 0,
-          "minor": 73,
+          "minor": 69,
           "info": 3
         }
       },
@@ -1673,7 +1621,7 @@
       "total_projects_in_map": 10,
       "matched": 10,
       "unmatched": [],
-      "total_loc": 21415,
+      "total_loc": 21799,
       "quality_gate": {
         "passed": 10,
         "failed": 0,
@@ -1684,7 +1632,7 @@
         "vulnerabilities": 0,
         "code_smells": 0,
         "security_hotspots": 0,
-        "avg_coverage": 95.9,
+        "avg_coverage": 95.8,
         "avg_duplication": 0.1,
         "repos_below_90_cov_overall": 1,
         "repos_below_90_cov_new": 0,
@@ -1738,7 +1686,7 @@
       "total_projects_in_map": 19,
       "matched": 19,
       "unmatched": [],
-      "total_loc": 113709,
+      "total_loc": 113691,
       "quality_gate": {
         "passed": 19,
         "failed": 0,
@@ -1864,7 +1812,7 @@
           "Defra.Trade.OnBoarding.Api",
           "Defra.Trade.SCI.Customer.Api"
         ],
-        "inactive_branches": 33,
+        "inactive_branches": 26,
         "false_positives": 17,
         "false_positives_no_justification": 0,
         "suppressions": 175,
@@ -1873,26 +1821,15 @@
         "high_duplication": [],
         "branch_issues": [
           {
-            "project_name": "Defra.Trade.API.Daera.Certificates",
-            "platform": "SonarCloud",
-            "main_branch": "master",
-            "non_main_branches": 2,
-            "inactive_branches_90": 2,
-            "repos_non_standard_main_branch": false,
-            "repos_with_inactive_non_main_branches": true,
-            "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "2 inactive branches (90+ days)"
-          },
-          {
             "project_name": "Defra.Trade.API.CertificatesStore",
             "platform": "SonarCloud",
             "main_branch": "dev",
-            "non_main_branches": 5,
-            "inactive_branches_90": 5,
+            "non_main_branches": 1,
+            "inactive_branches_90": 0,
             "repos_non_standard_main_branch": true,
-            "repos_with_inactive_non_main_branches": true,
+            "repos_with_inactive_non_main_branches": false,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 5 inactive branches (90+ days)"
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
           },
           {
             "project_name": "Defra.Trade.CatchCertificates",
@@ -2284,7 +2221,7 @@
           "Defra.Trade.ReferenceDataSync",
           "Defra.Trade.Events.Services.ChedppPublisher"
         ],
-        "inactive_branches": 23,
+        "inactive_branches": 15,
         "false_positives": 5,
         "false_positives_no_justification": 0,
         "suppressions": 8,
@@ -2296,7 +2233,7 @@
             "project_name": "Defra.Trade.RiskAssessment.Api",
             "platform": "SonarCloud",
             "main_branch": "dev",
-            "non_main_branches": 3,
+            "non_main_branches": 4,
             "inactive_branches_90": 0,
             "repos_non_standard_main_branch": true,
             "repos_with_inactive_non_main_branches": false,
@@ -2307,7 +2244,7 @@
             "project_name": "Defra.Trade.RiskAssessment.UI",
             "platform": "SonarCloud",
             "main_branch": "dev",
-            "non_main_branches": 3,
+            "non_main_branches": 5,
             "inactive_branches_90": 0,
             "repos_non_standard_main_branch": true,
             "repos_with_inactive_non_main_branches": false,
@@ -2329,7 +2266,7 @@
             "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
             "platform": "SonarCloud",
             "main_branch": "dev",
-            "non_main_branches": 5,
+            "non_main_branches": 2,
             "inactive_branches_90": 0,
             "repos_non_standard_main_branch": true,
             "repos_with_inactive_non_main_branches": false,
@@ -2340,34 +2277,12 @@
             "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
             "platform": "SonarCloud",
             "main_branch": "dev",
-            "non_main_branches": 4,
-            "inactive_branches_90": 4,
+            "non_main_branches": 2,
+            "inactive_branches_90": 1,
             "repos_non_standard_main_branch": true,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 4 inactive branches (90+ days)"
-          },
-          {
-            "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
-            "platform": "SonarCloud",
-            "main_branch": "master",
-            "non_main_branches": 2,
-            "inactive_branches_90": 1,
-            "repos_non_standard_main_branch": false,
-            "repos_with_inactive_non_main_branches": true,
-            "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
-          },
-          {
-            "project_name": "Defra.Trade.CommodityRiskCategorisation.Decider",
-            "platform": "SonarCloud",
-            "main_branch": "master",
-            "non_main_branches": 4,
-            "inactive_branches_90": 4,
-            "repos_non_standard_main_branch": false,
-            "repos_with_inactive_non_main_branches": true,
-            "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "4 inactive branches (90+ days)"
+            "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
           },
           {
             "project_name": "Defra.Trade.RiskAssessment.Reporting",
@@ -2576,14 +2491,14 @@
       "unmatched": [],
       "total_loc": 44714,
       "quality_gate": {
-        "passed": 7,
-        "failed": 2,
+        "passed": 8,
+        "failed": 1,
         "unknown": 0
       },
       "code_quality": {
         "bugs": 1,
         "vulnerabilities": 0,
-        "code_smells": 378,
+        "code_smells": 185,
         "security_hotspots": 8,
         "avg_coverage": 87.0,
         "avg_duplication": 0.2,
@@ -2608,7 +2523,7 @@
           "info": 0
         },
         "code_smells": {
-          "blocker": 337,
+          "blocker": 144,
           "critical": 0,
           "major": 22,
           "minor": 19,
@@ -2631,12 +2546,12 @@
             "project_name": "eutd-mmo-fes-external-frontend",
             "platform": "SonarCloud",
             "main_branch": "main",
-            "non_main_branches": 15,
+            "non_main_branches": 14,
             "inactive_branches_90": 0,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": false,
             "repos_with_non_main_branch_count_over_threshold": true,
-            "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+            "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
           },
           {
             "project_name": "eutd-mmo-fes-orchestration",
@@ -2655,10 +2570,6 @@
         {
           "name": "eutd-mmo-fes-external-frontend",
           "reason": "0% coverage, 5 blocker issues, 1 major issues"
-        },
-        {
-          "name": "eutd-mmo-fes-orchestration",
-          "reason": "80 blocker issues"
         }
       ],
       "project_ai_summary": "",
@@ -2752,10 +2663,10 @@
       "total_projects_in_map": 12,
       "matched": 12,
       "unmatched": [],
-      "total_loc": 31800,
+      "total_loc": 31843,
       "quality_gate": {
-        "passed": 7,
-        "failed": 1,
+        "passed": 8,
+        "failed": 0,
         "unknown": 4
       },
       "code_quality": {
@@ -2766,7 +2677,7 @@
         "avg_coverage": 94.3,
         "avg_duplication": 0.1,
         "repos_below_90_cov_overall": 0,
-        "repos_below_90_cov_new": 1,
+        "repos_below_90_cov_new": 0,
         "repos_above_3_dup_overall": 0,
         "repos_above_3_dup_new": 0
       },
@@ -2825,12 +2736,7 @@
           }
         ]
       },
-      "qg_failed_projects": [
-        {
-          "name": "btms-portal-frontend",
-          "reason": "86.2% coverage"
-        }
-      ],
+      "qg_failed_projects": [],
       "project_ai_summary": "",
       "status": "",
       "path_to_green": ""

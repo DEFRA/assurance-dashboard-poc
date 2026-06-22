@@ -1,29 +1,29 @@
 {
-  "generated": "2026-06-18 02:01:20",
+  "generated": "2026-06-21 23:58:53",
   "server_name": "SonarCloud",
-  "data_extracted_on": "18/06/2026 00:01",
+  "data_extracted_on": "21/06/2026 22:47",
   "platform_filter": "sonarcloud",
-  "total_repos": 788,
-  "total_loc": 3155106,
+  "total_repos": 792,
+  "total_loc": 3162781,
   "private_repos": 154,
-  "public_repos": 634,
+  "public_repos": 638,
   "consolidated_metrics": {
     "inactive_projects": {
-      "repos_inactive_over_1_years": 353,
-      "repos_inactive_over_2_years": 179,
-      "repos_inactive_over_4_years": 38,
+      "repos_inactive_over_1_years": 168,
+      "repos_inactive_over_2_years": 150,
+      "repos_inactive_over_4_years": 37,
       "repos_inactive_over_6_years": 1,
       "repos_inactive_over_8_years": 0
     },
     "high_duplication": {
-      "repos_over_threshold": 10
+      "repos_over_threshold": 11
     },
     "repo_visibility": {
       "private_repos": 154
     },
     "branch_hygiene": {
       "repos_non_standard_main_branch": 73,
-      "repos_with_inactive_non_main_branches": 164,
+      "repos_with_inactive_non_main_branches": 160,
       "repos_with_non_main_branch_count_over_threshold": 21
     },
     "false_positives": {
@@ -38,7 +38,7 @@
       "repos_with_non_compliant_quality_gate": 12
     },
     "configuration": {
-      "repos_with_configuration_issues": 59
+      "repos_with_configuration_issues": 60
     }
   },
   "sections": {
@@ -47,2125 +47,2143 @@
         "project_name": "ea-address_lookup",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-06-17",
-        "days_since_last_analysis": 2191
+        "days_since_last_analysis": 2194
       },
       {
         "project_name": "ffc-elm-scheme-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-07-16",
-        "days_since_last_analysis": 2162
+        "days_since_last_analysis": 2166
       },
       {
         "project_name": "ffc-elm-plan-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-07-16",
-        "days_since_last_analysis": 2162
+        "days_since_last_analysis": 2166
       },
       {
         "project_name": "ffc-elm-apply",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-07-21",
-        "days_since_last_analysis": 2157
+        "days_since_last_analysis": 2161
       },
       {
         "project_name": "ffc-digital-form-builder",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-08-28",
-        "days_since_last_analysis": 2119
+        "days_since_last_analysis": 2123
       },
       {
         "project_name": "waste-carriers-frontend",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-11-10",
-        "days_since_last_analysis": 2045
-      },
-      {
-        "project_name": "defra-ruby-mocks",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2020-11-10",
-        "days_since_last_analysis": 2045
-      },
-      {
-        "project_name": "waste-carriers-service",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2020-11-10",
-        "days_since_last_analysis": 2045
+        "days_since_last_analysis": 2048
       },
       {
         "project_name": "quke-demo-app",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-11-10",
-        "days_since_last_analysis": 2044
+        "days_since_last_analysis": 2048
       },
       {
-        "project_name": "ffc-grants-reporting",
+        "project_name": "waste-carriers-service",
         "platform": "SonarCloud",
-        "last_analysis_date": "2020-12-03",
-        "days_since_last_analysis": 2022
+        "last_analysis_date": "2020-11-10",
+        "days_since_last_analysis": 2048
+      },
+      {
+        "project_name": "defra-ruby-mocks",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2020-11-10",
+        "days_since_last_analysis": 2048
       },
       {
         "project_name": "ffc-grants-stubs",
         "platform": "SonarCloud",
         "last_analysis_date": "2020-12-03",
-        "days_since_last_analysis": 2022
+        "days_since_last_analysis": 2026
+      },
+      {
+        "project_name": "ffc-grants-reporting",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2020-12-03",
+        "days_since_last_analysis": 2026
       },
       {
         "project_name": "os-places-address-lookup",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-01-26",
-        "days_since_last_analysis": 1968
+        "days_since_last_analysis": 1971
       },
       {
         "project_name": "ffc-grants-eoi",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-03-01",
-        "days_since_last_analysis": 1934
+        "days_since_last_analysis": 1938
       },
       {
         "project_name": "ffc-grants-eligibility-alpha",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-03-02",
-        "days_since_last_analysis": 1933
+        "days_since_last_analysis": 1937
       },
       {
         "project_name": "lfw-data",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-03-03",
-        "days_since_last_analysis": 1932
+        "days_since_last_analysis": 1936
       },
       {
         "project_name": "hapi-govuk-question-page",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-03-15",
-        "days_since_last_analysis": 1920
+        "days_since_last_analysis": 1924
       },
       {
         "project_name": "ffc-sfi-agreement",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-04-29",
-        "days_since_last_analysis": 1875
+        "days_since_last_analysis": 1879
       },
       {
         "project_name": "ffc-sfi-calculator",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-04-29",
-        "days_since_last_analysis": 1875
-      },
-      {
-        "project_name": "ffc-sfi-frontend",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2021-04-29",
-        "days_since_last_analysis": 1875
+        "days_since_last_analysis": 1879
       },
       {
         "project_name": "ffc-sfi-pocs",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-04-29",
-        "days_since_last_analysis": 1875
+        "days_since_last_analysis": 1879
+      },
+      {
+        "project_name": "ffc-sfi-frontend",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2021-04-29",
+        "days_since_last_analysis": 1879
       },
       {
         "project_name": "ffc-sfi-inspections",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-07-08",
-        "days_since_last_analysis": 1805
+        "days_since_last_analysis": 1809
       },
       {
         "project_name": "ffc-sfi-siti-agri-mock",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-07-09",
-        "days_since_last_analysis": 1804
+        "days_since_last_analysis": 1808
       },
       {
         "project_name": "gwa-notification-sender",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-07-22",
-        "days_since_last_analysis": 1791
+        "days_since_last_analysis": 1795
       },
       {
         "project_name": "gwa-etl-dotnet",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-08-12",
-        "days_since_last_analysis": 1770
+        "days_since_last_analysis": 1774
       },
       {
         "project_name": "gwa-notification-receipt",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-08-12",
-        "days_since_last_analysis": 1770
+        "days_since_last_analysis": 1774
       },
       {
         "project_name": "IWTF Connectors lib",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-08-20",
-        "days_since_last_analysis": 1762
+        "days_since_last_analysis": 1766
       },
       {
         "project_name": "ffc-sfi-processing",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-08-20",
-        "days_since_last_analysis": 1762
+        "days_since_last_analysis": 1766
       },
       {
         "project_name": "ffc-sfi-apply-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-08-31",
-        "days_since_last_analysis": 1751
+        "days_since_last_analysis": 1755
       },
       {
         "project_name": "gwa-etl",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-09-08",
-        "days_since_last_analysis": 1743
+        "days_since_last_analysis": 1747
       },
       {
         "project_name": "ffc-sfi-eligibility",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-09-09",
-        "days_since_last_analysis": 1742
+        "days_since_last_analysis": 1746
       },
       {
         "project_name": "gwa-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-09-13",
-        "days_since_last_analysis": 1738
+        "days_since_last_analysis": 1742
       },
       {
         "project_name": "ffc-sfi-crown-hosting-prototype",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-09-24",
-        "days_since_last_analysis": 1727
+        "days_since_last_analysis": 1731
       },
       {
         "project_name": "ffc-sfi-agreement-viewer",
         "platform": "SonarCloud",
         "last_analysis_date": "2021-11-29",
-        "days_since_last_analysis": 1661
+        "days_since_last_analysis": 1665
       },
       {
         "project_name": "gwa-utils",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-01-07",
-        "days_since_last_analysis": 1622
+        "days_since_last_analysis": 1626
       },
       {
         "project_name": "ffc-demo-collector",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-02-19",
-        "days_since_last_analysis": 1579
+        "days_since_last_analysis": 1583
       },
       {
         "project_name": "ffc-sfi-map-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-04-21",
-        "days_since_last_analysis": 1518
+        "days_since_last_analysis": 1522
       },
       {
         "project_name": "os-map-ref",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-05-06",
-        "days_since_last_analysis": 1503
+        "days_since_last_analysis": 1507
       },
       {
         "project_name": "ffc-grants-addval-eligibility",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-05-16",
-        "days_since_last_analysis": 1493
+        "days_since_last_analysis": 1497
       },
       {
         "project_name": "Defra.Trade.DAERA.UI",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-08-05",
-        "days_since_last_analysis": 1412
+        "days_since_last_analysis": 1416
       },
       {
         "project_name": "pafs_core",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-10-17",
-        "days_since_last_analysis": 1339
-      },
-      {
-        "project_name": "ffc-techspike-customer-registry",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2022-10-27",
-        "days_since_last_analysis": 1329
-      },
-      {
-        "project_name": "Defra.Trade.Events.Services.SCICustomer",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2022-10-27",
-        "days_since_last_analysis": 1329
-      },
-      {
-        "project_name": "Defra.Trade.Events.Services.DaeraPublisher",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2022-10-27",
-        "days_since_last_analysis": 1329
+        "days_since_last_analysis": 1343
       },
       {
         "project_name": "Defra.Trade.Events.Services.DaeraEnricher",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-10-27",
-        "days_since_last_analysis": 1329
+        "days_since_last_analysis": 1333
+      },
+      {
+        "project_name": "Defra.Trade.Events.Services.DaeraPublisher",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2022-10-27",
+        "days_since_last_analysis": 1333
+      },
+      {
+        "project_name": "ffc-techspike-customer-registry",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2022-10-27",
+        "days_since_last_analysis": 1333
+      },
+      {
+        "project_name": "Defra.Trade.Events.Services.SCICustomer",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2022-10-27",
+        "days_since_last_analysis": 1333
       },
       {
         "project_name": "ffc-lnr-map-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-10-27",
-        "days_since_last_analysis": 1329
+        "days_since_last_analysis": 1333
       },
       {
         "project_name": "Defra.Trade.Events.SCI.EhcoExportCreator",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-10-27",
-        "days_since_last_analysis": 1329
+        "days_since_last_analysis": 1333
       },
       {
         "project_name": "ffc-pay-file-sender",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-10-31",
-        "days_since_last_analysis": 1325
-      },
-      {
-        "project_name": "ffc-techspike-customer-registry-event",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2022-11-02",
-        "days_since_last_analysis": 1323
+        "days_since_last_analysis": 1329
       },
       {
         "project_name": "ffc-techspike-customer-registry-data-consumer",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-11-02",
-        "days_since_last_analysis": 1323
+        "days_since_last_analysis": 1327
+      },
+      {
+        "project_name": "ffc-techspike-customer-registry-event",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2022-11-02",
+        "days_since_last_analysis": 1327
       },
       {
         "project_name": "ffc-grants-slurry-eligibility",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-11-07",
-        "days_since_last_analysis": 1318
+        "days_since_last_analysis": 1322
       },
       {
         "project_name": "ffc-grants-eligibility",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-11-16",
-        "days_since_last_analysis": 1309
+        "days_since_last_analysis": 1313
       },
       {
         "project_name": "Defra.Trade.Events.Traces.Certificates",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-11-29",
-        "days_since_last_analysis": 1296
+        "days_since_last_analysis": 1300
       },
       {
         "project_name": "ffc-techspike-rules-engine",
         "platform": "SonarCloud",
         "last_analysis_date": "2022-12-08",
-        "days_since_last_analysis": 1287
-      },
-      {
-        "project_name": "ffc-pay-event-projection",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-01-20",
-        "days_since_last_analysis": 1244
-      },
-      {
-        "project_name": "ffc-pay-batch-validator",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-01-20",
-        "days_since_last_analysis": 1244
+        "days_since_last_analysis": 1291
       },
       {
         "project_name": "ffc-pay-event",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-01-20",
-        "days_since_last_analysis": 1244
+        "days_since_last_analysis": 1248
       },
       {
-        "project_name": "ffc-pay-file-consumer",
+        "project_name": "ffc-pay-event-projection",
         "platform": "SonarCloud",
-        "last_analysis_date": "2023-01-23",
-        "days_since_last_analysis": 1241
+        "last_analysis_date": "2023-01-20",
+        "days_since_last_analysis": 1248
+      },
+      {
+        "project_name": "ffc-pay-batch-validator",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-01-20",
+        "days_since_last_analysis": 1248
       },
       {
         "project_name": "ffc-pay-mi-reporting",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-01-23",
-        "days_since_last_analysis": 1241
+        "days_since_last_analysis": 1245
+      },
+      {
+        "project_name": "ffc-pay-file-consumer",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-01-23",
+        "days_since_last_analysis": 1245
       },
       {
         "project_name": "ffc-pay-alerts",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-01-27",
-        "days_since_last_analysis": 1237
+        "days_since_last_analysis": 1241
       },
       {
         "project_name": "Identity.B2C.Policies",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-03-01",
-        "days_since_last_analysis": 1204
+        "days_since_last_analysis": 1208
       },
       {
         "project_name": "ngr-to-bng",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-03-20",
-        "days_since_last_analysis": 1185
+        "days_since_last_analysis": 1189
       },
       {
         "project_name": "waste-permits",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-04-06",
-        "days_since_last_analysis": 1168
+        "days_since_last_analysis": 1172
       },
       {
         "project_name": "defra-ruby-alert",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-04-20",
-        "days_since_last_analysis": 1154
+        "days_since_last_analysis": 1158
       },
       {
         "project_name": "Defra.Trade.Events.Certifier.Synchroniser",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-04-24",
-        "days_since_last_analysis": 1150
+        "days_since_last_analysis": 1154
       },
       {
         "project_name": "ffc-techspike-function-taskmanager",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-05-03",
-        "days_since_last_analysis": 1141
-      },
-      {
-        "project_name": "Defra.Trade.API.Imports.ReferenceData",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-05-04",
-        "days_since_last_analysis": 1140
+        "days_since_last_analysis": 1145
       },
       {
         "project_name": "Defra.Trade.API.Imports.ReferenceData.UAT",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-05-04",
-        "days_since_last_analysis": 1140
+        "days_since_last_analysis": 1144
+      },
+      {
+        "project_name": "Defra.Trade.API.Imports.ReferenceData",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-05-04",
+        "days_since_last_analysis": 1144
       },
       {
         "project_name": "ffc-pay-event-migrator",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-05-05",
-        "days_since_last_analysis": 1139
+        "days_since_last_analysis": 1143
       },
       {
         "project_name": "Portal.App.Web",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-05-24",
-        "days_since_last_analysis": 1120
+        "days_since_last_analysis": 1124
       },
       {
         "project_name": "Defra.Trade.BCPs.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-05-26",
-        "days_since_last_analysis": 1118
+        "days_since_last_analysis": 1122
       },
       {
         "project_name": "Defra.Trade.Traces.Mock",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-06-20",
-        "days_since_last_analysis": 1093
+        "days_since_last_analysis": 1097
       },
       {
         "project_name": "ffc-tcg-customer-registry",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-07-14",
-        "days_since_last_analysis": 1069
+        "days_since_last_analysis": 1073
       },
       {
         "project_name": "ffc-tcg-eligibility",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-07-14",
-        "days_since_last_analysis": 1069
+        "days_since_last_analysis": 1073
       },
       {
         "project_name": "Defra.Trade.Certificate.Gateway.Functions",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-07-20",
-        "days_since_last_analysis": 1063
+        "days_since_last_analysis": 1067
       },
       {
         "project_name": "Defra.Trade.Events.Services.Scheduler",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-07-21",
-        "days_since_last_analysis": 1062
+        "days_since_last_analysis": 1066
       },
       {
         "project_name": "Defra.Trade.BankHolidays.Functions",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-07-24",
-        "days_since_last_analysis": 1059
+        "days_since_last_analysis": 1063
       },
       {
         "project_name": "bng-credits-estimator",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-07-27",
-        "days_since_last_analysis": 1056
-      },
-      {
-        "project_name": "ffc-tcg-back-office",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-07-28",
-        "days_since_last_analysis": 1055
+        "days_since_last_analysis": 1060
       },
       {
         "project_name": "Defra.Trade.API.Imports",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-07-28",
-        "days_since_last_analysis": 1055
+        "days_since_last_analysis": 1059
+      },
+      {
+        "project_name": "ffc-tcg-back-office",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-07-28",
+        "days_since_last_analysis": 1059
       },
       {
         "project_name": "Defra.Trade.Traces.ReferenceData.Functions",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-08-12",
-        "days_since_last_analysis": 1040
+        "days_since_last_analysis": 1044
       },
       {
         "project_name": "Defra.Trade.Traces.Adapter.Functions",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-08-17",
-        "days_since_last_analysis": 1035
+        "days_since_last_analysis": 1039
       },
       {
         "project_name": "Defra.Trade.ReferenceAnalytics",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-08-21",
-        "days_since_last_analysis": 1031
+        "days_since_last_analysis": 1035
       },
       {
         "project_name": "ffc-tcg-abaco-agri-stub",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-08-23",
-        "days_since_last_analysis": 1029
+        "days_since_last_analysis": 1033
       },
       {
         "project_name": "Defra.Trade.Events.Services.RiskAssessment.RiskRuleOverride",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-09-05",
-        "days_since_last_analysis": 1016
+        "days_since_last_analysis": 1020
       },
       {
         "project_name": "Defra.Trade.API.Daera.CertificatesSonarTest",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-09-15",
-        "days_since_last_analysis": 1006
-      },
-      {
-        "project_name": "water-abstraction-ava",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-09-23",
-        "days_since_last_analysis": 998
+        "days_since_last_analysis": 1010
       },
       {
         "project_name": "ffc-tcg-rules-engine",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-09-23",
-        "days_since_last_analysis": 998
+        "days_since_last_analysis": 1002
+      },
+      {
+        "project_name": "water-abstraction-ava",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-09-23",
+        "days_since_last_analysis": 1002
       },
       {
         "project_name": "All.App.AuthZ",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-10-06",
-        "days_since_last_analysis": 985
-      },
-      {
-        "project_name": "ffc-demo-payment-service",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-10-13",
-        "days_since_last_analysis": 978
+        "days_since_last_analysis": 989
       },
       {
         "project_name": "ffc-demo-payment-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-10-13",
-        "days_since_last_analysis": 978
+        "days_since_last_analysis": 982
+      },
+      {
+        "project_name": "ffc-demo-payment-service",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-10-13",
+        "days_since_last_analysis": 982
       },
       {
         "project_name": "ffc-demo-payment-service-core",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-10-16",
-        "days_since_last_analysis": 975
+        "days_since_last_analysis": 979
       },
       {
         "project_name": "ffc-demo-calculation-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-10-17",
-        "days_since_last_analysis": 974
-      },
-      {
-        "project_name": "ffc-demo-web",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-10-17",
-        "days_since_last_analysis": 974
+        "days_since_last_analysis": 978
       },
       {
         "project_name": "ffc-demo-claim-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-10-17",
-        "days_since_last_analysis": 974
+        "days_since_last_analysis": 978
+      },
+      {
+        "project_name": "ffc-demo-web",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-10-17",
+        "days_since_last_analysis": 978
       },
       {
         "project_name": "defra-ruby-storm",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-11-03",
-        "days_since_last_analysis": 957
+        "days_since_last_analysis": 961
       },
       {
         "project_name": "ncea-infrastructure-core",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-11-07",
-        "days_since_last_analysis": 953
+        "days_since_last_analysis": 957
       },
       {
         "project_name": "ffc-pay-statement-data",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-11-22",
-        "days_since_last_analysis": 938
-      },
-      {
-        "project_name": "ffc-sfi-agreement-api",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2023-11-23",
-        "days_since_last_analysis": 937
+        "days_since_last_analysis": 942
       },
       {
         "project_name": "ffc-sfi-processing-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-11-23",
-        "days_since_last_analysis": 937
+        "days_since_last_analysis": 941
+      },
+      {
+        "project_name": "ffc-sfi-agreement-api",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2023-11-23",
+        "days_since_last_analysis": 941
       },
       {
         "project_name": "defra-ruby-area",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-11-30",
-        "days_since_last_analysis": 930
+        "days_since_last_analysis": 934
       },
       {
         "project_name": "ffc-ffd-frontend-poc",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-12-14",
-        "days_since_last_analysis": 916
+        "days_since_last_analysis": 920
       },
       {
         "project_name": "ffc-ffd-backend-poc",
         "platform": "SonarCloud",
         "last_analysis_date": "2023-12-15",
-        "days_since_last_analysis": 915
+        "days_since_last_analysis": 919
       },
       {
         "project_name": "rpa-mit-approvals",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-05",
-        "days_since_last_analysis": 894
+        "days_since_last_analysis": 898
       },
       {
         "project_name": "rpa-mit-reference-data",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-10",
-        "days_since_last_analysis": 889
+        "days_since_last_analysis": 893
       },
       {
         "project_name": "water-abstraction-reporting",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-18",
-        "days_since_last_analysis": 881
+        "days_since_last_analysis": 885
       },
       {
         "project_name": "ffc-tcg-apply",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-19",
-        "days_since_last_analysis": 880
-      },
-      {
-        "project_name": "ffc-tcg-api-gateway",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-01-19",
-        "days_since_last_analysis": 880
+        "days_since_last_analysis": 884
       },
       {
         "project_name": "ffc-sfi-agreement-calculator",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-19",
-        "days_since_last_analysis": 880
+        "days_since_last_analysis": 884
+      },
+      {
+        "project_name": "ffc-tcg-api-gateway",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-01-19",
+        "days_since_last_analysis": 884
       },
       {
         "project_name": "All.Infrastructure.MVP",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-24",
-        "days_since_last_analysis": 875
+        "days_since_last_analysis": 879
       },
       {
         "project_name": "jc-e2e-test-2",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-26",
-        "days_since_last_analysis": 873
+        "days_since_last_analysis": 877
       },
       {
         "project_name": "jc-refactor-test-2",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-26",
-        "days_since_last_analysis": 873
+        "days_since_last_analysis": 877
       },
       {
         "project_name": "jc-backend-template-3",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-30",
-        "days_since_last_analysis": 869
+        "days_since_last_analysis": 873
       },
       {
         "project_name": "jc-scaffold-test",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-01-31",
-        "days_since_last_analysis": 868
+        "days_since_last_analysis": 872
       },
       {
         "project_name": "ffc-ffd-data",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-02",
+        "days_since_last_analysis": 870
+      },
+      {
+        "project_name": "ffc-pay-statement-publisher",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-02-06",
         "days_since_last_analysis": 866
       },
       {
         "project_name": "ffc-pay-statement-generator",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-06",
-        "days_since_last_analysis": 862
-      },
-      {
-        "project_name": "ffc-pay-statement-publisher",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-02-06",
-        "days_since_last_analysis": 862
+        "days_since_last_analysis": 866
       },
       {
         "project_name": "ffc-sfi-apply-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-07",
-        "days_since_last_analysis": 861
+        "days_since_last_analysis": 865
       },
       {
         "project_name": "ffc-ffd-landing-page",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-08",
-        "days_since_last_analysis": 860
+        "days_since_last_analysis": 864
       },
       {
         "project_name": "ffc-grants-common-functionality",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-16",
-        "days_since_last_analysis": 852
-      },
-      {
-        "project_name": "est-mit-payment",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-02-19",
-        "days_since_last_analysis": 849
-      },
-      {
-        "project_name": "est-mit-invoice-importer",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-02-19",
-        "days_since_last_analysis": 849
-      },
-      {
-        "project_name": "est-mit-events",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-02-19",
-        "days_since_last_analysis": 849
-      },
-      {
-        "project_name": "rpa-mit-invoice",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-02-19",
-        "days_since_last_analysis": 849
+        "days_since_last_analysis": 856
       },
       {
         "project_name": "RPA-MIT-Notification",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-19",
-        "days_since_last_analysis": 849
+        "days_since_last_analysis": 853
       },
       {
-        "project_name": "jc-test-demo-1",
+        "project_name": "rpa-mit-invoice",
         "platform": "SonarCloud",
-        "last_analysis_date": "2024-02-20",
-        "days_since_last_analysis": 848
+        "last_analysis_date": "2024-02-19",
+        "days_since_last_analysis": 853
       },
       {
-        "project_name": "jc-links-test-3",
+        "project_name": "est-mit-events",
         "platform": "SonarCloud",
-        "last_analysis_date": "2024-02-20",
-        "days_since_last_analysis": 848
+        "last_analysis_date": "2024-02-19",
+        "days_since_last_analysis": 853
+      },
+      {
+        "project_name": "est-mit-invoice-importer",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-02-19",
+        "days_since_last_analysis": 853
+      },
+      {
+        "project_name": "est-mit-payment",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-02-19",
+        "days_since_last_analysis": 853
       },
       {
         "project_name": "jc-links-test-4",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-20",
-        "days_since_last_analysis": 848
+        "days_since_last_analysis": 852
+      },
+      {
+        "project_name": "jc-test-demo-1",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-02-20",
+        "days_since_last_analysis": 852
+      },
+      {
+        "project_name": "jc-links-test-3",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-02-20",
+        "days_since_last_analysis": 852
       },
       {
         "project_name": "jc-links-test-2",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-20",
-        "days_since_last_analysis": 848
+        "days_since_last_analysis": 852
       },
       {
         "project_name": "Customer.CRM.All",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-21",
-        "days_since_last_analysis": 847
+        "days_since_last_analysis": 851
       },
       {
         "project_name": "ffc-ffd-auth",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-22",
-        "days_since_last_analysis": 846
+        "days_since_last_analysis": 850
       },
       {
         "project_name": "Defra.Trade.Events.Ephyto.Phes.Ippc.Creator",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-23",
-        "days_since_last_analysis": 845
+        "days_since_last_analysis": 849
       },
       {
         "project_name": "ffc-future-grants-file-store",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-26",
-        "days_since_last_analysis": 842
+        "days_since_last_analysis": 846
       },
       {
         "project_name": "jc-permissions-test-1",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-27",
-        "days_since_last_analysis": 841
+        "days_since_last_analysis": 845
       },
       {
         "project_name": "jc-onboard-test-9",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-02-28",
-        "days_since_last_analysis": 840
+        "days_since_last_analysis": 844
       },
       {
         "project_name": "jc-scaffold-20240229-3",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-01",
-        "days_since_last_analysis": 838
+        "days_since_last_analysis": 842
       },
       {
         "project_name": "jc-resources-3",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-11",
-        "days_since_last_analysis": 828
-      },
-      {
-        "project_name": "ffc-customer-registry-api",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-03-12",
-        "days_since_last_analysis": 827
-      },
-      {
-        "project_name": "jc-resources-7",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-03-12",
-        "days_since_last_analysis": 827
+        "days_since_last_analysis": 832
       },
       {
         "project_name": "jc-resources-5",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-12",
-        "days_since_last_analysis": 827
+        "days_since_last_analysis": 831
       },
       {
-        "project_name": "coreai-mcu-backend",
+        "project_name": "jc-resources-7",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-12",
-        "days_since_last_analysis": 827
+        "days_since_last_analysis": 831
       },
       {
         "project_name": "jc-resources-6",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-12",
-        "days_since_last_analysis": 827
+        "days_since_last_analysis": 831
+      },
+      {
+        "project_name": "coreai-mcu-backend",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-03-12",
+        "days_since_last_analysis": 831
+      },
+      {
+        "project_name": "ffc-customer-registry-api",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-03-12",
+        "days_since_last_analysis": 831
       },
       {
         "project_name": "Defra.PTS.Pet.Fuctions",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-19",
-        "days_since_last_analysis": 820
+        "days_since_last_analysis": 824
       },
       {
         "project_name": "ffc-future-grants-apply",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-20",
-        "days_since_last_analysis": 819
+        "days_since_last_analysis": 823
       },
       {
         "project_name": "ffc-tcg-portal",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-25",
-        "days_since_last_analysis": 814
+        "days_since_last_analysis": 818
       },
       {
         "project_name": "coreai-mcu-event",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-25",
-        "days_since_last_analysis": 814
+        "days_since_last_analysis": 818
       },
       {
         "project_name": "Defra.PTS.Pet.Fuctions",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-03-26",
-        "days_since_last_analysis": 813
+        "days_since_last_analysis": 817
       },
       {
         "project_name": "coreai-techspike-document-analysis",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-03",
-        "days_since_last_analysis": 805
+        "days_since_last_analysis": 809
       },
       {
         "project_name": "coreai-techspike-document-analysis-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-03",
-        "days_since_last_analysis": 805
+        "days_since_last_analysis": 809
       },
       {
         "project_name": "Defra.Trade.AIL.UI",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-10",
-        "days_since_last_analysis": 798
+        "days_since_last_analysis": 802
       },
       {
         "project_name": "ffc-find-sfi-checker",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-11",
+        "days_since_last_analysis": 801
+      },
+      {
+        "project_name": "rpa-mit-events",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-04-15",
         "days_since_last_analysis": 797
       },
       {
         "project_name": "coreai-mcu-email-processor",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-15",
-        "days_since_last_analysis": 793
-      },
-      {
-        "project_name": "rpa-mit-events",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-04-15",
-        "days_since_last_analysis": 793
+        "days_since_last_analysis": 797
       },
       {
         "project_name": "jc-dev-test-20240416-1",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-16",
-        "days_since_last_analysis": 792
+        "days_since_last_analysis": 796
       },
       {
         "project_name": "fmp-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-19",
-        "days_since_last_analysis": 789
+        "days_since_last_analysis": 793
       },
       {
         "project_name": "containerapptest",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-26",
-        "days_since_last_analysis": 782
+        "days_since_last_analysis": 786
       },
       {
         "project_name": "Defra.PTS.User.Functions",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-29",
-        "days_since_last_analysis": 779
+        "days_since_last_analysis": 783
       },
       {
         "project_name": "Defra.PTS.Application.Functions",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-04-30",
-        "days_since_last_analysis": 778
+        "days_since_last_analysis": 782
       },
       {
         "project_name": "disinfectant-dr-test",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-01",
-        "days_since_last_analysis": 777
+        "days_since_last_analysis": 781
       },
       {
         "project_name": "pets-demo-11",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-03",
-        "days_since_last_analysis": 775
+        "days_since_last_analysis": 779
       },
       {
         "project_name": "Wildlife Licensing Digital Service",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-08",
-        "days_since_last_analysis": 770
+        "days_since_last_analysis": 774
       },
       {
         "project_name": "ncea-frontend-4",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-09",
-        "days_since_last_analysis": 769
+        "days_since_last_analysis": 773
       },
       {
         "project_name": "Defra.PTS.Web.UI",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-10",
-        "days_since_last_analysis": 768
+        "days_since_last_analysis": 772
       },
       {
         "project_name": "test-team-sync-1",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-14",
-        "days_since_last_analysis": 764
+        "days_since_last_analysis": 768
       },
       {
         "project_name": "test-team-sync-2",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-14",
-        "days_since_last_analysis": 764
+        "days_since_last_analysis": 768
       },
       {
         "project_name": "test-dotnet-topic",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-21",
-        "days_since_last_analysis": 757
-      },
-      {
-        "project_name": "test-node-frontend-jkr",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-05-23",
-        "days_since_last_analysis": 755
-      },
-      {
-        "project_name": "test-node-backend-jkr",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-05-23",
-        "days_since_last_analysis": 755
+        "days_since_last_analysis": 761
       },
       {
         "project_name": "adp-ffc-demo-payment-service-core",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-23",
-        "days_since_last_analysis": 755
+        "days_since_last_analysis": 759
+      },
+      {
+        "project_name": "test-node-backend-jkr",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-05-23",
+        "days_since_last_analysis": 759
+      },
+      {
+        "project_name": "test-node-frontend-jkr",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-05-23",
+        "days_since_last_analysis": 759
       },
       {
         "project_name": "Defra.Trade.Traces.ReferenceData.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-24",
+        "days_since_last_analysis": 758
+      },
+      {
+        "project_name": "ffc-ffd-business",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-05-28",
         "days_since_last_analysis": 754
       },
       {
         "project_name": "test-dotnet-backend-jkr",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-28",
-        "days_since_last_analysis": 750
-      },
-      {
-        "project_name": "ffc-ffd-business",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-05-28",
-        "days_since_last_analysis": 750
+        "days_since_last_analysis": 754
       },
       {
         "project_name": "mr-find-it-test",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-29",
-        "days_since_last_analysis": 749
+        "days_since_last_analysis": 753
       },
       {
         "project_name": "test-service-101",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-05-29",
-        "days_since_last_analysis": 749
+        "days_since_last_analysis": 753
       },
       {
         "project_name": "jc-migration-test-02",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-05",
-        "days_since_last_analysis": 742
+        "days_since_last_analysis": 746
       },
       {
         "project_name": "fcp-jkr-demo-backend-node-1",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-10",
-        "days_since_last_analysis": 737
-      },
-      {
-        "project_name": "fmc-test8",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-06-11",
-        "days_since_last_analysis": 736
-      },
-      {
-        "project_name": "ffc-pay-statement-constructor",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-06-11",
-        "days_since_last_analysis": 736
+        "days_since_last_analysis": 741
       },
       {
         "project_name": "fmc-test-final",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-11",
-        "days_since_last_analysis": 736
+        "days_since_last_analysis": 740
+      },
+      {
+        "project_name": "ffc-pay-statement-constructor",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-06-11",
+        "days_since_last_analysis": 740
+      },
+      {
+        "project_name": "fmc-test8",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-06-11",
+        "days_since_last_analysis": 740
       },
       {
         "project_name": "Defra-APHA-CITES",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-14",
-        "days_since_last_analysis": 733
+        "days_since_last_analysis": 737
       },
       {
         "project_name": "Defra.Trade.API.Fish.ReferenceData.UAT",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-17",
-        "days_since_last_analysis": 730
-      },
-      {
-        "project_name": "Defra.Trade.API.Fish",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-06-17",
-        "days_since_last_analysis": 730
+        "days_since_last_analysis": 734
       },
       {
         "project_name": "Defra.Trade.ServiceStatus.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-17",
-        "days_since_last_analysis": 730
+        "days_since_last_analysis": 734
       },
       {
         "project_name": "Defra.Trade.API.Fish.UAT",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-17",
-        "days_since_last_analysis": 730
+        "days_since_last_analysis": 734
+      },
+      {
+        "project_name": "Defra.Trade.API.Fish",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-06-17",
+        "days_since_last_analysis": 734
       },
       {
         "project_name": "Defra.Trade.API.Fish.ReferenceData",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-17",
-        "days_since_last_analysis": 730
+        "days_since_last_analysis": 734
       },
       {
         "project_name": "Defra.Trade.Api.SCI.ReferenceData",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-17",
-        "days_since_last_analysis": 730
+        "days_since_last_analysis": 734
       },
       {
         "project_name": "frontend-manual-testing-internal-ui",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-20",
-        "days_since_last_analysis": 727
+        "days_since_last_analysis": 731
       },
       {
         "project_name": "frontend-manual-testing-external-ui",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-20",
-        "days_since_last_analysis": 727
+        "days_since_last_analysis": 731
       },
       {
         "project_name": "internal-ui-frontend-manual-test-2",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-20",
-        "days_since_last_analysis": 727
+        "days_since_last_analysis": 731
       },
       {
         "project_name": "ffc-sfi-api-gateway",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-24",
-        "days_since_last_analysis": 723
+        "days_since_last_analysis": 727
       },
       {
         "project_name": "manual-testing-01",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-24",
-        "days_since_last_analysis": 723
-      },
-      {
-        "project_name": "ffc-grants-cattle-housing-web",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-06-25",
-        "days_since_last_analysis": 722
+        "days_since_last_analysis": 727
       },
       {
         "project_name": "ffc-grants-productivity-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-25",
-        "days_since_last_analysis": 722
+        "days_since_last_analysis": 726
+      },
+      {
+        "project_name": "ffc-grants-cattle-housing-web",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-06-25",
+        "days_since_last_analysis": 726
       },
       {
         "project_name": "ffc-grants-frontend",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-26",
-        "days_since_last_analysis": 721
-      },
-      {
-        "project_name": "sandpit-scaffold-test",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-06-26",
-        "days_since_last_analysis": 721
+        "days_since_last_analysis": 725
       },
       {
         "project_name": "demo-backend-20240626",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-26",
-        "days_since_last_analysis": 721
+        "days_since_last_analysis": 725
+      },
+      {
+        "project_name": "sandpit-scaffold-test",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-06-26",
+        "days_since_last_analysis": 725
       },
       {
         "project_name": "CloudNativeCommunity-1",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-27",
-        "days_since_last_analysis": 720
-      },
-      {
-        "project_name": "mcu-techspike-ai-web",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-06-28",
-        "days_since_last_analysis": 719
+        "days_since_last_analysis": 724
       },
       {
         "project_name": "core-ai-techradar",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-06-28",
-        "days_since_last_analysis": 719
+        "days_since_last_analysis": 723
+      },
+      {
+        "project_name": "mcu-techspike-ai-web",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-06-28",
+        "days_since_last_analysis": 723
       },
       {
         "project_name": "test-user-3",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-01",
-        "days_since_last_analysis": 716
+        "days_since_last_analysis": 720
       },
       {
         "project_name": "Test-Scaffold",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-01",
-        "days_since_last_analysis": 716
+        "days_since_last_analysis": 720
       },
       {
         "project_name": "jc-test-project-20240702",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-02",
-        "days_since_last_analysis": 715
+        "days_since_last_analysis": 719
       },
       {
         "project_name": "test-add-mi-appinsights",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-05",
-        "days_since_last_analysis": 712
+        "days_since_last_analysis": 716
       },
       {
         "project_name": "ffc-sfd-experiment-ui",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-08",
-        "days_since_last_analysis": 709
+        "days_since_last_analysis": 713
       },
       {
         "project_name": "Defra.Trade.BankHolidays.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-10",
-        "days_since_last_analysis": 707
+        "days_since_last_analysis": 711
       },
       {
         "project_name": "SmokeTest01",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-16",
-        "days_since_last_analysis": 701
+        "days_since_last_analysis": 705
       },
       {
         "project_name": "aphw-ddi-register-importer",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-23",
-        "days_since_last_analysis": 694
+        "days_since_last_analysis": 698
       },
       {
         "project_name": "aphw-ddi-register",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-23",
-        "days_since_last_analysis": 694
+        "days_since_last_analysis": 698
       },
       {
         "project_name": "jc-axe-zap-test-1",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-29",
-        "days_since_last_analysis": 688
+        "days_since_last_analysis": 692
       },
       {
         "project_name": "rpa-mit-manual-templates-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-07-30",
-        "days_since_last_analysis": 687
-      },
-      {
-        "project_name": "coreai-mcu-prompts",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-01",
-        "days_since_last_analysis": 685
+        "days_since_last_analysis": 691
       },
       {
         "project_name": "coreai-mcu-personas",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-01",
-        "days_since_last_analysis": 685
+        "days_since_last_analysis": 689
       },
       {
-        "project_name": "adp-ffc-demo-calculation-service",
+        "project_name": "coreai-mcu-prompts",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-01",
-        "days_since_last_analysis": 685
+        "days_since_last_analysis": 689
       },
       {
         "project_name": "Lorenzo-Pre-Smoke-Test-0108",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-01",
-        "days_since_last_analysis": 685
+        "days_since_last_analysis": 689
+      },
+      {
+        "project_name": "adp-ffc-demo-calculation-service",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-01",
+        "days_since_last_analysis": 689
       },
       {
         "project_name": "ffc-sfd-customer-receiver-queries",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-02",
-        "days_since_last_analysis": 684
+        "days_since_last_analysis": 688
       },
       {
         "project_name": "ffc-sfd-queries",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-03",
-        "days_since_last_analysis": 683
+        "days_since_last_analysis": 687
       },
       {
         "project_name": "ffc-sfd-landing-page",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-04",
-        "days_since_last_analysis": 682
-      },
-      {
-        "project_name": "ffc-sfd-business",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-04",
-        "days_since_last_analysis": 682
+        "days_since_last_analysis": 686
       },
       {
         "project_name": "ffc-sfd-auth",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-04",
-        "days_since_last_analysis": 682
+        "days_since_last_analysis": 686
+      },
+      {
+        "project_name": "ffc-sfd-business",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-04",
+        "days_since_last_analysis": 686
       },
       {
         "project_name": "coreai-mcu-documents",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-05",
-        "days_since_last_analysis": 681
+        "days_since_last_analysis": 685
       },
       {
         "project_name": "ffc-grants-laying-hens-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-05",
-        "days_since_last_analysis": 681
+        "days_since_last_analysis": 685
       },
       {
         "project_name": "testing-length",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-05",
-        "days_since_last_analysis": 681
+        "days_since_last_analysis": 685
       },
       {
         "project_name": "ffc-sfd-customer-receiver-preferences",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-07",
-        "days_since_last_analysis": 679
-      },
-      {
-        "project_name": "Defra.Trade.Identity.Api",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-08",
-        "days_since_last_analysis": 678
-      },
-      {
-        "project_name": "Defra.Trade.PlantExports.Api",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-08",
-        "days_since_last_analysis": 678
-      },
-      {
-        "project_name": "Defra.Trade.Traces.Adapter.Api",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-08",
-        "days_since_last_analysis": 678
-      },
-      {
-        "project_name": "ffc-sfd-messages",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-08",
-        "days_since_last_analysis": 678
+        "days_since_last_analysis": 683
       },
       {
         "project_name": "Defra.Trade.DataMapping.API",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-08",
-        "days_since_last_analysis": 678
+        "days_since_last_analysis": 682
       },
       {
-        "project_name": "Defra.Trade.DAERA",
+        "project_name": "Defra.Trade.PlantExports.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-08",
-        "days_since_last_analysis": 678
+        "days_since_last_analysis": 682
+      },
+      {
+        "project_name": "Defra.Trade.Traces.Adapter.Api",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-08",
+        "days_since_last_analysis": 682
+      },
+      {
+        "project_name": "Defra.Trade.Identity.Api",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-08",
+        "days_since_last_analysis": 682
+      },
+      {
+        "project_name": "ffc-sfd-messages",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-08",
+        "days_since_last_analysis": 682
       },
       {
         "project_name": "Defra.Trade.Certificate.Gateway.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-08",
-        "days_since_last_analysis": 678
+        "days_since_last_analysis": 682
+      },
+      {
+        "project_name": "Defra.Trade.DAERA",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-08",
+        "days_since_last_analysis": 682
       },
       {
         "project_name": "ffc-sfd-permissions",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-11",
-        "days_since_last_analysis": 675
+        "days_since_last_analysis": 679
       },
       {
         "project_name": "ffc-sfd-customer-receiver-payments",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-12",
-        "days_since_last_analysis": 674
+        "days_since_last_analysis": 678
       },
       {
         "project_name": "ffc-grants-adult-cattle-housing-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-15",
-        "days_since_last_analysis": 671
+        "days_since_last_analysis": 675
       },
       {
         "project_name": "adp-ffc-demo-payment-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-16",
-        "days_since_last_analysis": 670
+        "days_since_last_analysis": 674
       },
       {
         "project_name": "ffc-sfd-crm",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-16",
-        "days_since_last_analysis": 670
+        "days_since_last_analysis": 674
       },
       {
         "project_name": "fcp-find-ai-frontend",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-19",
-        "days_since_last_analysis": 667
-      },
-      {
-        "project_name": "coreai-mcu-responses",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-21",
-        "days_since_last_analysis": 665
+        "days_since_last_analysis": 671
       },
       {
         "project_name": "ffc-sfd-data",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-21",
-        "days_since_last_analysis": 665
+        "days_since_last_analysis": 669
       },
       {
         "project_name": "adp-ffc-demo-claim-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-21",
-        "days_since_last_analysis": 665
+        "days_since_last_analysis": 669
       },
       {
-        "project_name": "coreai-mcu-generation-oai",
+        "project_name": "coreai-mcu-responses",
         "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-22",
-        "days_since_last_analysis": 664
-      },
-      {
-        "project_name": "adp-test-dan",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-22",
-        "days_since_last_analysis": 664
-      },
-      {
-        "project_name": "adp-test-dan3",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-22",
-        "days_since_last_analysis": 664
-      },
-      {
-        "project_name": "Defra.Trade.Certificates.Generator.Api",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-22",
-        "days_since_last_analysis": 664
+        "last_analysis_date": "2024-08-21",
+        "days_since_last_analysis": 669
       },
       {
         "project_name": "adp-test-dr-11",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-22",
-        "days_since_last_analysis": 664
+        "days_since_last_analysis": 668
+      },
+      {
+        "project_name": "coreai-mcu-generation-oai",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-22",
+        "days_since_last_analysis": 668
+      },
+      {
+        "project_name": "adp-test-dan3",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-22",
+        "days_since_last_analysis": 668
+      },
+      {
+        "project_name": "adp-test-dan",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-22",
+        "days_since_last_analysis": 668
+      },
+      {
+        "project_name": "Defra.Trade.Certificates.Generator.Api",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-22",
+        "days_since_last_analysis": 668
       },
       {
         "project_name": "coreai-mcu-knowledge-pgv",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-23",
-        "days_since_last_analysis": 663
-      },
-      {
-        "project_name": "fcp-rpa-empowerments",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-08-29",
-        "days_since_last_analysis": 657
+        "days_since_last_analysis": 667
       },
       {
         "project_name": "fcp-rpa-integration",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-29",
-        "days_since_last_analysis": 657
+        "days_since_last_analysis": 661
       },
       {
         "project_name": "fcp-rpa-common",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-29",
-        "days_since_last_analysis": 657
+        "days_since_last_analysis": 661
       },
       {
         "project_name": "fcp-rpa-demographics",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-29",
-        "days_since_last_analysis": 657
+        "days_since_last_analysis": 661
+      },
+      {
+        "project_name": "fcp-rpa-empowerments",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-08-29",
+        "days_since_last_analysis": 661
       },
       {
         "project_name": "ffc-sfd-file-processor",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-30",
-        "days_since_last_analysis": 656
+        "days_since_last_analysis": 660
       },
       {
         "project_name": "adp-ffc-demo-payment-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-08-31",
-        "days_since_last_analysis": 655
+        "days_since_last_analysis": 659
       },
       {
         "project_name": "ffc-sfd-messages-processor",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-01",
-        "days_since_last_analysis": 654
+        "days_since_last_analysis": 658
       },
       {
         "project_name": "ffc-sfd-customer-receiver-messages",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-02",
-        "days_since_last_analysis": 653
+        "days_since_last_analysis": 657
       },
       {
         "project_name": "ffc-sfd-ahwp-stub",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-03",
-        "days_since_last_analysis": 652
+        "days_since_last_analysis": 656
       },
       {
         "project_name": "adp-portal-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-04",
-        "days_since_last_analysis": 651
+        "days_since_last_analysis": 655
       },
       {
         "project_name": "ffc-pay-statement-receiver",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-05",
-        "days_since_last_analysis": 650
+        "days_since_last_analysis": 654
       },
       {
         "project_name": "fcp-find-ai-data-ingester",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-06",
-        "days_since_last_analysis": 649
+        "days_since_last_analysis": 653
       },
       {
         "project_name": "ffc-sfd-file-receiver",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-07",
-        "days_since_last_analysis": 648
+        "days_since_last_analysis": 652
       },
       {
         "project_name": "crai-twiki-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-08",
-        "days_since_last_analysis": 647
+        "days_since_last_analysis": 651
       },
       {
         "project_name": "ffc-sfd-permissions-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-10",
-        "days_since_last_analysis": 645
+        "days_since_last_analysis": 649
       },
       {
         "project_name": "crai-jaf-backend",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-11",
-        "days_since_last_analysis": 644
+        "days_since_last_analysis": 648
       },
       {
         "project_name": "adp-portal",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-12",
-        "days_since_last_analysis": 643
+        "days_since_last_analysis": 647
       },
       {
         "project_name": "crai-jaf-frontend",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-15",
-        "days_since_last_analysis": 640
+        "days_since_last_analysis": 644
       },
       {
         "project_name": "ncea-frontend",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-18",
-        "days_since_last_analysis": 637
+        "days_since_last_analysis": 641
       },
       {
         "project_name": "Defra.Trade.API.Daera.Certificates",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-18",
-        "days_since_last_analysis": 637
-      },
-      {
-        "project_name": "ncea-mapper",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-09-19",
-        "days_since_last_analysis": 636
+        "days_since_last_analysis": 641
       },
       {
         "project_name": "ncea-harvester",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-19",
-        "days_since_last_analysis": 636
+        "days_since_last_analysis": 640
+      },
+      {
+        "project_name": "ncea-mapper",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-09-19",
+        "days_since_last_analysis": 640
       },
       {
         "project_name": "fcp-rpa-udi-cspp",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-23",
-        "days_since_last_analysis": 632
-      },
-      {
-        "project_name": "ncea-enricher",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-09-25",
-        "days_since_last_analysis": 630
+        "days_since_last_analysis": 636
       },
       {
         "project_name": "ncea-classifiers-microservice",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-25",
-        "days_since_last_analysis": 630
+        "days_since_last_analysis": 634
+      },
+      {
+        "project_name": "ncea-enricher",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-09-25",
+        "days_since_last_analysis": 634
       },
       {
         "project_name": "fcp-fd-ingress",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-27",
-        "days_since_last_analysis": 628
+        "days_since_last_analysis": 632
       },
       {
         "project_name": "Defra.Trade.Events.Services.CatchCertificates",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-28",
-        "days_since_last_analysis": 627
+        "days_since_last_analysis": 631
       },
       {
         "project_name": "Defra.Trade.Events.IDCOMS.GCEnricher",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-09-30",
-        "days_since_last_analysis": 625
-      },
-      {
-        "project_name": "fmp-app",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
-      },
-      {
-        "project_name": "fcp-fd-messages",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
-      },
-      {
-        "project_name": "fcp-fd-landing-page",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
-      },
-      {
-        "project_name": "fcp-fd-auth",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
-      },
-      {
-        "project_name": "fcp-fd-customer-receiver-messages",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
-      },
-      {
-        "project_name": "fcp-fd-messages-processor",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
+        "days_since_last_analysis": 629
       },
       {
         "project_name": "Defra.Trade.ReMoS.AssuranceService.UI.Hosting",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
+        "days_since_last_analysis": 626
+      },
+      {
+        "project_name": "fcp-fd-customer-receiver-messages",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-03",
+        "days_since_last_analysis": 626
       },
       {
         "project_name": "fcp-fd-probe",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
+        "days_since_last_analysis": 626
+      },
+      {
+        "project_name": "fcp-fd-messages-processor",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-03",
+        "days_since_last_analysis": 626
+      },
+      {
+        "project_name": "fcp-fd-landing-page",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-03",
+        "days_since_last_analysis": 626
+      },
+      {
+        "project_name": "fcp-fd-messages",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-03",
+        "days_since_last_analysis": 626
       },
       {
         "project_name": "fcp-fd-file-receiver",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-03",
-        "days_since_last_analysis": 622
+        "days_since_last_analysis": 626
+      },
+      {
+        "project_name": "fcp-fd-auth",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-03",
+        "days_since_last_analysis": 626
+      },
+      {
+        "project_name": "fmp-app",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-03",
+        "days_since_last_analysis": 626
       },
       {
         "project_name": "Defra.Trade.API.CertificatesStore",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-04",
-        "days_since_last_analysis": 621
-      },
-      {
-        "project_name": "Defra.Trade.Dev.Portal",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-07",
-        "days_since_last_analysis": 618
+        "days_since_last_analysis": 625
       },
       {
         "project_name": "Defra.Trade.OnBoarding.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-07",
-        "days_since_last_analysis": 618
+        "days_since_last_analysis": 622
       },
       {
         "project_name": "Defra.Trade.SCI.Customer.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-07",
-        "days_since_last_analysis": 618
+        "days_since_last_analysis": 622
+      },
+      {
+        "project_name": "Defra.Trade.Dev.Portal",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-07",
+        "days_since_last_analysis": 622
       },
       {
         "project_name": "Defra.Trade.Events.EHCO.GCSubscriber",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-08",
-        "days_since_last_analysis": 617
+        "days_since_last_analysis": 621
       },
       {
         "project_name": "rpa-mit-manual-templates",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-11",
-        "days_since_last_analysis": 614
+        "days_since_last_analysis": 618
       },
       {
         "project_name": "Defra.Trade.ReMoS.AssuranceService.API",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-14",
-        "days_since_last_analysis": 611
+        "days_since_last_analysis": 615
       },
       {
         "project_name": "ffc-rps-experiment-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-16",
-        "days_since_last_analysis": 609
-      },
-      {
-        "project_name": "ffc-grants-file-sender",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-21",
-        "days_since_last_analysis": 604
+        "days_since_last_analysis": 613
       },
       {
         "project_name": "ffc-grants-desirability-notification",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-21",
-        "days_since_last_analysis": 604
+        "days_since_last_analysis": 608
+      },
+      {
+        "project_name": "ffc-grants-file-sender",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-21",
+        "days_since_last_analysis": 608
       },
       {
         "project_name": "Defra.Trade.Events.SUS.RemosSignUpSubscriber",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-22",
-        "days_since_last_analysis": 603
+        "days_since_last_analysis": 607
       },
       {
         "project_name": "Defra.Trade.Api.Daera.RFL",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-22",
-        "days_since_last_analysis": 603
+        "days_since_last_analysis": 607
       },
       {
         "project_name": "defra-ruby-features",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-28",
-        "days_since_last_analysis": 597
+        "days_since_last_analysis": 601
       },
       {
         "project_name": "defra-ruby-email",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-28",
-        "days_since_last_analysis": 597
-      },
-      {
-        "project_name": "ffc-grants-file-creation",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-29",
-        "days_since_last_analysis": 596
-      },
-      {
-        "project_name": "ffc-grants-desirability-scoring",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-10-29",
-        "days_since_last_analysis": 596
+        "days_since_last_analysis": 601
       },
       {
         "project_name": "ffc-grants-slurry-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-10-29",
-        "days_since_last_analysis": 596
+        "days_since_last_analysis": 600
+      },
+      {
+        "project_name": "ffc-grants-file-creation",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-29",
+        "days_since_last_analysis": 600
+      },
+      {
+        "project_name": "ffc-grants-desirability-scoring",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-10-29",
+        "days_since_last_analysis": 600
       },
       {
         "project_name": "Hapi Google Analytics Integration",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-01",
-        "days_since_last_analysis": 593
+        "days_since_last_analysis": 597
       },
       {
         "project_name": "Defra.Trade.Cloning.Adapter.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-06",
-        "days_since_last_analysis": 588
+        "days_since_last_analysis": 592
       },
       {
         "project_name": "phi-etl-fera-backend",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-08",
-        "days_since_last_analysis": 586
+        "days_since_last_analysis": 590
       },
       {
         "project_name": "pha-import-notifications",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-11",
-        "days_since_last_analysis": 583
+        "days_since_last_analysis": 587
       },
       {
         "project_name": "cdp-node-frontend-template",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-12",
-        "days_since_last_analysis": 582
+        "days_since_last_analysis": 586
       },
       {
         "project_name": "cdp-node-backend-template",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-12",
-        "days_since_last_analysis": 582
+        "days_since_last_analysis": 586
       },
       {
         "project_name": "disinfectant-frontend",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-21",
-        "days_since_last_analysis": 573
+        "days_since_last_analysis": 577
       },
       {
         "project_name": "Defra.Trade.Notify.Ui",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-11-27",
-        "days_since_last_analysis": 567
+        "days_since_last_analysis": 571
       },
       {
         "project_name": "cyltfr",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-12-11",
-        "days_since_last_analysis": 553
+        "days_since_last_analysis": 557
       },
       {
         "project_name": "Defra.Trade.Events.DAERA.GCNotifier",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-12-14",
-        "days_since_last_analysis": 550
+        "days_since_last_analysis": 554
       },
       {
         "project_name": "ffc-grants-eligibility-checker",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-12-20",
-        "days_since_last_analysis": 544
-      },
-      {
-        "project_name": "Defra.Trade.Licensing.Api",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2024-12-23",
-        "days_since_last_analysis": 541
+        "days_since_last_analysis": 548
       },
       {
         "project_name": "Defra.Trade.Licensing.Admin.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-12-23",
-        "days_since_last_analysis": 541
+        "days_since_last_analysis": 545
+      },
+      {
+        "project_name": "Defra.Trade.Licensing.Api",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2024-12-23",
+        "days_since_last_analysis": 545
       },
       {
         "project_name": "defra-ruby-companies-house",
         "platform": "SonarCloud",
         "last_analysis_date": "2024-12-31",
-        "days_since_last_analysis": 533
+        "days_since_last_analysis": 537
       },
       {
         "project_name": "cdms-backend",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-03",
-        "days_since_last_analysis": 530
+        "days_since_last_analysis": 534
       },
       {
         "project_name": "adp-ado-callback-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-06",
-        "days_since_last_analysis": 527
+        "days_since_last_analysis": 531
       },
       {
         "project_name": "ffc-debugger",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-06",
-        "days_since_last_analysis": 527
+        "days_since_last_analysis": 531
       },
       {
         "project_name": "adp-flux-notify-api",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-06",
-        "days_since_last_analysis": 527
+        "days_since_last_analysis": 531
       },
       {
         "project_name": "fcp-rpa-empowerments",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-09",
-        "days_since_last_analysis": 524
+        "days_since_last_analysis": 528
       },
       {
         "project_name": "Defra.Trade.DelegatedAuthority.UI",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-13",
-        "days_since_last_analysis": 520
+        "days_since_last_analysis": 524
       },
       {
         "project_name": "Defra.Trade.DelegatedAuthority.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-13",
-        "days_since_last_analysis": 520
+        "days_since_last_analysis": 524
       },
       {
         "project_name": "coreai-mcu-frontend",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-14",
-        "days_since_last_analysis": 519
+        "days_since_last_analysis": 523
       },
       {
         "project_name": "fcp-fd-file-retriever",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-28",
-        "days_since_last_analysis": 505
+        "days_since_last_analysis": 509
       },
       {
         "project_name": "disinfectant-backend",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-01-29",
-        "days_since_last_analysis": 504
+        "days_since_last_analysis": 508
       },
       {
         "project_name": "fcp-fd-file-processor",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-03",
-        "days_since_last_analysis": 499
+        "days_since_last_analysis": 503
       },
       {
         "project_name": "ffc-grants-addvalue-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-04",
-        "days_since_last_analysis": 498
+        "days_since_last_analysis": 502
       },
       {
         "project_name": "Defra.Trade.IDCOMS.ReportingEndpoint",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-14",
-        "days_since_last_analysis": 488
+        "days_since_last_analysis": 492
       },
       {
         "project_name": "Defra.Trade.RiskAssessment.Reporting",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-17",
-        "days_since_last_analysis": 485
+        "days_since_last_analysis": 489
       },
       {
         "project_name": "ivory",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-18",
-        "days_since_last_analysis": 484
+        "days_since_last_analysis": 488
       },
       {
         "project_name": "Defra.Trade.Cloning.Gateway.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-19",
-        "days_since_last_analysis": 483
+        "days_since_last_analysis": 487
       },
       {
         "project_name": "adp-ffc-demo-web",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-24",
-        "days_since_last_analysis": 478
+        "days_since_last_analysis": 482
       },
       {
         "project_name": "btms-backend-stub",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-02-26",
-        "days_since_last_analysis": 476
+        "days_since_last_analysis": 480
       },
       {
         "project_name": "Defra.Trade.Events.Charges.ChargeableEventsPublisherCUC.Function",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-03-03",
-        "days_since_last_analysis": 471
+        "days_since_last_analysis": 475
       },
       {
         "project_name": "nipts-pts-container-ip-service",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-03-06",
-        "days_since_last_analysis": 468
+        "days_since_last_analysis": 472
       },
       {
         "project_name": "btms-search-acceptance-tests",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-03-12",
-        "days_since_last_analysis": 462
+        "days_since_last_analysis": 466
       },
       {
         "project_name": "All.Libraries.Metrics",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-03-19",
-        "days_since_last_analysis": 455
+        "days_since_last_analysis": 459
       },
       {
         "project_name": "eutd-mmo-bc",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-03-26",
-        "days_since_last_analysis": 448
+        "days_since_last_analysis": 452
       },
       {
         "project_name": "smart-incident-reporting",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-04-09",
-        "days_since_last_analysis": 434
+        "days_since_last_analysis": 438
       },
       {
         "project_name": "fcp-rpa-udi-inbound",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-04-16",
-        "days_since_last_analysis": 427
+        "days_since_last_analysis": 431
       },
       {
         "project_name": "Defra.PTS.Dynamics.Functions",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-04-22",
-        "days_since_last_analysis": 421
+        "days_since_last_analysis": 425
       },
       {
         "project_name": "ffc-ahwr-event",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-04-25",
-        "days_since_last_analysis": 418
+        "days_since_last_analysis": 422
       },
       {
         "project_name": "ddc",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-04-29",
-        "days_since_last_analysis": 414
+        "days_since_last_analysis": 418
       },
       {
         "project_name": "btms-backend",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-05-01",
-        "days_since_last_analysis": 412
-      },
-      {
-        "project_name": "Defra.Trade.Events.Logic.RiskAssessment.RiskRuleOverride",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2025-05-06",
-        "days_since_last_analysis": 407
-      },
-      {
-        "project_name": "Defra.Trade.BulkUploadProcessing",
-        "platform": "SonarCloud",
-        "last_analysis_date": "2025-05-06",
-        "days_since_last_analysis": 407
+        "days_since_last_analysis": 416
       },
       {
         "project_name": "Defra.Trade.Risk.Engine.Reporting.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-05-06",
-        "days_since_last_analysis": 407
+        "days_since_last_analysis": 411
+      },
+      {
+        "project_name": "Defra.Trade.Events.Logic.RiskAssessment.RiskRuleOverride",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2025-05-06",
+        "days_since_last_analysis": 411
+      },
+      {
+        "project_name": "Defra.Trade.BulkUploadProcessing",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2025-05-06",
+        "days_since_last_analysis": 411
       },
       {
         "project_name": "fcp-reporting-data-contracts",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-05-13",
-        "days_since_last_analysis": 400
+        "days_since_last_analysis": 404
       },
       {
         "project_name": "smart-incident-reporting-create-a-report",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-05-19",
-        "days_since_last_analysis": 394
+        "days_since_last_analysis": 398
       },
       {
         "project_name": "Defra.Trade.Events.Services.ChedppPublisher",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-05-29",
-        "days_since_last_analysis": 384
+        "days_since_last_analysis": 388
       },
       {
         "project_name": "Defra.Trade.ReferenceData.UI",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-05-29",
-        "days_since_last_analysis": 384
+        "days_since_last_analysis": 388
       },
       {
         "project_name": "Defra RCR API",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-06-04",
-        "days_since_last_analysis": 378
+        "days_since_last_analysis": 382
       },
       {
         "project_name": "Defra.Trade.Cloning.Api",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-06-09",
-        "days_since_last_analysis": 373
+        "days_since_last_analysis": 377
       },
       {
         "project_name": "Defra.Trade.ReferenceDataSync",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-06-10",
-        "days_since_last_analysis": 372
+        "days_since_last_analysis": 376
       },
       {
         "project_name": "cdp-dotnet-backend-template",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-06-10",
-        "days_since_last_analysis": 372
+        "days_since_last_analysis": 376
       },
       {
         "project_name": "fcp-reporting-pyspark-library",
         "platform": "SonarCloud",
         "last_analysis_date": "2025-06-12",
-        "days_since_last_analysis": 370
+        "days_since_last_analysis": 374
+      },
+      {
+        "project_name": "Defra.Trade.Licensing.Admin.UI",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
+      },
+      {
+        "project_name": "ffc-ice-bank",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2025-06-19",
+        "days_since_last_analysis": 367
+      },
+      {
+        "project_name": "ffc-ice-crm",
+        "platform": "SonarCloud",
+        "last_analysis_date": "2025-06-20",
+        "days_since_last_analysis": 366
       }
     ],
     "inactive_projects_consolidated": {
-      "repos_inactive_over_1_years": 353,
-      "repos_inactive_over_2_years": 179,
-      "repos_inactive_over_4_years": 38,
+      "repos_inactive_over_1_years": 168,
+      "repos_inactive_over_2_years": 150,
+      "repos_inactive_over_4_years": 37,
       "repos_inactive_over_6_years": 1,
       "repos_inactive_over_8_years": 0
     },
@@ -2175,6 +2193,12 @@
         "platform": "SonarCloud",
         "duplication_pct": 71.2,
         "lines_of_code": 7926
+      },
+      {
+        "project_name": "grants-config-land-grants",
+        "platform": "SonarCloud",
+        "duplication_pct": 32.6,
+        "lines_of_code": 1431
       },
       {
         "project_name": "phi-frontend",
@@ -2228,11 +2252,11 @@
         "project_name": "Defra.Trade.Common",
         "platform": "SonarCloud",
         "duplication_pct": 16.5,
-        "lines_of_code": 21591
+        "lines_of_code": 21593
       }
     ],
     "high_duplication_consolidated": {
-      "repos_over_threshold": 10
+      "repos_over_threshold": 11
     },
     "migration_candidates": [
       {
@@ -2282,7 +2306,7 @@
       },
       {
         "project_name": "Defra.Trade.Common",
-        "lines_of_code": 21591,
+        "lines_of_code": 21593,
         "recommendation": "Review for possible migration to SonarQube"
       },
       {
@@ -3138,12 +3162,12 @@
         "project_name": "apha-fps-apps",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 60,
+        "non_main_branches": 59,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 60 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 59 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "apha-vir",
@@ -3457,23 +3481,12 @@
         "project_name": "Defra.Trade.API.CertificatesStore",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 5,
-        "inactive_branches_90": 5,
+        "non_main_branches": 1,
+        "inactive_branches_90": 0,
         "repos_non_standard_main_branch": true,
-        "repos_with_inactive_non_main_branches": true,
+        "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 5 inactive branches (90+ days)"
-      },
-      {
-        "project_name": "Defra.Trade.API.Daera.Certificates",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 2,
-        "inactive_branches_90": 2,
-        "repos_non_standard_main_branch": false,
-        "repos_with_inactive_non_main_branches": true,
-        "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "2 inactive branches (90+ days)"
+        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
       },
       {
         "project_name": "Defra.Trade.API.Daera.CertificatesSonarTest",
@@ -3718,28 +3731,6 @@
         "hygiene_issue": "1 inactive branches (90+ days)"
       },
       {
-        "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 2,
-        "inactive_branches_90": 1,
-        "repos_non_standard_main_branch": false,
-        "repos_with_inactive_non_main_branches": true,
-        "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "1 inactive branches (90+ days)"
-      },
-      {
-        "project_name": "Defra.Trade.CommodityRiskCategorisation.Decider",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 4,
-        "inactive_branches_90": 4,
-        "repos_non_standard_main_branch": false,
-        "repos_with_inactive_non_main_branches": true,
-        "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "4 inactive branches (90+ days)"
-      },
-      {
         "project_name": "Defra.Trade.CoreServices.EventsStore.Api",
         "platform": "SonarCloud",
         "main_branch": "dev",
@@ -3908,12 +3899,12 @@
         "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 4,
-        "inactive_branches_90": 4,
+        "non_main_branches": 2,
+        "inactive_branches_90": 1,
         "repos_non_standard_main_branch": true,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 4 inactive branches (90+ days)"
+        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
       },
       {
         "project_name": "Defra.Trade.Events.Services.CaseNotifier",
@@ -3930,7 +3921,7 @@
         "project_name": "Defra.Trade.Events.Services.CasePublisher",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 2,
+        "non_main_branches": 1,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": true,
         "repos_with_inactive_non_main_branches": false,
@@ -3996,7 +3987,7 @@
         "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 5,
+        "non_main_branches": 2,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": true,
         "repos_with_inactive_non_main_branches": false,
@@ -4216,7 +4207,7 @@
         "project_name": "Defra.Trade.RiskAssessment.Api",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 3,
+        "non_main_branches": 4,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": true,
         "repos_with_inactive_non_main_branches": false,
@@ -4238,7 +4229,7 @@
         "project_name": "Defra.Trade.RiskAssessment.UI",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 3,
+        "non_main_branches": 5,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": true,
         "repos_with_inactive_non_main_branches": false,
@@ -4315,12 +4306,12 @@
         "project_name": "eutd-mmo-fes-external-frontend",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 15,
+        "non_main_branches": 14,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "eutd-mmo-fes-orchestration",
@@ -4612,12 +4603,12 @@
         "project_name": "flood-app",
         "platform": "SonarCloud",
         "main_branch": "master",
-        "non_main_branches": 41,
+        "non_main_branches": 42,
         "inactive_branches_90": 16,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "41 non-main branches including stale ones; 16 inactive branches (90+ days)"
+        "hygiene_issue": "42 non-main branches including stale ones; 16 inactive branches (90+ days)"
       },
       {
         "project_name": "flood-app-temp",
@@ -4634,12 +4625,12 @@
         "project_name": "flood-data",
         "platform": "SonarCloud",
         "main_branch": "master",
-        "non_main_branches": 17,
+        "non_main_branches": 19,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 17 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 19 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "flood-risk-back-office",
@@ -4656,12 +4647,12 @@
         "project_name": "flood-risk-engine",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 14,
+        "non_main_branches": 12,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 12 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "flood-risk-front-office",
@@ -5019,7 +5010,7 @@
         "project_name": "pafs_core",
         "platform": "SonarCloud",
         "main_branch": "develop",
-        "non_main_branches": 9,
+        "non_main_branches": 10,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": true,
         "repos_with_inactive_non_main_branches": false,
@@ -5195,12 +5186,12 @@
         "project_name": "waste-carriers-front-office",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 17,
+        "non_main_branches": 16,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 17 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 16 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "waste-carriers-frontend",
@@ -5228,23 +5219,23 @@
         "project_name": "waste-exemptions-back-office",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 13,
+        "non_main_branches": 14,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 13 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "waste-exemptions-engine",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 16,
+        "non_main_branches": 15,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 16 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "waste-permits",
@@ -5272,23 +5263,23 @@
         "project_name": "water-abstraction-import",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 13,
+        "non_main_branches": 16,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 13 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 16 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "water-abstraction-system",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 71,
+        "non_main_branches": 67,
         "inactive_branches_90": 0,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": false,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "Review: 71 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 67 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "Wildlife Licensing Digital Service",
@@ -5321,8 +5312,8 @@
         "project_name": "Defra.Trade.API.CertificatesStore",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 5,
-        "inactive_branches_90": 5
+        "non_main_branches": 1,
+        "inactive_branches_90": 0
       },
       {
         "project_name": "Defra.Trade.Api.Daera.RFL",
@@ -5517,8 +5508,8 @@
         "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 4,
-        "inactive_branches_90": 4
+        "non_main_branches": 2,
+        "inactive_branches_90": 1
       },
       {
         "project_name": "Defra.Trade.Events.Services.CaseNotifier",
@@ -5531,7 +5522,7 @@
         "project_name": "Defra.Trade.Events.Services.CasePublisher",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 2,
+        "non_main_branches": 1,
         "inactive_branches_90": 0
       },
       {
@@ -5559,7 +5550,7 @@
         "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 5,
+        "non_main_branches": 2,
         "inactive_branches_90": 0
       },
       {
@@ -5657,14 +5648,14 @@
         "project_name": "Defra.Trade.RiskAssessment.Api",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 3,
+        "non_main_branches": 4,
         "inactive_branches_90": 0
       },
       {
         "project_name": "Defra.Trade.RiskAssessment.UI",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 3,
+        "non_main_branches": 5,
         "inactive_branches_90": 0
       },
       {
@@ -5783,7 +5774,7 @@
         "project_name": "pafs_core",
         "platform": "SonarCloud",
         "main_branch": "develop",
-        "non_main_branches": 9,
+        "non_main_branches": 10,
         "inactive_branches_90": 0
       },
       {
@@ -6090,20 +6081,6 @@
         "inactive_branches_90": 2
       },
       {
-        "project_name": "Defra.Trade.API.CertificatesStore",
-        "platform": "SonarCloud",
-        "main_branch": "dev",
-        "non_main_branches": 5,
-        "inactive_branches_90": 5
-      },
-      {
-        "project_name": "Defra.Trade.API.Daera.Certificates",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 2,
-        "inactive_branches_90": 2
-      },
-      {
         "project_name": "Defra.Trade.API.Daera.CertificatesSonarTest",
         "platform": "SonarCloud",
         "main_branch": "master",
@@ -6230,20 +6207,6 @@
         "inactive_branches_90": 1
       },
       {
-        "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 2,
-        "inactive_branches_90": 1
-      },
-      {
-        "project_name": "Defra.Trade.CommodityRiskCategorisation.Decider",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 4,
-        "inactive_branches_90": 4
-      },
-      {
         "project_name": "Defra.Trade.CoreServices.EventsStore.Api",
         "platform": "SonarCloud",
         "main_branch": "dev",
@@ -6324,8 +6287,8 @@
         "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 4,
-        "inactive_branches_90": 4
+        "non_main_branches": 2,
+        "inactive_branches_90": 1
       },
       {
         "project_name": "Defra.Trade.Events.Services.CatchCertificates",
@@ -6695,7 +6658,7 @@
         "project_name": "flood-app",
         "platform": "SonarCloud",
         "main_branch": "master",
-        "non_main_branches": 41,
+        "non_main_branches": 42,
         "inactive_branches_90": 16
       },
       {
@@ -6970,7 +6933,7 @@
         "project_name": "apha-fps-apps",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 60,
+        "non_main_branches": 59,
         "inactive_branches_90": 0
       },
       {
@@ -6991,7 +6954,7 @@
         "project_name": "eutd-mmo-fes-external-frontend",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 15,
+        "non_main_branches": 14,
         "inactive_branches_90": 0
       },
       {
@@ -7012,14 +6975,14 @@
         "project_name": "flood-app",
         "platform": "SonarCloud",
         "main_branch": "master",
-        "non_main_branches": 41,
+        "non_main_branches": 42,
         "inactive_branches_90": 16
       },
       {
         "project_name": "flood-data",
         "platform": "SonarCloud",
         "main_branch": "master",
-        "non_main_branches": 17,
+        "non_main_branches": 19,
         "inactive_branches_90": 0
       },
       {
@@ -7033,7 +6996,7 @@
         "project_name": "flood-risk-engine",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 14,
+        "non_main_branches": 12,
         "inactive_branches_90": 0
       },
       {
@@ -7082,41 +7045,41 @@
         "project_name": "waste-carriers-front-office",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 17,
+        "non_main_branches": 16,
         "inactive_branches_90": 0
       },
       {
         "project_name": "waste-exemptions-back-office",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 13,
+        "non_main_branches": 14,
         "inactive_branches_90": 0
       },
       {
         "project_name": "waste-exemptions-engine",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 16,
+        "non_main_branches": 15,
         "inactive_branches_90": 0
       },
       {
         "project_name": "water-abstraction-import",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 13,
+        "non_main_branches": 16,
         "inactive_branches_90": 0
       },
       {
         "project_name": "water-abstraction-system",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 71,
+        "non_main_branches": 67,
         "inactive_branches_90": 0
       }
     ],
     "branch_hygiene_consolidated": {
       "repos_non_standard_main_branch": 73,
-      "repos_with_inactive_non_main_branches": 164,
+      "repos_with_inactive_non_main_branches": 160,
       "repos_with_non_main_branch_count_over_threshold": 21
     },
     "branch_issues": [
@@ -7212,9 +7175,9 @@
         "project_name": "apha-fps-apps",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 60,
+        "non_main_branches": 59,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 60 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 59 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "apha-vir",
@@ -7444,17 +7407,9 @@
         "project_name": "Defra.Trade.API.CertificatesStore",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 5,
-        "inactive_branches_90": 5,
-        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 5 inactive branches (90+ days)"
-      },
-      {
-        "project_name": "Defra.Trade.API.Daera.Certificates",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 2,
-        "inactive_branches_90": 2,
-        "hygiene_issue": "2 inactive branches (90+ days)"
+        "non_main_branches": 1,
+        "inactive_branches_90": 0,
+        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
       },
       {
         "project_name": "Defra.Trade.API.Daera.CertificatesSonarTest",
@@ -7633,22 +7588,6 @@
         "hygiene_issue": "1 inactive branches (90+ days)"
       },
       {
-        "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 2,
-        "inactive_branches_90": 1,
-        "hygiene_issue": "1 inactive branches (90+ days)"
-      },
-      {
-        "project_name": "Defra.Trade.CommodityRiskCategorisation.Decider",
-        "platform": "SonarCloud",
-        "main_branch": "master",
-        "non_main_branches": 4,
-        "inactive_branches_90": 4,
-        "hygiene_issue": "4 inactive branches (90+ days)"
-      },
-      {
         "project_name": "Defra.Trade.CoreServices.EventsStore.Api",
         "platform": "SonarCloud",
         "main_branch": "dev",
@@ -7772,9 +7711,9 @@
         "project_name": "Defra.Trade.Events.RiskAssessment.Decisions",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 4,
-        "inactive_branches_90": 4,
-        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 4 inactive branches (90+ days)"
+        "non_main_branches": 2,
+        "inactive_branches_90": 1,
+        "hygiene_issue": "Non-standard main branch 'dev' (expected main or master); 1 inactive branches (90+ days)"
       },
       {
         "project_name": "Defra.Trade.Events.Services.CaseNotifier",
@@ -7788,7 +7727,7 @@
         "project_name": "Defra.Trade.Events.Services.CasePublisher",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 2,
+        "non_main_branches": 1,
         "inactive_branches_90": 0,
         "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
       },
@@ -7836,7 +7775,7 @@
         "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 5,
+        "non_main_branches": 2,
         "inactive_branches_90": 0,
         "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
       },
@@ -7996,7 +7935,7 @@
         "project_name": "Defra.Trade.RiskAssessment.Api",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 3,
+        "non_main_branches": 4,
         "inactive_branches_90": 0,
         "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
       },
@@ -8012,7 +7951,7 @@
         "project_name": "Defra.Trade.RiskAssessment.UI",
         "platform": "SonarCloud",
         "main_branch": "dev",
-        "non_main_branches": 3,
+        "non_main_branches": 5,
         "inactive_branches_90": 0,
         "hygiene_issue": "Non-standard main branch 'dev' (expected main or master)"
       },
@@ -8068,9 +8007,9 @@
         "project_name": "eutd-mmo-fes-external-frontend",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 15,
+        "non_main_branches": 14,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "eutd-mmo-fes-orchestration",
@@ -8284,9 +8223,9 @@
         "project_name": "flood-app",
         "platform": "SonarCloud",
         "main_branch": "master",
-        "non_main_branches": 41,
+        "non_main_branches": 42,
         "inactive_branches_90": 16,
-        "hygiene_issue": "41 non-main branches including stale ones; 16 inactive branches (90+ days)"
+        "hygiene_issue": "42 non-main branches including stale ones; 16 inactive branches (90+ days)"
       },
       {
         "project_name": "flood-app-temp",
@@ -8300,9 +8239,9 @@
         "project_name": "flood-data",
         "platform": "SonarCloud",
         "main_branch": "master",
-        "non_main_branches": 17,
+        "non_main_branches": 19,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 17 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 19 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "flood-risk-back-office",
@@ -8316,9 +8255,9 @@
         "project_name": "flood-risk-engine",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 14,
+        "non_main_branches": 12,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 12 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "flood-risk-front-office",
@@ -8580,7 +8519,7 @@
         "project_name": "pafs_core",
         "platform": "SonarCloud",
         "main_branch": "develop",
-        "non_main_branches": 9,
+        "non_main_branches": 10,
         "inactive_branches_90": 0,
         "hygiene_issue": "Non-standard main branch 'develop' (expected main or master)"
       },
@@ -8708,9 +8647,9 @@
         "project_name": "waste-carriers-front-office",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 17,
+        "non_main_branches": 16,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 17 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 16 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "waste-carriers-frontend",
@@ -8732,17 +8671,17 @@
         "project_name": "waste-exemptions-back-office",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 13,
+        "non_main_branches": 14,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 13 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 14 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "waste-exemptions-engine",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 16,
+        "non_main_branches": 15,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 16 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 15 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "waste-permits",
@@ -8764,17 +8703,17 @@
         "project_name": "water-abstraction-import",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 13,
+        "non_main_branches": 16,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 13 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 16 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "water-abstraction-system",
         "platform": "SonarCloud",
         "main_branch": "main",
-        "non_main_branches": 71,
+        "non_main_branches": 67,
         "inactive_branches_90": 0,
-        "hygiene_issue": "Review: 71 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
+        "hygiene_issue": "Review: 67 non-main branches (verify all are active; apply trunk-based or GitFlow hygiene policy)"
       },
       {
         "project_name": "Wildlife Licensing Digital Service",
@@ -8928,6 +8867,11 @@
       },
       {
         "project_name": "fmc-test-final",
+        "platform": "SonarCloud",
+        "hygiene_issue": "Project name contains odd characters - may indicate test or temp project"
+      },
+      {
+        "project_name": "grants-config-example-grants",
         "platform": "SonarCloud",
         "hygiene_issue": "Project name contains odd characters - may indicate test or temp project"
       },
@@ -9562,6 +9506,265 @@
         "false_positives": 2,
         "false_positives_no_justification": 1,
         "quality_issue": "1 false positives without justification"
+      },
+      {
+        "project_name": "Customer.App.WriteAPI",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra-APHA-CITES",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Identity.App.Content",
+        "platform": "SonarCloud",
+        "false_positives": 66,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Identity.App.Hub",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ai-tech-radar-frontend",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "cyltfr-service",
+        "platform": "SonarCloud",
+        "false_positives": 3,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra RCR API",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.Api.Daera.RFL",
+        "platform": "SonarCloud",
+        "false_positives": 2,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.Cloning.Api",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.CommodityRiskCategorisation.Data",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.Common",
+        "platform": "SonarCloud",
+        "false_positives": 6,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.Dev.Portal",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.Events.SUS.RemosSignUpSubscriber",
+        "platform": "SonarCloud",
+        "false_positives": 16,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.ReMoS.AssuranceService.API",
+        "platform": "SonarCloud",
+        "false_positives": 35,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Defra.Trade.RiskAssessment.UI",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "DEFRA_nipts-pts-checker-web-api",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "epr-re-ex-admin-frontend",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "fcp-fd-data",
+        "platform": "SonarCloud",
+        "false_positives": 2,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "fcp-fd-probe",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "fcp-pds-data-retention",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "fcp-sfd-frontend",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "fcp-sfd-object-processor",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ffc-ahwr-backoffice",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ffc-ahwr-common-library",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ffc-ahwr-document-generator",
+        "platform": "SonarCloud",
+        "false_positives": 23,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ffc-grants-addvalue-web",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ffc-grants-scoring",
+        "platform": "SonarCloud",
+        "false_positives": 2,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ffc-pay-web",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "forms-notify-listener",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "Github-Defra-APHA-CITES",
+        "platform": "SonarCloud",
+        "false_positives": 3,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "grants-ui",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "gwa-web",
+        "platform": "SonarCloud",
+        "false_positives": 22,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "ivory",
+        "platform": "SonarCloud",
+        "false_positives": 6,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "nrf-backend",
+        "platform": "SonarCloud",
+        "false_positives": 10,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "nrf-frontend",
+        "platform": "SonarCloud",
+        "false_positives": 4,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "trade-imports-animals-frontend",
+        "platform": "SonarCloud",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "waste-exemptions-back-office",
+        "platform": "SonarCloud",
+        "false_positives": 3,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
       }
     ],
     "false_positives_consolidated": {
@@ -9572,10 +9775,10 @@
       {
         "project_name": "water-abstraction-system",
         "platform": "SonarCloud",
-        "suppressions_wont_fix": 465,
-        "suppressions_no_justification": 352,
-        "lines_of_code": 48524,
-        "quality_issue": "352 suppressions without justification"
+        "suppressions_wont_fix": 464,
+        "suppressions_no_justification": 351,
+        "lines_of_code": 48665,
+        "quality_issue": "351 suppressions without justification"
       },
       {
         "project_name": "ls-keeper-data-api",
@@ -9602,6 +9805,14 @@
         "quality_issue": "45 suppressions without justification"
       },
       {
+        "project_name": "forms-designer",
+        "platform": "SonarCloud",
+        "suppressions_wont_fix": 32,
+        "suppressions_no_justification": 27,
+        "lines_of_code": 53435,
+        "quality_issue": "27 suppressions without justification"
+      },
+      {
         "project_name": "Defra.Trade.API.Imports.ReferenceData",
         "platform": "SonarCloud",
         "suppressions_wont_fix": 25,
@@ -9615,14 +9826,6 @@
         "suppressions_wont_fix": 25,
         "suppressions_no_justification": 25,
         "lines_of_code": 1712,
-        "quality_issue": "25 suppressions without justification"
-      },
-      {
-        "project_name": "forms-designer",
-        "platform": "SonarCloud",
-        "suppressions_wont_fix": 30,
-        "suppressions_no_justification": 25,
-        "lines_of_code": 53118,
         "quality_issue": "25 suppressions without justification"
       },
       {
@@ -9660,9 +9863,9 @@
       {
         "project_name": "gep-land-model-viewer-frontend",
         "platform": "SonarCloud",
-        "suppressions_wont_fix": 13,
+        "suppressions_wont_fix": 14,
         "suppressions_no_justification": 12,
-        "lines_of_code": 4439,
+        "lines_of_code": 4873,
         "quality_issue": "12 suppressions without justification"
       },
       {
@@ -9694,7 +9897,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 7,
         "suppressions_no_justification": 7,
-        "lines_of_code": 7438,
+        "lines_of_code": 7627,
         "quality_issue": "7 suppressions without justification"
       },
       {
@@ -9710,7 +9913,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 6,
         "suppressions_no_justification": 6,
-        "lines_of_code": 2356,
+        "lines_of_code": 2494,
         "quality_issue": "6 suppressions without justification"
       },
       {
@@ -9718,7 +9921,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 8,
         "suppressions_no_justification": 4,
-        "lines_of_code": 13618,
+        "lines_of_code": 13611,
         "quality_issue": "4 suppressions without justification"
       },
       {
@@ -9766,7 +9969,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 3,
         "suppressions_no_justification": 3,
-        "lines_of_code": 8427,
+        "lines_of_code": 8423,
         "quality_issue": "3 suppressions without justification"
       },
       {
@@ -9782,7 +9985,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 3,
         "suppressions_no_justification": 3,
-        "lines_of_code": 5627,
+        "lines_of_code": 5620,
         "quality_issue": "3 suppressions without justification"
       },
       {
@@ -9790,7 +9993,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 14,
         "suppressions_no_justification": 3,
-        "lines_of_code": 17134,
+        "lines_of_code": 17135,
         "quality_issue": "3 suppressions without justification"
       },
       {
@@ -9846,7 +10049,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 3,
         "suppressions_no_justification": 2,
-        "lines_of_code": 32988,
+        "lines_of_code": 33000,
         "quality_issue": "2 suppressions without justification"
       },
       {
@@ -9870,7 +10073,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 2,
         "suppressions_no_justification": 2,
-        "lines_of_code": 7214,
+        "lines_of_code": 7243,
         "quality_issue": "2 suppressions without justification"
       },
       {
@@ -9886,7 +10089,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 2,
         "suppressions_no_justification": 2,
-        "lines_of_code": 2480,
+        "lines_of_code": 2725,
         "quality_issue": "2 suppressions without justification"
       },
       {
@@ -9950,7 +10153,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 6,
         "suppressions_no_justification": 1,
-        "lines_of_code": 1915,
+        "lines_of_code": 1996,
         "quality_issue": "1 suppressions without justification"
       },
       {
@@ -10006,7 +10209,7 @@
         "platform": "SonarCloud",
         "suppressions_wont_fix": 1,
         "suppressions_no_justification": 1,
-        "lines_of_code": 20979,
+        "lines_of_code": 21187,
         "quality_issue": "1 suppressions without justification"
       },
       {
@@ -10209,6 +10412,11 @@
       },
       {
         "project_name": "fcp-fd-probe-alerts",
+        "platform": "SonarCloud",
+        "missing_fields": "No scan date, No lines of code (ncloc)"
+      },
+      {
+        "project_name": "fcp-pds-web",
         "platform": "SonarCloud",
         "missing_fields": "No scan date, No lines of code (ncloc)"
       },
@@ -10424,37 +10632,37 @@
       }
     ],
     "configuration_consolidated": {
-      "repos_with_configuration_issues": 59
+      "repos_with_configuration_issues": 60
     },
     "missing_sonar_config_consolidated": {
-      "repos_with_configuration_issues": 59
+      "repos_with_configuration_issues": 60
     },
     "sonar_rules_analysis": [
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "[OLD] DEFRA Javascript Default | JavaScript",
-        "details": "Days since last update=40 | Projects affected=0 | Last used=2024-03-18",
+        "details": "Days since last update=44 | Projects affected=0 | Last used=2024-03-18",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | PL/SQL",
-        "details": "Days since last update=387 | Projects affected=15 | Last used=2026-06-17",
-        "action": "Check and update the built-in rules; last updated 387 days ago."
+        "details": "Days since last update=391 | Projects affected=15 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 391 days ago."
       }
     ],
     "sonar_rules_analysis_defra": [
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "[OLD] DEFRA Javascript Default | JavaScript",
-        "details": "Days since last update=40 | Projects affected=0 | Last used=2024-03-18",
+        "details": "Days since last update=44 | Projects affected=0 | Last used=2024-03-18",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Built-in profile used by projects but not updated for a long time",
         "profile_name_language": "Sonar way | PL/SQL",
-        "details": "Days since last update=387 | Projects affected=15 | Last used=2026-06-17",
-        "action": "Check and update the built-in rules; last updated 387 days ago."
+        "details": "Days since last update=391 | Projects affected=15 | Last used=2026-06-19",
+        "action": "Check and update the built-in rules; last updated 391 days ago."
       }
     ],
     "sonar_rules_analysis_defragovuk": []
@@ -10474,7 +10682,7 @@
     },
     {
       "name": "water-abstraction-system",
-      "score": 172,
+      "score": 164,
       "categories": [
         "Unjustified FPs",
         "Suppressions",
@@ -10482,7 +10690,7 @@
       ],
       "details": {
         "unjustified_fps": 1,
-        "suppressions": 465,
+        "suppressions": 464,
         "inactive_branches": 0
       }
     },
@@ -10494,13 +10702,13 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 768,
+        "inactive_days": 772,
         "inactive_branches": 20
       }
     },
     {
       "name": "flood-app",
-      "score": 157,
+      "score": 159,
       "categories": [
         "Unjustified FPs",
         "Branch Hygiene"
@@ -10519,45 +10727,45 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 630,
+        "inactive_days": 634,
         "inactive_branches": 16
       }
     }
   ],
   "quick_wins": [
-    "Delete 510 stale branches across 208 projects — zero risk, instant cleanup",
-    "Archive 64 test/demo projects to declutter the portfolio",
-    "Add justification for 43 projects with ≤5 unjustified false positives each — quick audit fix"
+    "Delete 495 stale branches across 205 projects — zero risk, instant cleanup",
+    "Archive 65 test/demo projects to declutter the portfolio",
+    "Add justification for 80 projects with ≤5 unjustified false positives each — quick audit fix"
   ],
   "ai_insights": {
-    "narrative": "The SonarCloud portfolio of 788 repositories is broadly functional but carries notable hygiene and governance risk. The most material concerns are a large volume of inactive projects (353 repositories unscanned for over a year, including 38 beyond four years), inconsistent branch hygiene across 208 repositories, and suppression and false-positive decisions recorded without justification. Quality profiles remain largely compliant, and Quality Gate non-compliance is limited in scope. Addressing the stale projects, tightening branch configuration, and adding justification comments to accepted issues and false positives would meaningfully strengthen auditability and reporting accuracy.",
+    "narrative": "The SonarCloud portfolio spans 792 repositories and presents several material governance concerns requiring attention. Lifecycle management represents the most significant risk, with 356 repositories stale for more than one year, many of which appear to be abandoned test or proof-of-concept projects. Branch hygiene is also a notable concern, with 160 repositories carrying inactive non-main branches and 73 configured to scan a non-standard main branch. Process discipline around issue management is inconsistent - 102 repositories contain false positives and 96 have accepted issues, with the majority in each category lacking justification comments. Addressing inactive projects, configuration gaps, and the auditability of issue decisions would have the most significant impact on the overall hygiene posture.",
     "sections": {
-      "inactive_insights": "Removing unused repositories can help to reduce unnecessary cost and maintenance effort. 353 repositories have not had a Sonar scan for more than 1 year, 179 of these have not been scanned for over 2 years, and 38 for over 4 years. These should be reviewed to check if they are still needed.",
+      "inactive_insights": "Removing unused repositories can help to reduce unnecessary cost and maintenance effort. 356 repositories are stale and have not been scanned for more than one year. This includes 168 repositories inactive for 1-2 years, 150 inactive for 2-4 years, 37 inactive for 4-6 years, and one inactive for more than six years.",
       "inactive_action": "Request project POCs to review these repositories for continued relevance, with inactive ones to be removed or archived from the SonarCloud instance to optimise cost and maintain a clear project portfolio.",
-      "duplication_insights": "10 repositories exceed the defined duplication threshold, indicating a higher level of repeated code.",
-      "duplication_action": "Review these repositories with project POCs to identify and reduce duplication, and improve code efficiency and maintainability.",
-      "migration_insights": "154 private repositories are present in the portfolio and are candidates for review against the target platform and visibility standards.",
-      "migration_action": "Plan a review of the 154 private repositories with project POCs to confirm correct visibility and migration status.",
-      "branch_repos_non_standard_main_branch_insights": "73 repositories are set up in Sonar to scan a branch other than the expected main branch. This can lead to confusion and make reports less consistent across projects.",
+      "duplication_insights": "11 repositories exceed the duplication threshold (>15%) for overall code. The Quality Gate controls duplication on new code (up to 3%) but does not enforce it on overall code. This leads to increased lines of code (LOC) - raising SonarCloud costs as pricing is LOC-based - and elevated maintenance effort.",
+      "duplication_action": "Review the identified repositories with respective project POCs to reduce duplication, optimise code efficiency, and improve overall maintainability.",
+      "migration_insights": "154 private repositories are present in the portfolio. In SonarCloud, analysis of private repositories is billed based on total lines of code (LOC), meaning a higher number of private repositories directly increases subscription cost, unlike public repositories which can be analysed without cost under open-source plans. This may lead to avoidable spending if some repositories can be made public or consolidated. Additionally, retaining all repositories on SonarCloud may not be optimal for large portfolios, where self-hosted SonarQube could offer more cost control depending on infrastructure strategy.",
+      "migration_action": "Review the 154 private repositories with respective project POCs to validate visibility requirements (public vs private) and assess opportunities to optimise cost by making eligible repositories public or evaluating migration to self-hosted SonarQube where appropriate.",
+      "branch_repos_non_standard_main_branch_insights": "73 repositories are configured in SonarCloud to scan a branch other than the expected main branch. This can lead to confusion and make reports less consistent across projects.",
       "branch_repos_non_standard_main_branch_action": "Review these repositories with project POCs to confirm the correct branch is set for scanning, and update it where needed for consistency.",
-      "branch_repos_with_inactive_non_main_branches_insights": "164 repositories have non-main branches (for example feature or development branches) that have not been scanned for a long period, which may indicate stale or abandoned work.",
-      "branch_repos_with_inactive_non_main_branches_action": "Review these repositories with project POCs to confirm if these branches are still needed, and remove or clean them up to maintain a well-managed Sonar environment.",
+      "branch_repos_with_inactive_non_main_branches_insights": "160 repositories have non-main branches (such as feature or development branches) that have not been scanned for more than 180 days, which may indicate stale or abandoned work.",
+      "branch_repos_with_inactive_non_main_branches_action": "Review these repositories with project POCs to confirm if the branches are still needed, and remove or clean them up to maintain a well-managed SonarCloud environment.",
       "branch_repos_with_non_main_branch_count_over_threshold_insights": "21 repositories have more non-main branches than the agreed threshold, which can clutter scan results and make reporting harder to follow.",
       "branch_repos_with_non_main_branch_count_over_threshold_action": "Review these repositories with project POCs to consolidate or remove surplus non-main branches and keep the branch count within the agreed threshold.",
-      "naming_insights": "64 repositories have names containing odd characters or markers such as test, demo, temp, poc, and date stamps, suggesting they may be temporary or experimental projects. This can make it difficult to identify, manage, and report on projects across the portfolio.",
-      "naming_action": "Review repository naming with project POCs to ensure alignment with the defined standards, and update or retire temporary and test projects where needed for consistency and clarity.",
-      "false_positives_insights": "102 repositories have issues marked as false positives, and 65 of these have been recorded without a justification comment, weakening auditability.",
-      "false_positives_action": "Add justification comments to the 65 repositories with uncommented false positives, and confirm the markings are valid and consistently applied.",
-      "suppressions_insights": "96 repositories contain accepted issues, and 60 of these have been recorded without justification comments, reducing transparency of suppression decisions.",
-      "suppressions_action": "Add justification comments to the 60 repositories with uncommented accepted issues so suppression decisions remain auditable.",
-      "quality_gates_insights": "12 repositories use a non-compliant Quality Gate, reducing assurance consistency across the portfolio.",
-      "quality_gates_action": "Restore the default Quality Gate on the 12 repositories using a non-compliant gate.",
-      "config_gaps_insights": "59 repositories have scanner configuration gaps that suppress metric collection and reduce reporting visibility.",
-      "config_gaps_action": "Add the missing scanner configuration to the 59 repositories to restore metric visibility.",
+      "naming_insights": "65 repositories do not follow consistent naming conventions. The flagged projects share patterns suggesting they are test, demo, proof-of-concept, or temporary artefacts, with names containing terms such as demo, test, poc, temp, or numeric date suffixes. This makes it difficult to identify, manage, and report on projects across the portfolio, and raises questions about whether these projects belong in the production SonarCloud instance.",
+      "naming_action": "Review repository naming with project POCs to ensure alignment with defined standards, and update or remove projects where names indicate they are test, demo, or temporary artefacts that are no longer needed.",
+      "false_positives_insights": "102 repositories contain false positives, of which 65 lack a justification comment, limiting traceability and auditability. Without documented rationale, it is not possible to confirm that these suppressions are valid.",
+      "false_positives_action": "Review false-positive markings across the affected repositories to confirm they are valid and consistently applied, and add justification comments where missing to ensure auditability.",
+      "suppressions_insights": "96 repositories have accepted issues (suppressed findings), of which 60 have no justification comment. This weakens auditability and makes it difficult to understand why issues were accepted or suppressed.",
+      "suppressions_action": "Add justification comments to all accepted issues in the affected repositories so suppression decisions remain auditable and traceable.",
+      "quality_gates_insights": "12 repositories are using a non-default or non-compliant Quality Gate, leading to inconsistent evaluation of code quality conditions across the portfolio.",
+      "quality_gates_action": "Reassign the affected repositories to the default Defra Quality Gate to ensure consistent measurement against standard conditions, or review and confirm the justification for using a non-compliant Quality Gate with stakeholders and the assurance team.",
+      "config_gaps_insights": "60 repositories lack valid scanner configuration, preventing analysis and metric computation.",
+      "config_gaps_action": "Fix scanner configuration in the affected repositories to restore analysis and metric computation.",
       "sonarqube_rules_insights": "",
       "sonarqube_rules_action": "",
-      "sonarcloud_rules_insights": "Two quality-profile concerns were identified in the defra organisation: a standalone custom JavaScript profile that does not inherit from a built-in profile (currently affecting no projects), and the built-in Sonar way PL/SQL profile, used by 15 projects, that has not been updated for 387 days. The defragovuk organisation has no profile issues.",
-      "sonarcloud_rules_action": "Make the standalone custom JavaScript profile inherit from a built-in profile or document why it must remain standalone, and review and update the Sonar way PL/SQL built-in profile that has not been updated for 387 days."
+      "sonarcloud_rules_insights": "Two rule profile issues have been identified in the Defra organisation. One custom profile ([OLD] DEFRA Javascript Default) does not inherit from a built-in profile and requires manual updates to stay current, though it currently has no active projects assigned. A built-in PL/SQL profile (Sonar way) has not been updated for 391 days and is actively used by 15 projects, meaning those projects may not benefit from the latest rule improvements. No issues were identified in the defragovuk organisation.",
+      "sonarcloud_rules_action": "Update or archive the [OLD] DEFRA Javascript Default profile, or configure it to inherit from a built-in profile. Review and update the Sonar way PL/SQL profile to address the 391-day update gap and ensure the 15 affected projects are evaluated against current rules."
     }
   }
 }

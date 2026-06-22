@@ -109,9 +109,9 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Of the 49 repositories mapped to this service, none have been scanned in SonarQube, so no Quality Gate results, bugs, vulnerabilities, or code smells can be reported. The complete absence of scanner data means reliability and maintainability cannot be assured.\n\nDefra Development standards cannot be assessed, as no test coverage or code duplication metrics are available for any of the repositories.\n\nFrom a governance perspective, all 49 repositories are missing scanner configuration, which prevents any quality reporting for this service. Onboarding these repositories to SonarQube is the immediate priority.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). None of the 49 repositories mapped to IPAFFS are present in the SonarQube instance, meaning no Quality Gate results, code quality metrics, or coverage data are available for assessment. Without any Sonar scanning data, the reliability and maintainability of the codebase cannot be evaluated.\n\nDefra Development standards cannot be assessed for this service. No coverage or duplication metrics are available, as none of the mapped repositories have been onboarded to SonarQube.\n\nFrom a governance perspective, the complete absence of all 49 expected repositories from SonarQube indicates that scanner configuration has not been established for this service. This represents a full visibility gap and requires immediate remediation.",
     "status": "Red",
-    "path_to_green": "Onboard all 49 repositories to SonarQube and add the required scanner configuration so that Quality Gate, coverage, and duplication metrics can be collected; once scanning is in place, review the results and resolve any issues identified."
+    "path_to_green": "Onboard all 49 mapped repositories to SonarQube by configuring valid scanner setup for each project; Run initial scans to generate baseline Quality Gate and metrics data; Review and remediate any identified issues to align with Service Standard 14 and Defra Development standards."
   },
   "Exports": {
     "group_name": "Exports",
@@ -175,9 +175,9 @@
       "branch_issues": []
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). Its single repository has not been scanned in SonarQube, so no Quality Gate result, bugs, vulnerabilities, or code smells can be reported. Without any scanner data, reliability and maintainability cannot be assured.\n\nDefra Development standards cannot be assessed, as no test coverage or code duplication metrics are available for the repository.\n\nFrom a governance perspective, the repository is missing scanner configuration, which prevents any quality reporting. Onboarding it to SonarQube is the immediate priority.",
+    "project_ai_summary": "The service does not currently meet Service Standard 14 (operating a reliable service). The single repository mapped to Exports is not present in the SonarQube instance, meaning no Quality Gate results or code quality metrics are available for assessment. Without any scanning data, the quality posture of this service cannot be determined.\n\nDefra Development standards cannot be assessed for this service. No coverage or duplication data is available, as the mapped repository has not been onboarded to SonarQube.\n\nFrom a governance perspective, the absence of the mapped repository from SonarQube indicates that scanner configuration has not been established for this service. Adding valid scanner configuration would restore full quality visibility.",
     "status": "Red",
-    "path_to_green": "Onboard the repository to SonarQube and add the required scanner configuration so that Quality Gate, coverage, and duplication metrics can be collected; then review the results and resolve any issues identified."
+    "path_to_green": "Onboard the Exports repository to SonarQube by configuring a valid scanner setup; Run an initial scan to generate Quality Gate and metrics data; Remediate any identified issues to align with Service Standard 14 and Defra Development standards."
   },
   "PHES": {
     "group_name": "PHES",
@@ -235,7 +235,7 @@
     },
     "governance": {
       "inactive_projects": [],
-      "inactive_branches": 4,
+      "inactive_branches": 7,
       "false_positives": 0,
       "false_positives_no_justification": 0,
       "suppressions": 2,
@@ -244,10 +244,10 @@
       "high_duplication": [],
       "branch_issues": [
         {
-          "project_name": "plants-common-ui",
+          "project_name": "plants-common",
           "platform": "SonarQube",
           "main_branch": "master",
-          "non_main_branches": 3,
+          "non_main_branches": 4,
           "inactive_branches_90": 1,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
@@ -255,15 +255,26 @@
           "hygiene_issue": "1 inactive branches (90+ days)"
         },
         {
+          "project_name": "plants-common-ui",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 3,
+          "inactive_branches_90": 2,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "2 inactive branches (90+ days)"
+        },
+        {
           "project_name": "plants-exporter-ui",
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 5,
-          "inactive_branches_90": 1,
+          "inactive_branches_90": 2,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
+          "hygiene_issue": "2 inactive branches (90+ days)"
         },
         {
           "project_name": "plants-form-configuration-microservice",
@@ -290,9 +301,9 @@
       ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a high level of code quality across the six repositories assessed. All Quality Gates have passed, and there are no bugs, vulnerabilities, or code smells identified. The service largely aligns with Service Standard 14 (operating a reliable service).\n\nAll assessed repositories meet Defra Development standards, maintaining 94.5% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, five of the eleven mapped repositories are not currently scanned in SonarQube, and there are four stale branches along with two suppressions recorded without justification comments. These affect visibility and the accuracy of reporting.",
-    "status": "Amber",
-    "path_to_green": "Onboard the 5 mapped repositories not yet scanned in SonarQube to restore full visibility; add justification comments to the 2 suppressions for auditability; and remove the 4 stale branches to reduce noise in reports."
+    "project_ai_summary": "The service shows a high level of code quality across its six assessed repositories. All Quality Gates have passed, and no bugs, vulnerabilities, or code smells have been identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.5% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, two accepted issues have been recorded without justification comments, and seven stale branches have been identified across five repositories. Additionally, five of the eleven mapped repositories are not present in SonarQube, which limits full quality visibility for this group. Addressing these items would improve auditability and reporting completeness.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "Trade Plants Portal": {
     "group_name": "Trade Plants Portal",
@@ -350,19 +361,31 @@
     },
     "governance": {
       "inactive_projects": [],
-      "inactive_branches": 0,
+      "inactive_branches": 1,
       "false_positives": 0,
       "false_positives_no_justification": 0,
       "suppressions": 0,
       "suppressions_no_justification": 0,
       "missing_config": [],
       "high_duplication": [],
-      "branch_issues": []
+      "branch_issues": [
+        {
+          "project_name": "plants-common",
+          "platform": "SonarQube",
+          "main_branch": "master",
+          "non_main_branches": 4,
+          "inactive_branches_90": 1,
+          "repos_non_standard_main_branch": false,
+          "repos_with_inactive_non_main_branches": true,
+          "repos_with_non_main_branch_count_over_threshold": false,
+          "hygiene_issue": "1 inactive branches (90+ days)"
+        }
+      ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a high level of code quality within its single assessed repository. The Quality Gate has passed, and there are no bugs, vulnerabilities, or code smells identified. The service largely aligns with Service Standard 14 (operating a reliable service).\n\nAll assessed repositories meet Defra Development standards, maintaining 93.7% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, five of the six mapped repositories are not currently scanned in SonarQube, which limits visibility and the accuracy of reporting for this service.",
-    "status": "Amber",
-    "path_to_green": "Onboard the 5 mapped repositories not yet scanned in SonarQube so that full Quality Gate, coverage, and duplication metrics can be collected."
+    "project_ai_summary": "The service shows good code quality within its single assessed repository. The Quality Gate has passed, with no bugs, vulnerabilities, or code smells identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nThe assessed repository meets Defra Development standards, maintaining 93.7% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, one stale branch has been identified, and five of the six mapped repositories are not present in SonarQube, which significantly limits quality visibility for this group. Expanding scanner coverage to the remaining repositories would provide a more complete picture of the service's quality posture.",
+    "status": "Green",
+    "path_to_green": ""
   },
   "Trade Dynamics": {
     "group_name": "Trade Dynamics",
@@ -414,7 +437,7 @@
     },
     "governance": {
       "inactive_projects": [],
-      "inactive_branches": 4,
+      "inactive_branches": 6,
       "false_positives": 0,
       "false_positives_no_justification": 0,
       "suppressions": 2,
@@ -427,22 +450,22 @@
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 3,
-          "inactive_branches_90": 1,
+          "inactive_branches_90": 2,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
+          "hygiene_issue": "2 inactive branches (90+ days)"
         },
         {
           "project_name": "plants-exporter-ui",
           "platform": "SonarQube",
           "main_branch": "master",
           "non_main_branches": 5,
-          "inactive_branches_90": 1,
+          "inactive_branches_90": 2,
           "repos_non_standard_main_branch": false,
           "repos_with_inactive_non_main_branches": true,
           "repos_with_non_main_branch_count_over_threshold": false,
-          "hygiene_issue": "1 inactive branches (90+ days)"
+          "hygiene_issue": "2 inactive branches (90+ days)"
         },
         {
           "project_name": "plants-form-configuration-microservice",
@@ -469,7 +492,7 @@
       ]
     },
     "qg_failed_projects": [],
-    "project_ai_summary": "The service shows a high level of code quality across all five repositories. All Quality Gates have passed, and there are no bugs, vulnerabilities, or code smells identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.7% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, four stale branches have been identified, along with two suppressions recorded without justification comments. These are minor hygiene items that do not affect the quality posture but are worth addressing for auditability.",
+    "project_ai_summary": "The service shows a high level of code quality across all five repositories. All Quality Gates have passed, and no bugs, vulnerabilities, or code smells have been identified. The service aligns with Service Standard 14 (operating a reliable service).\n\nAll repositories meet Defra Development standards, maintaining 94.7% test coverage and 0.0% code duplication.\n\nFrom a governance perspective, two accepted issues have been recorded without justification comments, and six stale branches have been identified across four repositories. Adding justification comments and removing stale branches would improve auditability and reduce noise in reports.",
     "status": "Green",
     "path_to_green": ""
   },
@@ -713,7 +736,7 @@
       },
       "governance": {
         "inactive_projects": [],
-        "inactive_branches": 4,
+        "inactive_branches": 7,
         "false_positives": 0,
         "false_positives_no_justification": 0,
         "suppressions": 2,
@@ -722,10 +745,10 @@
         "high_duplication": [],
         "branch_issues": [
           {
-            "project_name": "plants-common-ui",
+            "project_name": "plants-common",
             "platform": "SonarQube",
             "main_branch": "master",
-            "non_main_branches": 3,
+            "non_main_branches": 4,
             "inactive_branches_90": 1,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
@@ -733,15 +756,26 @@
             "hygiene_issue": "1 inactive branches (90+ days)"
           },
           {
+            "project_name": "plants-common-ui",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 3,
+            "inactive_branches_90": 2,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "2 inactive branches (90+ days)"
+          },
+          {
             "project_name": "plants-exporter-ui",
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 5,
-            "inactive_branches_90": 1,
+            "inactive_branches_90": 2,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
+            "hygiene_issue": "2 inactive branches (90+ days)"
           },
           {
             "project_name": "plants-form-configuration-microservice",
@@ -829,14 +863,26 @@
       },
       "governance": {
         "inactive_projects": [],
-        "inactive_branches": 0,
+        "inactive_branches": 1,
         "false_positives": 0,
         "false_positives_no_justification": 0,
         "suppressions": 0,
         "suppressions_no_justification": 0,
         "missing_config": [],
         "high_duplication": [],
-        "branch_issues": []
+        "branch_issues": [
+          {
+            "project_name": "plants-common",
+            "platform": "SonarQube",
+            "main_branch": "master",
+            "non_main_branches": 4,
+            "inactive_branches_90": 1,
+            "repos_non_standard_main_branch": false,
+            "repos_with_inactive_non_main_branches": true,
+            "repos_with_non_main_branch_count_over_threshold": false,
+            "hygiene_issue": "1 inactive branches (90+ days)"
+          }
+        ]
       },
       "qg_failed_projects": [],
       "project_ai_summary": "",
@@ -894,7 +940,7 @@
       },
       "governance": {
         "inactive_projects": [],
-        "inactive_branches": 4,
+        "inactive_branches": 6,
         "false_positives": 0,
         "false_positives_no_justification": 0,
         "suppressions": 2,
@@ -907,22 +953,22 @@
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 3,
-            "inactive_branches_90": 1,
+            "inactive_branches_90": 2,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
+            "hygiene_issue": "2 inactive branches (90+ days)"
           },
           {
             "project_name": "plants-exporter-ui",
             "platform": "SonarQube",
             "main_branch": "master",
             "non_main_branches": 5,
-            "inactive_branches_90": 1,
+            "inactive_branches_90": 2,
             "repos_non_standard_main_branch": false,
             "repos_with_inactive_non_main_branches": true,
             "repos_with_non_main_branch_count_over_threshold": false,
-            "hygiene_issue": "1 inactive branches (90+ days)"
+            "hygiene_issue": "2 inactive branches (90+ days)"
           },
           {
             "project_name": "plants-form-configuration-microservice",

@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-18 01:32:56",
+  "generated": "2026-06-21 23:34:50",
   "server_name": "Sonar Test Server",
-  "data_extracted_on": "18/06/2026 00:09",
+  "data_extracted_on": "21/06/2026 23:15",
   "platform_filter": "sonarqube",
   "total_repos": 198,
   "total_loc": 1465888,
@@ -9,8 +9,8 @@
   "public_repos": 197,
   "consolidated_metrics": {
     "inactive_projects": {
-      "repos_inactive_over_1_years": 56,
-      "repos_inactive_over_2_years": 46,
+      "repos_inactive_over_1_years": 15,
+      "repos_inactive_over_2_years": 19,
       "repos_inactive_over_4_years": 27,
       "repos_inactive_over_6_years": 0,
       "repos_inactive_over_8_years": 0
@@ -23,7 +23,7 @@
     },
     "branch_hygiene": {
       "repos_non_standard_main_branch": 0,
-      "repos_with_inactive_non_main_branches": 129,
+      "repos_with_inactive_non_main_branches": 132,
       "repos_with_non_main_branch_count_over_threshold": 9
     },
     "false_positives": {
@@ -47,342 +47,372 @@
         "project_name": "Defra.Trade.Eventstore.Ui",
         "platform": "SonarQube",
         "last_analysis_date": "2021-06-12",
-        "days_since_last_analysis": 1831
+        "days_since_last_analysis": 1835
       },
       {
         "project_name": "Defra.Trade.Events.Services.Scheduler",
         "platform": "SonarQube",
         "last_analysis_date": "2021-08-13",
-        "days_since_last_analysis": 1769
+        "days_since_last_analysis": 1773
       },
       {
         "project_name": "Defra.Trade.Events.Services.SCICustomer",
         "platform": "SonarQube",
         "last_analysis_date": "2021-08-25",
-        "days_since_last_analysis": 1757
+        "days_since_last_analysis": 1761
       },
       {
         "project_name": "Defra.Trade.Events.Services.CustomerPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2021-09-15",
-        "days_since_last_analysis": 1736
+        "days_since_last_analysis": 1740
       },
       {
         "project_name": "Defra.Trade.Events.Services.TradeStoreUpdater",
         "platform": "SonarQube",
         "last_analysis_date": "2021-09-21",
-        "days_since_last_analysis": 1730
+        "days_since_last_analysis": 1734
       },
       {
         "project_name": "Defra.Trade.Events.CoreServices.InfoPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2021-09-23",
-        "days_since_last_analysis": 1728
+        "days_since_last_analysis": 1732
       },
       {
         "project_name": "Defra.Trade.Events.Traces.Certificates",
         "platform": "SonarQube",
         "last_analysis_date": "2021-10-04",
-        "days_since_last_analysis": 1717
-      },
-      {
-        "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
-        "platform": "SonarQube",
-        "last_analysis_date": "2021-10-14",
-        "days_since_last_analysis": 1707
+        "days_since_last_analysis": 1721
       },
       {
         "project_name": "Defra.Trade.Events.Services.CaseNotifier",
         "platform": "SonarQube",
         "last_analysis_date": "2021-10-14",
-        "days_since_last_analysis": 1707
+        "days_since_last_analysis": 1711
+      },
+      {
+        "project_name": "Defra.Trade.Events.Services.RiskAssessment.Scheduler",
+        "platform": "SonarQube",
+        "last_analysis_date": "2021-10-14",
+        "days_since_last_analysis": 1711
       },
       {
         "project_name": "Defra.Trade.Events.Certifier.Synchroniser",
         "platform": "SonarQube",
         "last_analysis_date": "2021-11-11",
-        "days_since_last_analysis": 1679
+        "days_since_last_analysis": 1683
       },
       {
         "project_name": "Defra.Trade.Events.Customer.EventStream",
         "platform": "SonarQube",
         "last_analysis_date": "2021-11-18",
-        "days_since_last_analysis": 1672
+        "days_since_last_analysis": 1676
       },
       {
         "project_name": "Defra.Trade.Events.Notify",
         "platform": "SonarQube",
         "last_analysis_date": "2021-11-19",
-        "days_since_last_analysis": 1671
+        "days_since_last_analysis": 1675
       },
       {
         "project_name": "Defra.Trade.CustomerExtension.Api",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-16",
-        "days_since_last_analysis": 1613
+        "days_since_last_analysis": 1617
       },
       {
         "project_name": "Defra.Trade.Events.Charges.ChargeableEventsPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-20",
-        "days_since_last_analysis": 1609
+        "days_since_last_analysis": 1613
       },
       {
         "project_name": "Defra.Trade.Events.Charges.BatchOutputService",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-21",
-        "days_since_last_analysis": 1608
+        "days_since_last_analysis": 1612
       },
       {
         "project_name": "Defra.Trade.CrmAdapter",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-29",
-        "days_since_last_analysis": 1600
+        "days_since_last_analysis": 1604
       },
       {
         "project_name": "Defra.Trade.Events.Services.RiskAssessmentPublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2022-01-31",
-        "days_since_last_analysis": 1598
+        "days_since_last_analysis": 1602
       },
       {
         "project_name": "Defra.Trade.Application.Status",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1596
-      },
-      {
-        "project_name": "Defra.Trade.CHARGE.UI",
-        "platform": "SonarQube",
-        "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1596
-      },
-      {
-        "project_name": "Defra.Trade.ReferenceData.UI",
-        "platform": "SonarQube",
-        "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1596
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.ReferenceData",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1596
+        "days_since_last_analysis": 1600
+      },
+      {
+        "project_name": "Defra.Trade.CHARGE.UI",
+        "platform": "SonarQube",
+        "last_analysis_date": "2022-02-02",
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.Charge.Api",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-02",
-        "days_since_last_analysis": 1596
+        "days_since_last_analysis": 1600
+      },
+      {
+        "project_name": "Defra.Trade.ReferenceData.UI",
+        "platform": "SonarQube",
+        "last_analysis_date": "2022-02-02",
+        "days_since_last_analysis": 1600
       },
       {
         "project_name": "Defra.Trade.Events.Services.CasePublisher",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-03",
-        "days_since_last_analysis": 1595
+        "days_since_last_analysis": 1599
       },
       {
         "project_name": "Defra.Trade.ReferenceAnalytics",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-08",
-        "days_since_last_analysis": 1590
+        "days_since_last_analysis": 1594
       },
       {
         "project_name": "Defra.Trade.Certificate.Gateway.Api",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-09",
-        "days_since_last_analysis": 1589
+        "days_since_last_analysis": 1593
       },
       {
         "project_name": "Defra.Trade.API.Fish.ReferenceData",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-10",
-        "days_since_last_analysis": 1588
+        "days_since_last_analysis": 1592
       },
       {
         "project_name": "Defra.Trade.CustomerExtension.UI",
         "platform": "SonarQube",
         "last_analysis_date": "2022-02-13",
-        "days_since_last_analysis": 1585
+        "days_since_last_analysis": 1589
       },
       {
         "project_name": "enotification-event-listener-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-07-13",
-        "days_since_last_analysis": 1435
+        "days_since_last_analysis": 1439
       },
       {
         "project_name": "DEFRA-REF",
         "platform": "SonarQube",
         "last_analysis_date": "2022-08-15",
-        "days_since_last_analysis": 1402
-      },
-      {
-        "project_name": "ODS-WEB",
-        "platform": "SonarQube",
-        "last_analysis_date": "2022-08-17",
-        "days_since_last_analysis": 1400
+        "days_since_last_analysis": 1406
       },
       {
         "project_name": "FGAS-WEB",
         "platform": "SonarQube",
         "last_analysis_date": "2022-08-17",
-        "days_since_last_analysis": 1400
+        "days_since_last_analysis": 1404
+      },
+      {
+        "project_name": "ODS-WEB",
+        "platform": "SonarQube",
+        "last_analysis_date": "2022-08-17",
+        "days_since_last_analysis": 1404
       },
       {
         "project_name": "enotification-event-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-08-31",
-        "days_since_last_analysis": 1386
+        "days_since_last_analysis": 1390
       },
       {
         "project_name": "bulk-upload-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-01",
-        "days_since_last_analysis": 1385
+        "days_since_last_analysis": 1389
       },
       {
         "project_name": "notification-search-migration-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-07",
-        "days_since_last_analysis": 1379
+        "days_since_last_analysis": 1383
       },
       {
         "project_name": "enotification-submission-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-12",
-        "days_since_last_analysis": 1374
+        "days_since_last_analysis": 1378
       },
       {
         "project_name": "TracesX-Checks",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-13",
-        "days_since_last_analysis": 1373
+        "days_since_last_analysis": 1377
       },
       {
         "project_name": "enotification-processing-microservice",
         "platform": "SonarQube",
         "last_analysis_date": "2022-09-22",
-        "days_since_last_analysis": 1364
+        "days_since_last_analysis": 1368
       },
       {
         "project_name": "frontend-accountcreation-microservice-manual",
         "platform": "SonarQube",
         "last_analysis_date": "2023-04-06",
-        "days_since_last_analysis": 1168
+        "days_since_last_analysis": 1172
       },
       {
         "project_name": "EPR Laps Queries And Complaints",
         "platform": "SonarQube",
         "last_analysis_date": "2023-10-05",
-        "days_since_last_analysis": 986
+        "days_since_last_analysis": 990
       },
       {
         "project_name": "epr-laps-accounts",
         "platform": "SonarQube",
         "last_analysis_date": "2023-10-05",
-        "days_since_last_analysis": 986
+        "days_since_last_analysis": 990
       },
       {
         "project_name": "epr-laps-usermanagement",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-13",
-        "days_since_last_analysis": 917
+        "days_since_last_analysis": 921
       },
       {
         "project_name": "epr-logging-api",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-18",
-        "days_since_last_analysis": 912
+        "days_since_last_analysis": 916
       },
       {
         "project_name": "Laps User management",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-20",
-        "days_since_last_analysis": 910
+        "days_since_last_analysis": 914
       },
       {
         "project_name": "epr-laps-home",
         "platform": "SonarQube",
         "last_analysis_date": "2023-12-22",
-        "days_since_last_analysis": 908
+        "days_since_last_analysis": 912
       },
       {
         "project_name": "mapping-library",
         "platform": "SonarQube",
         "last_analysis_date": "2024-01-17",
-        "days_since_last_analysis": 882
+        "days_since_last_analysis": 886
       },
       {
         "project_name": "RSP-ATM",
         "platform": "SonarQube",
         "last_analysis_date": "2024-01-25",
-        "days_since_last_analysis": 874
+        "days_since_last_analysis": 878
       },
       {
         "project_name": "\"UK REACH-IT Reach Metrics\"",
         "platform": "SonarQube",
         "last_analysis_date": "2025-01-27",
-        "days_since_last_analysis": 506
+        "days_since_last_analysis": 510
       },
       {
         "project_name": "epr-event-dispatcher-function-app",
         "platform": "SonarQube",
         "last_analysis_date": "2025-04-09",
-        "days_since_last_analysis": 434
+        "days_since_last_analysis": 438
       },
       {
         "project_name": "\"UK REACH-IT Reach Liquibase\"",
         "platform": "SonarQube",
         "last_analysis_date": "2025-05-08",
-        "days_since_last_analysis": 405
+        "days_since_last_analysis": 409
       },
       {
         "project_name": "Imports-FUNC-Archive-Notifications",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-15",
-        "days_since_last_analysis": 367
+        "days_since_last_analysis": 371
       },
       {
         "project_name": "Imports-FUNC-Auto-Clearance",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-15",
-        "days_since_last_analysis": 367
-      },
-      {
-        "project_name": "Imports-frontend-control",
-        "platform": "SonarQube",
-        "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 371
       },
       {
         "project_name": "Imports-Proxy",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 370
       },
       {
-        "project_name": "Imports-frontend-bordernotification",
+        "project_name": "Imports-frontend-control",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 366
-      },
-      {
-        "project_name": "Imports-frontend-upload",
-        "platform": "SonarQube",
-        "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 370
       },
       {
         "project_name": "Imports-FUNC-Notify",
         "platform": "SonarQube",
         "last_analysis_date": "2025-06-16",
-        "days_since_last_analysis": 366
+        "days_since_last_analysis": 370
+      },
+      {
+        "project_name": "Imports-frontend-upload",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-16",
+        "days_since_last_analysis": 370
+      },
+      {
+        "project_name": "Imports-frontend-bordernotification",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-16",
+        "days_since_last_analysis": 370
+      },
+      {
+        "project_name": "Imports-SpringBoot-CommonSecurity",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
+      },
+      {
+        "project_name": "Imports-SpringBoot-Common",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
+      },
+      {
+        "project_name": "Imports-FUNC-Risk-Locking",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
+      },
+      {
+        "project_name": "Imports-FUNC-Risk-Assessment",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
+      },
+      {
+        "project_name": "Imports-FUNC-Risk-Interface",
+        "platform": "SonarQube",
+        "last_analysis_date": "2025-06-17",
+        "days_since_last_analysis": 369
       }
     ],
     "inactive_projects_consolidated": {
-      "repos_inactive_over_1_years": 56,
-      "repos_inactive_over_2_years": 46,
+      "repos_inactive_over_1_years": 15,
+      "repos_inactive_over_2_years": 19,
       "repos_inactive_over_4_years": 27,
       "repos_inactive_over_6_years": 0,
       "repos_inactive_over_8_years": 0
@@ -477,11 +507,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3,
+        "inactive_branches_90": 4,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "3 inactive branches (90+ days)"
+        "hygiene_issue": "4 inactive branches (90+ days)"
       },
       {
         "project_name": "\"UK REACH-IT: Audit\"",
@@ -504,6 +534,17 @@
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
         "hygiene_issue": "3 inactive branches (90+ days)"
+      },
+      {
+        "project_name": "ipaffs-Imports-Proxy",
+        "platform": "SonarQube",
+        "main_branch": "master",
+        "non_main_branches": 2,
+        "inactive_branches_90": 1,
+        "repos_non_standard_main_branch": false,
+        "repos_with_inactive_non_main_branches": true,
+        "repos_with_non_main_branch_count_over_threshold": false,
+        "hygiene_issue": "1 inactive branches (90+ days)"
       },
       {
         "project_name": "\"UK REACH-IT: File\"",
@@ -554,11 +595,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 7,
-        "inactive_branches_90": 4,
+        "inactive_branches_90": 6,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "4 inactive branches (90+ days)"
+        "hygiene_issue": "6 inactive branches (90+ days)"
       },
       {
         "project_name": "\"UK REACH-IT: NipNots\"",
@@ -664,11 +705,11 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 3,
-        "inactive_branches_90": 1,
+        "inactive_branches_90": 2,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "bulk-upload-microservice",
@@ -807,11 +848,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 8,
-        "inactive_branches_90": 6,
+        "inactive_branches_90": 7,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "6 inactive branches (90+ days)"
+        "hygiene_issue": "7 inactive branches (90+ days)"
       },
       {
         "project_name": "Defra.Trade.Events.Charges.BatchOutputService",
@@ -862,11 +903,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 1,
+        "inactive_branches_90": 2,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "ipaffs-Imports-Mapping-Library",
@@ -1144,6 +1185,17 @@
         "hygiene_issue": "1 inactive branches (90+ days)"
       },
       {
+        "project_name": "epr-payment-facade",
+        "platform": "SonarQube",
+        "main_branch": "main",
+        "non_main_branches": 1,
+        "inactive_branches_90": 1,
+        "repos_non_standard_main_branch": false,
+        "repos_with_inactive_non_main_branches": true,
+        "repos_with_non_main_branch_count_over_threshold": false,
+        "hygiene_issue": "1 inactive branches (90+ days)"
+      },
+      {
         "project_name": "enotification-event-microservice",
         "platform": "SonarQube",
         "main_branch": "master",
@@ -1258,22 +1310,22 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 13,
-        "inactive_branches_90": 9,
+        "inactive_branches_90": 11,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "13 non-main branches including stale ones; 9 inactive branches (90+ days)"
+        "hygiene_issue": "13 non-main branches including stale ones; 11 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-common-data-api",
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 8,
-        "inactive_branches_90": 4,
+        "inactive_branches_90": 5,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "4 inactive branches (90+ days)"
+        "hygiene_issue": "5 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-document-schema-job-runner-function-app",
@@ -1445,11 +1497,11 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 8,
-        "inactive_branches_90": 4,
+        "inactive_branches_90": 5,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "4 inactive branches (90+ days)"
+        "hygiene_issue": "5 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-subsidiary-func-bulk-upload",
@@ -1533,11 +1585,11 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 11,
-        "inactive_branches_90": 4,
+        "inactive_branches_90": 5,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": true,
-        "hygiene_issue": "11 non-main branches including stale ones; 4 inactive branches (90+ days)"
+        "hygiene_issue": "11 non-main branches including stale ones; 5 inactive branches (90+ days)"
       },
       {
         "project_name": "Imports-FUNC-Risk-Interface",
@@ -1573,6 +1625,17 @@
         "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
+        "project_name": "plants-common",
+        "platform": "SonarQube",
+        "main_branch": "master",
+        "non_main_branches": 4,
+        "inactive_branches_90": 1,
+        "repos_non_standard_main_branch": false,
+        "repos_with_inactive_non_main_branches": true,
+        "repos_with_non_main_branch_count_over_threshold": false,
+        "hygiene_issue": "1 inactive branches (90+ days)"
+      },
+      {
         "project_name": "plants-application-form-microservice",
         "platform": "SonarQube",
         "main_branch": "master",
@@ -1599,11 +1662,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 1,
+        "inactive_branches_90": 2,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "ipaffs-Imports-MS-AntiVirus-Stub",
@@ -1654,11 +1717,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 3,
-        "inactive_branches_90": 1,
+        "inactive_branches_90": 2,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "ipaffs-Imports-MS-Checks",
@@ -1797,11 +1860,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 2,
+        "inactive_branches_90": 5,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "2 inactive branches (90+ days)"
+        "hygiene_issue": "5 inactive branches (90+ days)"
       },
       {
         "project_name": "UK REACH-IT Storage: Azure Blob Storage",
@@ -1819,11 +1882,11 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 2,
+        "inactive_branches_90": 5,
         "repos_non_standard_main_branch": false,
         "repos_with_inactive_non_main_branches": true,
         "repos_with_non_main_branch_count_over_threshold": false,
-        "hygiene_issue": "2 inactive branches (90+ days)"
+        "hygiene_issue": "5 inactive branches (90+ days)"
       }
     ],
     "branch_hygiene_non_standard_main_branch": [],
@@ -1875,7 +1938,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3
+        "inactive_branches_90": 4
       },
       {
         "project_name": "\"UK REACH-IT: Audit\"",
@@ -1890,6 +1953,13 @@
         "main_branch": "master",
         "non_main_branches": 5,
         "inactive_branches_90": 3
+      },
+      {
+        "project_name": "ipaffs-Imports-Proxy",
+        "platform": "SonarQube",
+        "main_branch": "master",
+        "non_main_branches": 2,
+        "inactive_branches_90": 1
       },
       {
         "project_name": "\"UK REACH-IT: File\"",
@@ -1924,7 +1994,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 7,
-        "inactive_branches_90": 4
+        "inactive_branches_90": 6
       },
       {
         "project_name": "\"UK REACH-IT: NipNots\"",
@@ -1994,7 +2064,7 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 3,
-        "inactive_branches_90": 1
+        "inactive_branches_90": 2
       },
       {
         "project_name": "bulk-upload-microservice",
@@ -2085,7 +2155,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 8,
-        "inactive_branches_90": 6
+        "inactive_branches_90": 7
       },
       {
         "project_name": "Defra.Trade.Events.Charges.BatchOutputService",
@@ -2120,7 +2190,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 1
+        "inactive_branches_90": 2
       },
       {
         "project_name": "ipaffs-Imports-Mapping-Library",
@@ -2298,6 +2368,13 @@
         "inactive_branches_90": 1
       },
       {
+        "project_name": "epr-payment-facade",
+        "platform": "SonarQube",
+        "main_branch": "main",
+        "non_main_branches": 1,
+        "inactive_branches_90": 1
+      },
+      {
         "project_name": "enotification-event-microservice",
         "platform": "SonarQube",
         "main_branch": "master",
@@ -2372,14 +2449,14 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 13,
-        "inactive_branches_90": 9
+        "inactive_branches_90": 11
       },
       {
         "project_name": "epr-common-data-api",
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 8,
-        "inactive_branches_90": 4
+        "inactive_branches_90": 5
       },
       {
         "project_name": "epr-document-schema-job-runner-function-app",
@@ -2491,7 +2568,7 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 8,
-        "inactive_branches_90": 4
+        "inactive_branches_90": 5
       },
       {
         "project_name": "epr-subsidiary-func-bulk-upload",
@@ -2547,7 +2624,7 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 11,
-        "inactive_branches_90": 4
+        "inactive_branches_90": 5
       },
       {
         "project_name": "Imports-FUNC-Risk-Interface",
@@ -2571,6 +2648,13 @@
         "inactive_branches_90": 2
       },
       {
+        "project_name": "plants-common",
+        "platform": "SonarQube",
+        "main_branch": "master",
+        "non_main_branches": 4,
+        "inactive_branches_90": 1
+      },
+      {
         "project_name": "plants-application-form-microservice",
         "platform": "SonarQube",
         "main_branch": "master",
@@ -2589,7 +2673,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 1
+        "inactive_branches_90": 2
       },
       {
         "project_name": "ipaffs-Imports-MS-AntiVirus-Stub",
@@ -2624,7 +2708,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 3,
-        "inactive_branches_90": 1
+        "inactive_branches_90": 2
       },
       {
         "project_name": "ipaffs-Imports-MS-Checks",
@@ -2715,7 +2799,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 2
+        "inactive_branches_90": 5
       },
       {
         "project_name": "UK REACH-IT Storage: Azure Blob Storage",
@@ -2729,7 +2813,7 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 2
+        "inactive_branches_90": 5
       }
     ],
     "branch_hygiene_non_main_branch_count_over_threshold": [
@@ -2773,7 +2857,7 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 13,
-        "inactive_branches_90": 9
+        "inactive_branches_90": 11
       },
       {
         "project_name": "epr-laps-home",
@@ -2787,7 +2871,7 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 11,
-        "inactive_branches_90": 4
+        "inactive_branches_90": 5
       },
       {
         "project_name": "Laps User management",
@@ -2799,7 +2883,7 @@
     ],
     "branch_hygiene_consolidated": {
       "repos_non_standard_main_branch": 0,
-      "repos_with_inactive_non_main_branches": 129,
+      "repos_with_inactive_non_main_branches": 132,
       "repos_with_non_main_branch_count_over_threshold": 9
     },
     "branch_issues": [
@@ -2856,8 +2940,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 3,
-        "hygiene_issue": "3 inactive branches (90+ days)"
+        "inactive_branches_90": 4,
+        "hygiene_issue": "4 inactive branches (90+ days)"
       },
       {
         "project_name": "\"UK REACH-IT: Audit\"",
@@ -2874,6 +2958,14 @@
         "non_main_branches": 5,
         "inactive_branches_90": 3,
         "hygiene_issue": "3 inactive branches (90+ days)"
+      },
+      {
+        "project_name": "ipaffs-Imports-Proxy",
+        "platform": "SonarQube",
+        "main_branch": "master",
+        "non_main_branches": 2,
+        "inactive_branches_90": 1,
+        "hygiene_issue": "1 inactive branches (90+ days)"
       },
       {
         "project_name": "\"UK REACH-IT: File\"",
@@ -2912,8 +3004,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 7,
-        "inactive_branches_90": 4,
-        "hygiene_issue": "4 inactive branches (90+ days)"
+        "inactive_branches_90": 6,
+        "hygiene_issue": "6 inactive branches (90+ days)"
       },
       {
         "project_name": "\"UK REACH-IT: NipNots\"",
@@ -2992,8 +3084,8 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 3,
-        "inactive_branches_90": 1,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "inactive_branches_90": 2,
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "bulk-upload-microservice",
@@ -3096,8 +3188,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 8,
-        "inactive_branches_90": 6,
-        "hygiene_issue": "6 inactive branches (90+ days)"
+        "inactive_branches_90": 7,
+        "hygiene_issue": "7 inactive branches (90+ days)"
       },
       {
         "project_name": "Defra.Trade.Events.Charges.BatchOutputService",
@@ -3136,8 +3228,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 1,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "inactive_branches_90": 2,
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "ipaffs-Imports-Mapping-Library",
@@ -3340,6 +3432,14 @@
         "hygiene_issue": "1 inactive branches (90+ days)"
       },
       {
+        "project_name": "epr-payment-facade",
+        "platform": "SonarQube",
+        "main_branch": "main",
+        "non_main_branches": 1,
+        "inactive_branches_90": 1,
+        "hygiene_issue": "1 inactive branches (90+ days)"
+      },
+      {
         "project_name": "enotification-event-microservice",
         "platform": "SonarQube",
         "main_branch": "master",
@@ -3424,16 +3524,16 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 13,
-        "inactive_branches_90": 9,
-        "hygiene_issue": "13 non-main branches including stale ones; 9 inactive branches (90+ days)"
+        "inactive_branches_90": 11,
+        "hygiene_issue": "13 non-main branches including stale ones; 11 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-common-data-api",
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 8,
-        "inactive_branches_90": 4,
-        "hygiene_issue": "4 inactive branches (90+ days)"
+        "inactive_branches_90": 5,
+        "hygiene_issue": "5 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-document-schema-job-runner-function-app",
@@ -3560,8 +3660,8 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 8,
-        "inactive_branches_90": 4,
-        "hygiene_issue": "4 inactive branches (90+ days)"
+        "inactive_branches_90": 5,
+        "hygiene_issue": "5 inactive branches (90+ days)"
       },
       {
         "project_name": "epr-subsidiary-func-bulk-upload",
@@ -3624,8 +3724,8 @@
         "platform": "SonarQube",
         "main_branch": "main",
         "non_main_branches": 11,
-        "inactive_branches_90": 4,
-        "hygiene_issue": "11 non-main branches including stale ones; 4 inactive branches (90+ days)"
+        "inactive_branches_90": 5,
+        "hygiene_issue": "11 non-main branches including stale ones; 5 inactive branches (90+ days)"
       },
       {
         "project_name": "Imports-FUNC-Risk-Interface",
@@ -3652,6 +3752,14 @@
         "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
+        "project_name": "plants-common",
+        "platform": "SonarQube",
+        "main_branch": "master",
+        "non_main_branches": 4,
+        "inactive_branches_90": 1,
+        "hygiene_issue": "1 inactive branches (90+ days)"
+      },
+      {
         "project_name": "plants-application-form-microservice",
         "platform": "SonarQube",
         "main_branch": "master",
@@ -3672,8 +3780,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 1,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "inactive_branches_90": 2,
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "ipaffs-Imports-MS-AntiVirus-Stub",
@@ -3712,8 +3820,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 3,
-        "inactive_branches_90": 1,
-        "hygiene_issue": "1 inactive branches (90+ days)"
+        "inactive_branches_90": 2,
+        "hygiene_issue": "2 inactive branches (90+ days)"
       },
       {
         "project_name": "ipaffs-Imports-MS-Checks",
@@ -3816,8 +3924,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 2,
-        "hygiene_issue": "2 inactive branches (90+ days)"
+        "inactive_branches_90": 5,
+        "hygiene_issue": "5 inactive branches (90+ days)"
       },
       {
         "project_name": "UK REACH-IT Storage: Azure Blob Storage",
@@ -3832,8 +3940,8 @@
         "platform": "SonarQube",
         "main_branch": "master",
         "non_main_branches": 5,
-        "inactive_branches_90": 2,
-        "hygiene_issue": "2 inactive branches (90+ days)"
+        "inactive_branches_90": 5,
+        "hygiene_issue": "5 inactive branches (90+ days)"
       }
     ],
     "odd_names": [],
@@ -3844,6 +3952,34 @@
         "false_positives": 44,
         "false_positives_no_justification": 4,
         "quality_issue": "4 false positives without justification"
+      },
+      {
+        "project_name": "epr_regulator_service_facade",
+        "platform": "SonarQube",
+        "false_positives": 3,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "epr-pom-web-api-gateway",
+        "platform": "SonarQube",
+        "false_positives": 3,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "plants-certificate-microservice",
+        "platform": "SonarQube",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
+      },
+      {
+        "project_name": "UK REACH-IT: Frontend",
+        "platform": "SonarQube",
+        "false_positives": 1,
+        "false_positives_no_justification": 0,
+        "quality_issue": "All false positives have justification"
       }
     ],
     "false_positives_consolidated": {
@@ -3979,31 +4115,31 @@
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "EPR | C#",
-        "details": "Days since last update=831 | Projects affected=1 | Last used=2026-04-29",
+        "details": "Days since last update=835 | Projects affected=1 | Last used=2026-04-29",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "DefraJavaCustomEcho | Java",
-        "details": "Days since last update=27 | Projects affected=0 | Last used=2026-03-27",
+        "details": "Days since last update=31 | Projects affected=0 | Last used=2026-03-27",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "newCreedengoJava | Java",
-        "details": "Days since last update=12 | Projects affected=1 | Last used=2026-06-05",
+        "details": "Days since last update=16 | Projects affected=1 | Last used=2026-06-05",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "MMOJavascript | JavaScript",
-        "details": "Days since last update=847 | Projects affected=1 | Last used=2026-01-21",
+        "details": "Days since last update=851 | Projects affected=1 | Last used=2026-01-21",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       },
       {
         "category": "Custom profile does not inherit from built-in (manual updates needed)",
         "profile_name_language": "Typescript MMO | TypeScript",
-        "details": "Days since last update=847 | Projects affected=0 | Last used=2026-01-21",
+        "details": "Days since last update=851 | Projects affected=0 | Last used=2026-01-21",
         "action": "Make this profile inherit from a built-in profile, or document why it must remain standalone."
       }
     ],
@@ -4019,7 +4155,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 1595,
+        "inactive_days": 1599,
         "inactive_branches": 13
       }
     },
@@ -4031,7 +4167,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 1364,
+        "inactive_days": 1368,
         "inactive_branches": 12
       }
     },
@@ -4043,7 +4179,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 1590,
+        "inactive_days": 1594,
         "inactive_branches": 11
       }
     },
@@ -4055,7 +4191,7 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 910,
+        "inactive_days": 914,
         "inactive_branches": 11
       }
     },
@@ -4067,42 +4203,42 @@
         "Branch Hygiene"
       ],
       "details": {
-        "inactive_days": 908,
+        "inactive_days": 912,
         "inactive_branches": 11
       }
     }
   ],
   "quick_wins": [
-    "Delete 432 stale branches across 129 projects — zero risk, instant cleanup",
-    "Add justification for 1 projects with ≤5 unjustified false positives each — quick audit fix"
+    "Delete 454 stale branches across 132 projects — zero risk, instant cleanup",
+    "Add justification for 5 projects with ≤5 unjustified false positives each — quick audit fix"
   ],
   "ai_insights": {
-    "narrative": "The SonarQube portfolio of 198 repositories is broadly healthy, though the most material hygiene risks are concentrated in inactive projects and stale non-main branches. 56 repositories have not been scanned for over a year, and a large number carry inactive non-main branches that inflate branch noise. Configuration gaps affect 11 repositories and four use a non-compliant Quality Gate, both of which weaken metric visibility and assurance consistency. Addressing the stale projects, cleaning up dormant branches, and restoring scanner configuration would meaningfully improve auditability across the portfolio.",
+    "narrative": "The portfolio spans 198 repositories on SonarQube. The most significant concerns are around lifecycle and branch hygiene: 61 repositories are inactive and have not been scanned in over one year, and 132 repositories carry non-main branches that have not been scanned in more than 90 days. Configuration gaps affect 11 repositories, limiting analysis visibility across the portfolio. Quality gate compliance is broadly consistent, with only four repositories using non-compliant gates, though all three repositories with accepted issues lack justification comments, weakening auditability. Rule profile hygiene also requires attention, as five custom profiles do not inherit from built-in profiles and will need manual maintenance to remain current. Prioritising inactive project cleanup, stale branch removal, and configuration gap resolution would have the most immediate impact on portfolio hygiene.",
     "sections": {
-      "inactive_insights": "Removing unused repositories can help to reduce unnecessary cost and maintenance effort. 56 repositories have not had a Sonar scan for more than 1 year, 46 of these for more than 2 years, and 27 for more than 4 years. These should be reviewed to check if they are still needed.",
-      "inactive_action": "Request project POCs to review these repositories for continued relevance, with inactive ones to be removed or archived from the SonarScan instance to optimise cost and maintain a clear project portfolio.",
-      "duplication_insights": "1 repository exceeds the defined duplication threshold, indicating a higher level of repeated code.",
-      "duplication_action": "Review this repository with the project POC to identify and reduce duplication, and improve code efficiency and maintainability.",
+      "inactive_insights": "61 repositories are inactive and have not been scanned in over one year. This includes 15 repositories inactive for 1-2 years, 19 inactive for 2-4 years, and 27 inactive for more than four years. Retaining unused repositories increases maintenance overhead and can distort portfolio metrics.",
+      "inactive_action": "Request project POCs to review these repositories for continued relevance, with inactive ones to be removed or archived from the SonarQube instance to optimise maintenance and maintain a clear project portfolio.",
+      "duplication_insights": "One repository exceeds the duplication threshold for overall code. High duplication increases maintenance effort and can inflate compute and storage overhead on self-hosted SonarQube, complicating analysis and long-term maintainability.",
+      "duplication_action": "Review the identified repository with the respective project POC to reduce duplication, optimise code efficiency, and improve overall maintainability.",
       "migration_insights": "",
       "migration_action": "",
       "branch_repos_non_standard_main_branch_insights": "",
       "branch_repos_non_standard_main_branch_action": "",
-      "branch_repos_with_inactive_non_main_branches_insights": "129 repositories have non-main branches (e.g. feature or development branches) that have not been scanned for a prolonged period, which may indicate stale or abandoned work.",
-      "branch_repos_with_inactive_non_main_branches_action": "Review these repositories with project POCs to confirm if the branches are still needed, and remove or clean them up to maintain a well-managed Sonar environment.",
-      "branch_repos_with_non_main_branch_count_over_threshold_insights": "9 repositories have more non-main branches than the agreed threshold, which can clutter scan results and make reporting harder to follow.",
+      "branch_repos_with_inactive_non_main_branches_insights": "132 repositories have non-main branches that have not been scanned for more than 90 days. This represents a significant portion of the portfolio and likely indicates widespread stale or abandoned feature and development branches.",
+      "branch_repos_with_inactive_non_main_branches_action": "Review these repositories with project POCs to confirm whether non-main branches are still required, and remove or archive stale branches to keep the Sonar environment clean and reports accurate.",
+      "branch_repos_with_non_main_branch_count_over_threshold_insights": "Nine repositories have more non-main branches than the agreed threshold, which can clutter scan results and make portfolio-level reporting harder to follow.",
       "branch_repos_with_non_main_branch_count_over_threshold_action": "Review these repositories with project POCs to consolidate or remove surplus non-main branches and keep the branch count within the agreed threshold.",
       "naming_insights": "",
       "naming_action": "",
-      "false_positives_insights": "5 repositories have issues marked as false positives, and 1 of these has been recorded without a justification comment, weakening auditability.",
-      "false_positives_action": "Review the false-positive markings to confirm they are valid, and add a justification comment to the 1 repository missing one so the decision remains auditable.",
-      "suppressions_insights": "3 repositories have accepted (suppressed) issues, and all 3 have been recorded without justification comments, weakening auditability.",
-      "suppressions_action": "Add justification comments to the accepted issues in the 3 repositories so suppression decisions remain auditable.",
-      "quality_gates_insights": "4 repositories use a non-compliant Quality Gate, reducing assurance consistency across the portfolio.",
-      "quality_gates_action": "Restore the default Quality Gate on the 4 repositories using a non-compliant gate.",
-      "config_gaps_insights": "11 repositories have scanner configuration gaps that suppress metric collection and reduce reporting visibility.",
-      "config_gaps_action": "Add the missing scanner configuration to the 11 repositories to restore metric visibility.",
-      "sonarqube_rules_insights": "5 custom quality profiles do not inherit from a built-in profile, meaning they require manual updates and may drift from current rule standards. Two of these profiles have not been updated for over 800 days.",
-      "sonarqube_rules_action": "Make these custom profiles inherit from a built-in profile, or document why each must remain standalone, and review the long-stale profiles for continued relevance.",
+      "false_positives_insights": "Five repositories contain false positives, with one lacking a justification comment, which limits traceability and auditability of the suppression decisions made.",
+      "false_positives_action": "Review false-positive markings in the affected repositories to confirm they are valid, and add justification comments where missing to ensure suppression decisions remain auditable.",
+      "suppressions_insights": "Three repositories have accepted issues, and all three lack justification comments. This weakens auditability and makes it difficult to understand why issues were suppressed.",
+      "suppressions_action": "Add justification comments to all accepted issues in the three affected repositories so suppression decisions remain auditable and traceable.",
+      "quality_gates_insights": "Four repositories are using a non-compliant Quality Gate, leading to inconsistent evaluation of code quality conditions across the portfolio.",
+      "quality_gates_action": "Reassign the affected repositories to the standard Defra Quality Gate to ensure consistent measurement, or confirm the justification for any non-standard Quality Gate with stakeholders and the assurance team.",
+      "config_gaps_insights": "11 repositories lack valid scanner configuration, preventing analysis and metric computation for those projects.",
+      "config_gaps_action": "Fix scanner configuration in the 11 affected repositories to restore analysis coverage and metric computation.",
+      "sonarqube_rules_insights": "Five custom quality profiles do not inherit from a built-in profile and require manual updates to stay current. Profiles span C#, Java, JavaScript, and TypeScript, with some having not been updated in over two years, increasing the risk of outdated rule coverage.",
+      "sonarqube_rules_action": "Review each standalone custom profile and either configure it to inherit from the relevant built-in profile, or document a clear justification for maintaining it as standalone to ensure rule coverage remains current.",
       "sonarcloud_rules_insights": "",
       "sonarcloud_rules_action": ""
     }
